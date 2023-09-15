@@ -1,5 +1,5 @@
 .header {
-    background-color: var(--verde);
+    background-color: var(--green);
 }
 
 .container {
@@ -11,7 +11,7 @@
 
 .nav {
     display: none;
-    background-color: var(--verde);
+    background-color: var(--green);
 }
 
 .nav.show {
@@ -27,6 +27,11 @@
     padding: 10px 20px;
     text-align: center;
     transition: background-color 0.3s ease;
+}
+
+.nav__list li a {
+    color: var(--white);
+    text-decoration: none;
 }
 
 .nav__list li:hover {
