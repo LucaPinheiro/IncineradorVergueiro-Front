@@ -1,0 +1,45 @@
+.banner__title {
+    color: var(--white);
+    font-size: 20px;
+    margin-top: 0; 
+}
+
+.banner {
+    background-image: url('/assets/IncineradorDesign.png');
+    background-size: cover;
+    background-position: center;
+    height: 175px;
+    position: relative; 
+}
+
+.banner__box {
+    position: relative;
+    text-align: left; /* Alterado para alinhar o texto à esquerda */
+    padding-left: 25px;
+    padding-top: 20px;
+}
+
+.banner__text {
+    color: var(--white);
+    font-size: 10px;
+    margin-top: 14px;
+    width: 150px;
+}
+
+.banner__button {
+    position: absolute; 
+    bottom: 10px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    background-color: var(--green); /* Cor de fundo verde */
+    color: var(--white); /* Cor do texto branco */
+    padding: 10px 20px; /* Espaçamento interno para o botão */
+    border-radius: 12px; /* Borda arredondada */
+    text-decoration: none; /* Remover sublinhado do link */
+    transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+}
+
+.banner__button:hover {
+    background-color: #4C7E16; /* Cor de fundo mais escura ao passar o mouse */
+}
+
