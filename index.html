@@ -12,11 +12,25 @@
 <body>
     <header class="header">
         <div class="container">
-            <span class="header__menu"><img src="./assets/menu.svg" alt="Menu" class="menu"></span>
+            <span class="header__menu" id="menuBtn">
+                <img src="./assets/menu.svg" alt="Menu" class="menu">
+            </span>
             <a href="#"><img src="./assets/icon.svg" alt="logo da Usina"></a>
-            <span class="header__menu"><img src="./assets/profile.svg" alt="Meu perfil" class="menu"></span>
+            <span class="header__menu">
+                <img src="./assets/profile.svg" alt="Meu perfil" class="menu">
+            </span>
         </div>
+        <nav class="nav" id="nav">
+            <ul class="nav__list">
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">Loja</a></li>
+                <li><a href="#">Apoie</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Agendamentos</a></li>
+            </ul>
+        </nav>
     </header>
+    <script src="./scripts/navbar.js"></script>
 </body>
 
 </html>

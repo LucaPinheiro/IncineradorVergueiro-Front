@@ -1,12 +1,34 @@
 .header {
     background-color: var(--verde);
-   }
+}
 
 .container {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
-    padding: 10px 20px; 
+    align-items: center;
+    padding: 10px 20px;
 }
 
+.nav {
+    display: none;
+    background-color: var(--verde);
+}
 
+.nav.show {
+    display: block; 
+}
+
+.nav__list {
+    list-style: none;
+    padding: 0;
+}
+
+.nav__list li {
+    padding: 10px 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.nav__list li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
