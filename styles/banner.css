@@ -14,7 +14,7 @@
 
 .banner__box {
     position: relative;
-    text-align: left; /* Alterado para alinhar o texto à esquerda */
+    text-align: left;
     padding-left: 25px;
     padding-top: 20px;
 }
@@ -31,12 +31,12 @@
     bottom: 10px; 
     left: 50%; 
     transform: translateX(-50%);
-    background-color: var(--green); /* Cor de fundo verde */
-    color: var(--white); /* Cor do texto branco */
-    padding: 10px 20px; /* Espaçamento interno para o botão */
-    border-radius: 12px; /* Borda arredondada */
-    text-decoration: none; /* Remover sublinhado do link */
-    transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+    background-color: var(--green); 
+    color: var(--white); 
+    padding: 10px 20px; 
+    border-radius: 12px; 
+    text-decoration: none;
+    transition: background-color 0.3s ease; 
 }
 
 .banner__button:hover {
