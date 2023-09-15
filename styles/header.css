@@ -1,5 +1,6 @@
 .header {
     background-color: var(--green);
+    padding-bottom: 10px;
 }
 
 .container {
@@ -12,28 +13,47 @@
 .nav {
     display: none;
     background-color: var(--green);
+
 }
 
 .nav.show {
     display: block; 
+    left: 0;
 }
 
 .nav__list {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 
 .nav__list li {
-    padding: 10px 20px;
     text-align: center;
+    display: flex;
+    justify-content: center;
     transition: background-color 0.3s ease;
+    border-bottom: 2px solid var(--green);
+    width: 100%;
+
 }
 
 .nav__list li a {
     color: var(--white);
     text-decoration: none;
+
+    background-color: #6cb21e;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    width: 80%;
+    border-radius: 12px;
+    transition: 0.3s;
 }
 
-.nav__list li:hover {
+.nav__list li a:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
