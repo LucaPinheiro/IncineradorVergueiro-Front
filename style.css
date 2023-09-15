@@ -1,12 +1,18 @@
 @import url("./styles/header.css");
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+
+
 
 :root {
-    --cor-de-fundo: #FFFFFF;
-    --verde: #69A625;
+    --background-color: #FFFFFF;
+    --green: #69A625;
+    --main-font-family: "Marcellus SC";
+    --white: #FFFFFF;
 }
 
 body {
-    background-color: var(--cor-de-fundo);
+    background-color: var(--background-color);
+    font-family: var(--main-font-family);
 }
 
 body, header {
