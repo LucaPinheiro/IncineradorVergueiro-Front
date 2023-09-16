@@ -27,6 +27,16 @@ function updateCarousel() {
   const currentItem = carouselData[currentIndex];
   titleElement.textContent = currentItem.title;
   textElement.textContent = currentItem.text;
+
+  const indicators = document.querySelectorAll(".indicator");
+  indicators.forEach((indicator, index) => {
+    if (index === currentIndex) {
+      indicator.classList.add("active");
+    } else {
+      indicator.classList.remove("active");
+    }
+  });
+
   currentIndex = (currentIndex + 1) % carouselData.length;
 }
 
@@ -34,5 +44,3 @@ const interval = 4000;
 setInterval(updateCarousel, interval);
 
 updateCarousel();
-
-export default { updateCarousel };

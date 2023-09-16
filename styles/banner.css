@@ -1,7 +1,7 @@
 .banner__title {
     color: var(--white);
     font-size: 20px;
-    margin-top: 0; 
+    margin-top: 0;
 }
 
 .banner {
@@ -9,7 +9,7 @@
     background-size: cover;
     background-position: center;
     height: 175px;
-    position: relative; 
+    position: relative;
 }
 
 .banner__box {
@@ -27,19 +27,39 @@
 }
 
 .banner__button {
-    position: absolute; 
-    bottom: 10px; 
-    left: 50%; 
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
     transform: translateX(-50%);
-    background-color: var(--green); 
-    color: var(--white); 
-    padding: 10px 20px; 
-    border-radius: 12px; 
+    background-color: var(--green);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 12px;
     text-decoration: none;
-    transition: background-color 0.3s ease; 
+    transition: background-color 0.3s ease;
 }
 
 .banner__button:hover {
-    background-color: #4C7E16; /* Cor de fundo mais escura ao passar o mouse */
+    background-color: #4C7E16;
 }
 
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.indicator.active {
+    background-color: blue;
+}
