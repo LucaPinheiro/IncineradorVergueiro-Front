@@ -28,6 +28,7 @@ function updateCarousel() {
   titleElement.textContent = currentItem.title;
   textElement.textContent = currentItem.text;
 
+  // Atualize os indicadores de posição
   const indicators = document.querySelectorAll(".indicator");
   indicators.forEach((indicator, index) => {
     if (index === currentIndex) {
@@ -43,4 +44,4 @@ function updateCarousel() {
 const interval = 4000;
 setInterval(updateCarousel, interval);
 
-updateCarousel();
+export { updateCarousel }; 
