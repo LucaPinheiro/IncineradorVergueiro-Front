@@ -17,8 +17,7 @@
 }
 
 .nav.show {
-    display: block; 
-    left: 0;
+    display: block;
 }
 
 .nav__list {
@@ -56,4 +55,13 @@
 
 .nav__list li a:hover {
     background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav2 {
+    display: none;
+    background-color: var(--green);
+}
+
+.nav2.show {
+    display: block;
 }
