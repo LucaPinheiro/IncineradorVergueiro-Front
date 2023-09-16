@@ -36,7 +36,7 @@
 
 .nav__list {
     list-style: none;
-    padding: 0;
+    padding-bottom: 14px;
     display: flex;
     flex-direction: column;
     justify-content: center;
