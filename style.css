@@ -1,4 +1,5 @@
 @import url("./styles/header.css");
+@import url("./styles/banner.css");
 @import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
 
 
@@ -8,6 +9,7 @@
     --green: #69A625;
     --main-font-family: "Marcellus SC";
     --white: #FFFFFF;
+    --black: #000000;
 }
 
 body {
@@ -15,6 +17,7 @@ body {
     font-family: var(--main-font-family);
 }
 
-body, header {
+body,
+header {
     margin: 0;
-} 
+}
