@@ -16,6 +16,11 @@ export const carouselData = [
       text: "Descrição do Evento 3.",
       buttonText: "Inscreva-se 3",
       buttonLink: "#",
+    },{
+      title: "Evento 4",
+      text: "Descrição do Evento 3.",
+      buttonText: "Inscreva-se 3",
+      buttonLink: "#",
     },
   ];
   
