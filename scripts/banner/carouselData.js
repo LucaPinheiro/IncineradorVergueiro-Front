@@ -8,8 +8,8 @@ export const carouselData = [
     {
       title: "Abaixo Assinado",
       text: "Contribua",
-      buttonText: "Acesse",
-      buttonLink: "#",
+      buttonText: "Assine",
+      buttonLink: "https://secure.avaaz.org/community_petitions/po/prefeitura_municipal_de_sao_paulo_eu_apoio_incinerador_vergueiro_devera_ser_um_espaco_de_conscientizacao_ambiental_e_vida/",
     },
     {
       title: "Evento 3",
@@ -18,8 +18,8 @@ export const carouselData = [
       buttonLink: "#",
     },{
       title: "Evento 4",
-      text: "Descrição do Evento 3.",
-      buttonText: "Inscreva-se 3",
+      text: "Descrição do Evento 4.",
+      buttonText: "Inscreva-se 4",
       buttonLink: "#",
     },
   ];
