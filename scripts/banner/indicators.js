@@ -1,4 +1,4 @@
-import { carouselData } from './carouselData.js';
+import { carouselData } from './data/carouselData.js';
 
 function createIndicators() {
   const indicatorsContainer = document.getElementById("indicators");

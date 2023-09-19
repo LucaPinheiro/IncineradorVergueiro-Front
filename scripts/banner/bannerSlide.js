@@ -1,4 +1,4 @@
-import { carouselData } from './carouselData.js';
+import { carouselData } from './data/carouselData.js';
 
 let currentIndex = 0;
 

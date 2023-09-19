@@ -1,5 +1,5 @@
 import { updateCarousel } from "./banner/bannerSlide.js";
-import { carouselData } from "./banner/carouselData.js";
+import { carouselData } from "./banner/data/carouselData.js";
 import { createIndicators } from "./banner/indicators.js";
 
 const menuButton = document.getElementById("menuBtn");
