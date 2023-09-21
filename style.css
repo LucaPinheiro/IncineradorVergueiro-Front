@@ -22,3 +22,9 @@ body,
 header {
     margin: 0;
 }
+
+.black-line {
+    border: 1px solid black; 
+    margin-top: 45px; 
+    margin-bottom: 20px; 
+}
