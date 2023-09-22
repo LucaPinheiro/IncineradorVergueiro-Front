@@ -1,6 +1,7 @@
 @import url("./styles/home/header.css");
 @import url("./styles/home/banner.css");
 @import url("./styles/home/containers.css");
+@import url("./styles/home/circlesImage.css");
 @import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
 
 
@@ -26,5 +27,5 @@ header {
 .black-line {
     border: 1px solid black; 
     margin-top: 45px; 
-    margin-bottom: 20px; 
+    margin-bottom: 45px; 
 }
