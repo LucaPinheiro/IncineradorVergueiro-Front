@@ -1,0 +1,16 @@
+/* mobile */
+
+.container__maps {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; 
+    margin-bottom: 40px;
+}
+
+.container__maps__maps {
+    width: 70%;
+    height: 90%;
+    border-radius: 40px;
+}
