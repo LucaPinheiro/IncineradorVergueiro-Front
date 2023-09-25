@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Eventos</title>
+    <link rel="stylesheet" href="../../reset.css">
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <span class="header__menu" id="menuBtn">
+                <img src="../../assets/home/menu.svg" alt="Menu" class="menu">
+            </span>
+            <a href="#"><img src="../../assets/home/icon.svg" alt="logo da Usina"></a>
+            <span class="header__menu" id="menuBtn2">
+                <img src="../../assets/home/profile.svg" alt="Minha conta" class="menu">
+            </span>
+        </div>
+        <nav class="nav" id="nav">
+            <ul class="nav__list">
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="pages/usuario/loja.html">Loja</a></li>
+                <li><a href="pages/usuario/apoie.html">Apoie</a></li>
+                <li><a href="pages/usuario/sobreNos.html">Sobre Nós</a></li>
+                <li><a href="pages/usuario/agendamentoEvento.html">Agendamentos</a></li>
+            </ul>
+        </nav>
+        <nav class="nav2" id="nav2">
+            <ul class="nav__list">
+                <li><a href="pages/usuario/minhaConta.html">Minha conta</a></li>
+                <li><a href="pages/usuario/meusAgendamentos.html">Meus agendamentos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container__event">
+        <h1 class="container__event__title">Agendamento de Eventos</h1>
+        <form>
+            <div class="form-row-first-box">
+                <div class="form-row">
+                    <label class="wide-label" for="nomeEvento">Nome do Evento:</label>
+                    <input type="text" id="nomeEvento" name="nomeEvento" required>
+                </div>
+                <div class="form-row">
+                    <label class="wide-label" for="nomeAnfitriao">Nome do Anfitrião:</label>
+                    <input type="text" id="nomeAnfitriao" name="nomeAnfitriao" required>
+                </div>
+                
+                <div class="form-row">
+                    <label for="dataEvento">Data do Evento:</label>
+                    <input type="date" id="dataEvento" name="dataEvento" required>
+                </div>
+            </div>
+            <div class="form-row-start-finish">
+                <div class="form-row">
+                    <label for="horaInicio">Horário de Início:</label>
+                    <input type="time" id="horaInicio" name="horaInicio" required>
+                </div>
+                <div class="form-row">
+                    <label for="horaTermino">Horário de Término:</label>
+                    <input type="time" id="horaTermino" name="horaTermino" required>
+                </div>
+            </div>
+            <div class="form-row-second-box">
+                <div class="form-row">
+                    <label for="numParticipantes">Número de Participantes:</label>
+                    <input type="number" id="numParticipantes" name="numParticipantes" required>
+                </div>
+                <div class="form-row">
+                    <label for="descricaoEvento">Descrição do Evento:</label>
+                    <textarea id="descricaoEvento" name="descricaoEvento" rows="4" cols="50" required></textarea>
+                </div>
+                <div class="form-row">
+                    <input type="submit" value="Agendar Evento">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
