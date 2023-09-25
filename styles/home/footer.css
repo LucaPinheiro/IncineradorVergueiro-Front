@@ -1,0 +1,32 @@
+/* footer mobile */
+
+.footer {
+    background-color: #69A625;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0; /* Espaçamento interno */
+}
+
+.footer h2 {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.footer h3 {
+    font-size: 8px;
+    margin: 5px 0;
+}
+
+.white-line {
+    width: 250px;
+    height: 1px;
+    background-color: #FFFFFF;
+    margin: 0 auto; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+
+.footer h4 {
+    font-size: 8px;
+    margin: 5px 0;
+}
