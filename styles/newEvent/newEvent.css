@@ -122,29 +122,29 @@ input[type="submit"]:hover {
 @media screen and (min-width: 820px) {
     .container__event {
         margin-top: 20px;
-        text-align: left; /* Alinha o conteúdo à esquerda */
+        text-align: left; 
     }
 
     .container__event__title {
-        margin-left: 80px; /* Remove a margem à direita */
+        margin-left: 80px; 
         font-size: 28px;
     }
 
     form {
-        align-items: flex-start; /* Alinha os itens do formulário à esquerda */
+        align-items: flex-start;
     }
 
-    .form-row {
-        /* margin-right: 0; Remove a margem à direita */
-    }
+    /* .form-row {
+        
+    } */
 
     .form-row-start-finish {
-        margin-left: 80px; /* Remove a margem à direita */
+        margin-left: 80px; 
         gap: 50px;
     }
 
     .form-row-start-finish .form-row {
-        margin-right: 0; /* Remove a margem à direita */
+        margin-right: 0; 
     }
 
     .form-row-start-finish .large-textbox {
@@ -152,11 +152,11 @@ input[type="submit"]:hover {
     }
 
     .form-row-second-box {
-        margin-left: 80px; /* Remove a margem à esquerda */
+        margin-left: 80px; 
     }
 
     .form-row-first-box {
-        margin-left: 80px; /* Remove a margem à esquerda */
+        margin-left: 80px; 
     }
 
     .wide-label {
@@ -201,8 +201,8 @@ input[type="submit"]:hover {
 
 @media screen and (min-width: 1703px) {
     .container__event {
-        text-align: left; /* Alinha o conteúdo à esquerda */
-        margin-top: 0; /* Remove a margem superior */
+        text-align: left;
+        margin-top: 0; 
     }
 
     .container__event__title {
@@ -210,25 +210,25 @@ input[type="submit"]:hover {
     }
 
     form {
-        align-items: flex-start; /* Alinha os itens do formulário à esquerda */
+        align-items: flex-start;
     }
 
     .form-row {
-        margin-right: 0; /* Remove a margem à direita */
-        align-items: flex-start; /* Alinha os elementos à esquerda */
+        margin-right: 0; 
+        align-items: flex-start; 
     }
 
     .form-row-start-finish {
-        gap: 140px; /* Espaço entre os elementos */
-        margin-right: 0; /* Remove a margem à direita */
+        gap: 140px; 
+        margin-right: 0; 
     }
 
     .form-row-second-box {
-        margin-left: 80px; /* Remove a margem à esquerda */
+        margin-left: 80px; 
     }
 
     .form-row-first-box {
-        margin-left: 80px; /* Remove a margem à esquerda */
+        margin-left: 80px; 
     }
 
     .wide-label {
@@ -240,7 +240,7 @@ input[type="submit"]:hover {
     }
 
     .form-row-button {
-        margin-left: 640px; /* Remove a margem à esquerda */
+        margin-left: 640px; 
         margin-top: 30px;
         margin-bottom: 18px;
 
@@ -256,7 +256,5 @@ input[type="submit"]:hover {
 
     #endTime {
         width: 700px;
-    }
-
-    
+    }   
 } 
