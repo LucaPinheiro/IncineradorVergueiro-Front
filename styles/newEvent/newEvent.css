@@ -44,7 +44,8 @@ label {
     flex-direction: row; 
     align-items: center; 
     margin-bottom: 20px;
-    margin-right: 40px;
+    margin-right: 20px;
+    gap: 18px;
 }
 
 .form-row-start-finish .large-textbox {
@@ -83,8 +84,12 @@ label {
 }
 
 #newEvent {
-    font-size: 12px;
+    font-size: 12px;    
+    margin-bottom: 18px;
+    margin-right: 80px;
+    margin-left: 50px;
 }
+
 
 
 
@@ -114,3 +119,63 @@ input[type="submit"]:hover {
     background-color: #4F802D; 
 }
 
+@media screen and (min-width: 820px) {
+    .container__event {
+        margin-top: 20px;
+        text-align: left; /* Alinha o conteúdo à esquerda */
+    }
+
+    .container__event__title {
+        margin-left: 80px; /* Remove a margem à direita */
+        font-size: 28px;
+    }
+
+    form {
+        align-items: flex-start; /* Alinha os itens do formulário à esquerda */
+    }
+
+    .form-row {
+        /* margin-right: 0; Remove a margem à direita */
+    }
+
+    .form-row-start-finish {
+        margin-left: 80px; /* Remove a margem à direita */
+        gap: 50px;
+    }
+
+    .form-row-start-finish .form-row {
+        margin-right: 0; /* Remove a margem à direita */
+    }
+
+    .form-row-start-finish .large-textbox {
+        width: 300px;
+    }
+
+    .form-row-second-box {
+        margin-left: 80px; /* Remove a margem à esquerda */
+    }
+
+    .form-row-first-box {
+        margin-left: 80px; /* Remove a margem à esquerda */
+    }
+
+    .wide-label {
+        font-size: 18px;
+    }
+
+    #newEvent {
+        font-size: 18px;
+    }
+
+    .form-row-button {
+        margin-left: 200px;
+        margin-top: 30px;
+        margin-bottom: 18px;
+        margin-right: 50px;
+    }
+
+    .large-textbox {
+        width: 650px;
+    }
+
+}
