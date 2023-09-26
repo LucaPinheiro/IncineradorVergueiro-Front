@@ -1,0 +1,27 @@
+@import url("./styles/home/containers.css");
+@import url("./styles/home/circlesImage.css");
+@import url("./styles/home/maps.css");
+@import url("./styles/newEvent/newEvent.css");
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+
+
+:root {
+    --background-color: #FFFFFF;
+    --green: #69A625;
+    --main-font-family: "Marcellus SC";
+    --white: #FFFFFF;
+    --black: #000000;
+}
+body {
+    background-color: var(--background-color);
+    font-family: var(--main-font-family);
+}
+body,
+header {
+    margin: 0;
+}
+.black-line {
+    border: 1px solid black; 
+    margin-top: 45px; 
+    margin-bottom: 45px; 
+}

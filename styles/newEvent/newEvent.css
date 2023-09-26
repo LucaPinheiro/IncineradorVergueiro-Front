@@ -14,7 +14,7 @@
     margin-top: 30px;
     margin-bottom: 30px; 
     font-size: 20px;
-    margin-right: 80px;
+    margin-right: 130px;
 }
 
 form {
@@ -36,6 +36,7 @@ label {
     padding-right: 10px;
     border-radius: 10px;
     margin-bottom: 5px;
+    font-size: 13px;
 }
 
 .form-row-start-finish {
@@ -43,15 +44,20 @@ label {
     flex-direction: row; 
     align-items: center; 
     margin-bottom: 20px;
-    margin-right: 60px;
+    margin-right: 40px;
 }
 
-.form-row-start-finish .form-row {
-    margin-right: 10px; 
+.form-row-start-finish .large-textbox {
+    width: 135px;
+}
+
+.form-row-start-finish .form-row  {
+    margin-right: 10px;
+
 }
 
 .form-row-second-box {
-    margin-left: 16px;
+    margin-left: 30px;
 }
 
 .form-row-first-box {
@@ -59,8 +65,29 @@ label {
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 20px;
-    margin-right: 123px;
+    margin-right: 5px;
+    margin-left: 35px;
 }
+
+.large-textbox {
+    width: 300px;
+    height: 20px;
+}
+
+#eventDescription {
+    height: 80px;
+}
+
+.wide-label {
+    font-size: 15px;
+}
+
+#newEvent {
+    font-size: 12px;
+}
+
+
+
 
 
 input[type="text"],

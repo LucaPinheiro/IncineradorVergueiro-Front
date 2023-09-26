@@ -41,40 +41,41 @@
         <form>
             <div class="form-row-first-box">
                 <div class="form-row">
-                    <label class="wide-label" for="nomeEvento">Nome do Evento:</label>
-                    <input type="text" id="nomeEvento" name="nomeEvento" required>
+                    <label class="wide-label" for="eventName">Nome do Evento:</label>
+                    <input class="large-textbox" type="text" id="eventName" name="eventName" required>
                 </div>
                 <div class="form-row">
-                    <label class="wide-label" for="nomeAnfitriao">Nome do Anfitrião:</label>
-                    <input type="text" id="nomeAnfitriao" name="nomeAnfitriao" required>
+                    <label class="wide-label" for="hostName">Nome do Anfitrião:</label>
+                    <input class="large-textbox" type="text" id="hostName" name="hostName" required>
                 </div>
-                
+
                 <div class="form-row">
-                    <label for="dataEvento">Data do Evento:</label>
-                    <input type="date" id="dataEvento" name="dataEvento" required>
+                    <label class="wide-label" for="eventDate">Data do Evento:</label>
+                    <input class="large-textbox" type="date" id="eventDate" name="eventDate" required>
                 </div>
             </div>
             <div class="form-row-start-finish">
                 <div class="form-row">
-                    <label for="horaInicio">Horário de Início:</label>
-                    <input type="time" id="horaInicio" name="horaInicio" required>
+                    <label class="wide-label" for="startTime">Horário de Início:</label>
+                    <input class="large-textbox" type="time" id="startTime" name="startTime" required>
                 </div>
                 <div class="form-row">
-                    <label for="horaTermino">Horário de Término:</label>
-                    <input type="time" id="horaTermino" name="horaTermino" required>
+                    <label class="wide-label" for="endTime">Horário de Término:</label>
+                    <input class="large-textbox" type="time" id="endTime" name="endTime" required>
                 </div>
             </div>
             <div class="form-row-second-box">
                 <div class="form-row">
-                    <label for="numParticipantes">Número de Participantes:</label>
-                    <input type="number" id="numParticipantes" name="numParticipantes" required>
+                    <label class="wide-label" for="numParticipants">Número de Participantes:</label>
+                    <input class="large-textbox" type="number" id="numParticipants" name="numParticipants" required>
                 </div>
                 <div class="form-row">
-                    <label for="descricaoEvento">Descrição do Evento:</label>
-                    <textarea id="descricaoEvento" name="descricaoEvento" rows="4" cols="50" required></textarea>
+                    <label class="wide-label" for="eventDescription">Descrição do Evento:</label>
+                    <textarea class="large-textbox" id="eventDescription" name="eventDescription" rows="4" cols="50"
+                        required></textarea>
                 </div>
                 <div class="form-row">
-                    <input type="submit" value="Agendar Evento">
+                    <input id="newEvent" type="submit" value="Agendar Evento">
                 </div>
             </div>
         </form>
