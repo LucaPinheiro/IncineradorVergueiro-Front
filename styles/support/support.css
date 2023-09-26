@@ -1,0 +1,54 @@
+@import url("../home/header.css");
+@import url("../home/footer.css");
+@import url("../../global.css");
+
+.banner {
+  background-image: url("/assets/support/SupportImage.png");
+  background-size: cover;
+  background-position: center;
+  height: 191px;
+  position: relative;
+}
+
+.banner__box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.banner__title {
+  color: var(--white);
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.banner__text {
+  color: var(--white);
+  font-size: 12px;
+  margin-top: 27px;
+}
+
+.banner__button {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--green);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 0px;
+    width: 135px;
+}
+
+.banner__button:hover {
+    background-color: #4C7E16;
+}
+
+.title {
+    font-size: 24px;
+    color: var(--green);
+}
