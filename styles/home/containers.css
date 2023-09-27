@@ -7,7 +7,7 @@
 }
 
 .first {
-    background-image: url('/assets/home/BackgroundImage-Home.png');
+    background-color: #FAF1E4;
     height: 209px;
     display: flex;
     justify-content: space-between;
@@ -19,13 +19,13 @@
     font-size: 20px;
     margin-top: 10px;
     margin-left: 20px;
-    margin-bottom: 0;
+    margin-bottom: 15px;
 }
 
 .container__values__text {
-    font-size: 12px;
+    font-size: 9px;
     margin-left: 20px;
-    margin-top: 20px;
+    margin-top: 46px;
     margin-right: 16px;
     width: 150px;
 }
@@ -36,6 +36,11 @@
     display: flex;
     justify-content: space-between;
     color: var(--black);
+}
+
+.imagem {
+    width: 190px;
+    height: 130px;
 }
 
 
@@ -52,4 +57,77 @@
     height: 158px;
     margin-top: 44px;
 }
+
+/* Desktop */
+
+@media screen and (min-width: 1200px) {
+    .container__values {
+        display: flex;
+        margin-top: 35px;
+        justify-content: space-between;
+    }
+
+    .imagem {
+        margin-top: 10px;
+        width: 300px;
+    }
+
+    .first {
+        background-color: #FAF1E4;
+        height: 209px;
+        display: flex;
+        align-items: flex-start;
+        color: var(--black);
+        margin-bottom: 47px;
+        width: calc(50% - 85px); 
+        margin-right: 15px; 
+    }
+
+    .container__values__box {
+        background-color: #FAF1E4;
+        height: 209px;
+        display: flex;
+        align-items: flex-start;
+        color: var(--black);
+        margin-bottom: 47px;
+        width: calc(50% - 85px); 
+        margin-left: 15px; 
+    }
+
+    .container__values__title,
+    .title_second {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-bottom: 0;
+    }
+
+    .container__values__text,
+    .text_second {
+        font-size: 12px;
+        margin-left: 20px;
+        margin-top: 30px;
+        margin-right: 16px;
+        width: 300px;
+    }
+
+    .container__values__box__left {
+        flex: 0 0 auto; 
+        padding-right: 20px;
+        margin-left: 0; 
+    }
+
+    .container__values__box__left img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-right: 20px; 
+    }
+
+    .container__values__box {
+        margin-right: 20px;
+    }
+}
+
+
 
