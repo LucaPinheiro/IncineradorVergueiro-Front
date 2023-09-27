@@ -61,7 +61,6 @@ a {
 
 @media(max-width:768px) {
     header {
-        position: fixed;
         z-index: 100;
         height: 70px;
     }
