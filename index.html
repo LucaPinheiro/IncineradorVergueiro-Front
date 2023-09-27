@@ -10,30 +10,35 @@
 
 <body>
 
-    <header class="header">
-        <div class="container">
-            <span class="header__menu" id="menuBtn">
-                <img src="./assets/home/menu.svg" alt="Menu" class="menu">
-            </span>
-            <a href="#"><img src="./assets/home/icon.svg" alt="logo da Usina"></a>
-            <span class="header__menu" id="menuBtn2">
-                <img src="./assets/home/profile.svg" alt="Minha conta" class="menu">
-            </span>
-        </div>
-        <nav class="nav" id="nav">
-            <ul class="nav__list">
-                <li><a href="index.html">Página Inicial</a></li>
-                <li><a href="./pages/user/market.html">Loja</a></li>
-                <li><a href="./pages/user/support.html">Apoie</a></li>
-                <li><a href="./pages/user/about.html">Sobre Nós</a></li>
-                <li><a href="./pages/user/newEvent.html">Agendamentos</a></li>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-branding"><img src="/assets/home/icon.svg" alt="Logo"></a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="./index.html" class="nav-link">Página Inicial</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./pages/user/market.html" class="nav-link">Loja</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./pages/user/support.html" class="nav-link">Apoie</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./pages/user/about.html" class="nav-link">Sobre nós</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./pages/user/newEvent.html" class="nav-link">Agendamentos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Minha Conta</a>
+                </li>
             </ul>
-        </nav>
-        <nav class="nav2" id="nav2">
-            <ul class="nav__list">
-                <li><a href="pages/usuario/minhaConta.html">Minha conta</a></li>
-                <li><a href="pages/usuario/meusAgendamentos.html">Meus agendamentos</a></li>
-            </ul>
+            <div class="hamburguer">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
 
@@ -108,6 +113,9 @@
         <h4>Desenvolvido por Imtech Mauá</h4>
     </footer>
 
+    <script>
+
+    </script>
 
     <script src="./scripts/home/app.js" type="module"></script>
     <script src="./scripts/home/banner/bannerSlide.js" type="module"></script>

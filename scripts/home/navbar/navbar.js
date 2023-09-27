@@ -1,16 +1,13 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const menuBtn = document.getElementById("menuBtn");
-  const menuBtn2 = document.getElementById("menuBtn2");
-  const nav = document.getElementById("nav");
-  const nav2 = document.getElementById("nav2");
+const hamburguer = document.querySelector(".hamburguer");
+const navMenu = document.querySelector(".nav-menu");
 
-  menuBtn.addEventListener("click", () => {
-      nav.classList.toggle("show");
-      nav2.classList.remove("show"); 
-  });
-
-  menuBtn2.addEventListener("click", () => {
-      nav2.classList.toggle("show");
-      nav.classList.remove("show"); 
+hamburguer.addEventListener("click", () => {
+  hamburguer.classList.toggle("active");
+  navMenu.classList.toggle("active");
+});
+document.querySelectorAll(".nav-link").forEach((n) => {
+  n.addEventListener("click", () => {
+    hamburguer.classList.remove("active");
+    navMenu.classList.remove("active");
   });
 });
