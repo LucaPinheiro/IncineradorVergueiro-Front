@@ -199,3 +199,64 @@ input[type="submit"]:hover {
     }
 }
 
+@media screen and (min-width: 1703px) {
+    .container__event {
+        text-align: left; /* Alinha o conteúdo à esquerda */
+        margin-top: 0; /* Remove a margem superior */
+    }
+
+    .container__event__title {
+        font-size: 28px;
+    }
+
+    form {
+        align-items: flex-start; /* Alinha os itens do formulário à esquerda */
+    }
+
+    .form-row {
+        margin-right: 0; /* Remove a margem à direita */
+        align-items: flex-start; /* Alinha os elementos à esquerda */
+    }
+
+    .form-row-start-finish {
+        gap: 140px; /* Espaço entre os elementos */
+        margin-right: 0; /* Remove a margem à direita */
+    }
+
+    .form-row-second-box {
+        margin-left: 80px; /* Remove a margem à esquerda */
+    }
+
+    .form-row-first-box {
+        margin-left: 80px; /* Remove a margem à esquerda */
+    }
+
+    .wide-label {
+        font-size: 18px;
+    }
+
+    #newEvent {
+        font-size: 18px;
+    }
+
+    .form-row-button {
+        margin-left: 640px; /* Remove a margem à esquerda */
+        margin-top: 30px;
+        margin-bottom: 18px;
+
+    }
+
+    #eventName, #hostName, #eventDate, #numParticipants, #eventDescription {
+        width: 1540px;
+    }
+
+    #startTime {
+        width: 700px;
+    }
+
+    #endTime {
+        width: 700px;
+    }
+
+    
+} 
