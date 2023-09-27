@@ -21,11 +21,11 @@ a {
     color: var(--white);
 }
 
-.home-icon {
+/* .home-icon {
     height: 70px;
     width: 70px;
-    margin-left: 25px;
-}
+    margin-left: 5px;
+} */
 
 .navbar {
     min-height: 70px;
@@ -77,11 +77,6 @@ a {
         height: 70px;
         position: sticky;
         top: 0;
-    }
-
-    .home-icon {
-        height: 60px;
-        width: 60px;
     }
 
     .navbar {
