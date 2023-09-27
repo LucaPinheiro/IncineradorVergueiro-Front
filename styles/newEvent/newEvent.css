@@ -178,4 +178,24 @@ input[type="submit"]:hover {
         width: 650px;
     }
 
+    .footer h2.first-title {
+        font-size: 18px;
+    }
+
+    .footer h3.second-title {
+        font-size: 12px;
+    }
+
+    .footer h3.third-title {
+        font-size: 12px;
+    }
+
+    .footer h2.fourth-title {
+        font-size: 13px;
+    }
+
+    .footer h4.fifith-title {
+        font-size: 10px;
+    }
 }
+
