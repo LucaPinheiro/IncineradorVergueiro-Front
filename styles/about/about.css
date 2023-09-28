@@ -8,10 +8,10 @@
     background-color: #cedebd;
     display: flex;
     flex-direction: column;
-    padding-top: 80px;
+    padding-top: 7px;
     align-items: center;
     justify-content: space-between;
-    height: 60vh;   
+    height: 54vh;   
 }
 
 .section1 img{
@@ -85,6 +85,11 @@
     display: flex;
     flex-direction: column;
     height: 250vh;   
+}
+
+.section4 .background1 {
+    background-color: #cedebd;
+    margin-bottom: 3%;
 }
 
 .section4 .TitleContainer{
