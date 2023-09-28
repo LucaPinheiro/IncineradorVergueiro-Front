@@ -67,9 +67,13 @@
         justify-content: space-between;
     }
 
-    .imagem {
+    .image {
         margin-top: 10px;
         width: 300px;
+    }
+
+    #first__image {
+        height: 170px;
     }
 
     .first {
@@ -106,7 +110,7 @@
     .text_second {
         font-size: 12px;
         margin-left: 20px;
-        margin-top: 30px;
+        margin-top: 37px;
         margin-right: 16px;
         width: 300px;
     }
