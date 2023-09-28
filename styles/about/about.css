@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section1 {
+    background-color: #cedebd;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    align-items: center;
+    justify-content: space-between;
+    height: 60vh;   
+}
+
+.section1 img{
+    margin-top: 5%;
+}
+
+.section1 p{
+    margin-bottom: 6%;
+}
+
+.section2{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 18vh;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;   
+}
+
+.section2 .Stripe{
+    background-color: black;
+    width: 100%;
+    height: 1%;
+}
+
+.section2 .Container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.section2 .Label{
+    font-size: 15px;
+    text-align: center;
+}
+
+.section3{
+    background-color: #cedebd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 45vh;   
+}
+
+.section3 .FirstImg{
+    margin-top: 8%;
+}
+
+.section3 .Container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 68%;
+    margin-bottom: 2%;
+}
+
+.section3 .Label{
+    font-size: 14px;
+    text-align: center;
+    color: #224402;
+}
+
+.section4{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 250vh;   
+}
+
+.section4 .TitleContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 18vh;
+}
+
+.section4 .TitleDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 35%;
+    height: 8vh;
+}
+
+.section4 .LabelTitle{
+    display: flex;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 7%;
+}
+
+.section4 .Stripe{
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 1%;
+    margin-bottom: 9%;
+}
+
+.section4 .YearLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 10%;
+    margin-left: 10%;
+}
+
+.section4 .YearRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section4 .YearLabel{
+    font-size: 16px;
+}
+
+.section4 .YearRow .BarLeft{
+    display: flex;
+    width: 0.2vw;
+    height: 5vh;
+    background-color: black;
+    margin-left: 2vw;
+    margin-bottom: 2vh;
+}
+
+.section4 .YearLeft .Stripe{
+    background-color: black;
+    width: 100%;
+    height: 0.2vh;
+    margin-right: 2vw;
+    margin-top: -1vh;
+}
+
+.section4 .Combo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 38vh;
+}
+
+.section4 .TextContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    height: 70%;
+}
+
+.section4 .Text{
+    font-size: 10px;
+    text-align: justify;
+}
+
+.section4 .YearRight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 10%;
+    margin-left: 80%;
+}
+
+.section4 .YearRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section4 .YearRight .Stripe{
+    background-color: black;
+    width: 100%;
+    height: 0.2vh;
+    margin-right: 2vw;
+    margin-top: -1vh;
+}
+
+.section4 .YearRow .BarRight{
+    display: flex;
+    width: 0.2vw;
+    height: 5vh;
+    background-color: black;
+    margin-right: 2vw;
+    margin-bottom: 2vh;
+}
+
+.section4 .YearLabelRight{
+    font-size: 16px;
+    margin-right: 4vw;
+}
