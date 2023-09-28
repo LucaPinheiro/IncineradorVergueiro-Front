@@ -200,7 +200,6 @@ input[type="submit"]:hover {
     .container__event {
         text-align: left;
         margin-top: 0; 
-        margin-left: 20px;
     }
 
     .container__event__title {
