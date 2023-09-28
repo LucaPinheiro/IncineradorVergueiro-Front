@@ -1,23 +1,24 @@
+
+
+.banner {
+    background-image: url('../../assets/home/IncineradorDesign.png');
+    background-size: cover;
+    background-position: center;
+    height: 170px;
+    position: relative;
+}
+
 .banner__title {
     color: var(--white);
     font-size: 20px;
     margin-top: 0;
 }
 
-.banner {
-    background-image: url('/assets/home/IncineradorDesign.png');
-    background-size: cover;
-    background-position: center;
-    height: 225px;
-    position: relative;
-    padding-top: 70px;
-}
-
 .banner__box {
     position: relative;
     text-align: left;
     padding-left: 25px;
-    padding-top: 20px;
+    padding-top: 19px;
 }
 
 .banner__text {
@@ -38,29 +39,43 @@
     border-radius: 12px;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    margin-bottom: 5px;
 }
 
 .banner__button:hover {
     background-color: #4C7E16;
 }
 
-.carousel-indicators {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
+@media screen and (min-width: 1200px) {
+    
+    .banner {
+        height: 300px;
+    }
 
-.indicator {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: gray;
-    margin: 0 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+    .banner__title {
+        font-size: 25px;
+        margin-top: 20px;
+    }
 
-.indicator.active {
-    background-color: blue;
+    .banner__box {
+        padding-top: 40px;
+        padding-left: 50px;
+    }
+
+    .banner__text {
+        font-size: 17px;
+        margin-top: 30px;
+        width: 800px;
+        line-height: 1.5;
+    }
+
+    .banner__button {
+        padding: 13px 40px;
+        font-size: 18px;
+        margin-bottom: 15px;
+        width: 230px;
+        display: flex; 
+        justify-content: center;
+        align-items: center; 
+    }
 }
