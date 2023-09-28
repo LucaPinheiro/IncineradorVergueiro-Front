@@ -196,10 +196,11 @@ input[type="submit"]:hover {
     }
 }
 
-@media screen and (min-width: 1703px) {
+@media screen and (min-width: 1024px) {
     .container__event {
         text-align: left;
         margin-top: 0; 
+        margin-left: 20px;
     }
 
     .container__event__title {
@@ -237,21 +238,21 @@ input[type="submit"]:hover {
     }
 
     .form-row-button {
-        margin-left: 640px; 
+        margin-left: 935px; 
         margin-top: 30px;
         margin-bottom: 18px;
 
     }
 
     #eventName, #hostName, #eventDate, #numParticipants, #eventDescription {
-        width: 1540px;
+        width: 1150px;
     }
 
     #startTime {
-        width: 700px;
+        width: 505px;
     }
 
     #endTime {
-        width: 700px;
+        width: 505px;
     }   
 } 
