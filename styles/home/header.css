@@ -6,6 +6,10 @@
 
 header {
     background-color: var(--green);
+    height: 100px;
+    display: flex;
+    align-items: center;
+
 }
 
 li {
@@ -17,12 +21,19 @@ a {
     color: var(--white);
 }
 
+.home-icon {
+    height: 70px;
+    width: 70px;
+    margin-left: 25px;
+}
+
 .navbar {
     min-height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 24px;
+    height: 100%;
 }
 
 .nav-menu {
@@ -60,27 +71,38 @@ a {
 }
 
 @media(max-width:768px) {
+
     header {
-        position: fixed;
         z-index: 100;
         height: 70px;
+        position: sticky;
+        top: 0;
     }
-    .navbar{
+
+    .home-icon {
+        height: 60px;
+        width: 60px;
+    }
+
+    .navbar {
         width: 100vw;
         z-index: 100;
         background-color: var(--green);
     }
+
     .hamburguer {
         display: block;
     }
 
-    .hamburguer.active .bar:nth-child(2){
+    .hamburguer.active .bar:nth-child(2) {
         opacity: 0;
     }
-    .hamburguer.active .bar:nth-child(1){
+
+    .hamburguer.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
-    .hamburguer.active .bar:nth-child(3){
+
+    .hamburguer.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
 
