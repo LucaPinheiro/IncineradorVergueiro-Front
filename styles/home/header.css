@@ -70,7 +70,7 @@ a {
     background-color: var(--white);
 }
 
-@media(max-width:768px) {
+@media(max-width:850px) {
 
     header {
         z-index: 100;
