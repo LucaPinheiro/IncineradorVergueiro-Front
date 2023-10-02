@@ -1,0 +1,78 @@
+@import url("../home/header.css");
+@import url("../home/footer.css");
+@import url("../../global.css");
+
+
+
+main {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('../../assets/register/BackgroundImage.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    background-color: #141414; 
+    opacity: 80%; 
+    padding: 10px 35px;
+    border-radius: 16px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.container__event__title {
+    margin-top: 30px;
+    margin-bottom: 30px; 
+    font-size: 15px;
+    color: white;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#registrationForm label {
+    display: block;
+    margin-bottom: 8px;
+    color: white;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    background-color: #3D3D3D;
+    color: white;
+    border-radius: 10px;
+    height: 10px;
+}
+
+
+.container__button {
+    display: flex;
+    gap: 25px;
+
+}
+
+.container__button button {
+    background-color: #69A625;
+    color: white;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
