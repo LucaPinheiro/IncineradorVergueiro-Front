@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja</title>
+    <link rel="stylesheet" href="../../styles/store/store.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header>
+        <nav style="padding: 0 20px;" class="navbar">
+            <a href="#" class="nav-branding"><img src="/assets/home/icon.svg" alt="Logo"></a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../../index.html" class="nav-link">Página Inicial</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./market.html" class="nav-link">Loja</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./support.html" class="nav-link">Apoie</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./about.html" class="nav-link">Sobre nós</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./newEvent.html" class="nav-link">Agendamentos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Minha Conta</a>
+                </li>
+            </ul>
+            <div class="hamburguer">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container__banner">
+            <div class="banner__title">Loja</div>
+            <div class="banner__text">
+                Venha conferir nossa loja <br> completamente orgânica!
+            </div>
+        </section>
+
+        <div class="container__title">Produtos</div>
+
+        <section class="container__products">
+            <div class="container__products__item container-fluid row">
+                <!-- Button trigger modal -->
+                <div class="col-6 col-md-4">
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <div style="width: 10rem; padding-top: 1em; border: 0;">
+                            <img src="../../assets/store/products/Tomate-popUp.jpg"
+                                class="card-img-top w-75 rounded-4 imageCard" alt="...">
+                            <div class="card-body p-0">
+                                <p class="card-text m-0">Tomates Orgânicos</p>
+                                <p class="card-text">R$ 7.50</p>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="../../assets/store/products/Tomate-popUp.jpg" class="card-img-top" alt="...">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Understood</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button trigger modal -->
+                <div class="col-6 col-md-4 p-0">
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <div style="width: 10rem; padding-top: 1em; border: 0;">
+                            <img src="../../assets/store/products/Alface 1.png"
+                                class="card-img-top w-75 rounded-4 imageCard" alt="...">
+                            <div class="card-body p-0">
+                                <p class="card-text m-0">Alface</p>
+                                <p class="card-text">R$ 5.00</p>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="../../assets/store/products/Tomate-popUp.jpg" class="card-img-top" alt="...">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Understood</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="../../scripts/home/navbar/navbar.js" type="module"></script>
+</body>
+
+</html>
