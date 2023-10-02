@@ -2,7 +2,21 @@
 @import url("../home/footer.css");
 @import url("../../global.css");
 
+body {
+    font-family: var(--main-font-family) !important;
+}
+
 /* mobile */
+
+.header-item {
+    color: #fff !important;
+    transition: color 0.5s !important; 
+}
+
+.header-item:hover {
+    color: #000 !important; 
+}
+
 
 .container__banner {
     background-color: var(--black);
@@ -41,6 +55,45 @@
     margin: 0 auto;
 }
 
-.container__products {
+.btn-custom-add {
+    background-color: var(--green-hover) !important;
+    color: #fff !important;
+    border: none;
+    transition: background-color 0.5s ease-in-out; 
+}
 
+.btn-custom-add:hover {
+    background-color: var(--green) !important;
+    color: #000 !important;
+}
+
+btn-custom-exit {
+    color: #fff !important;
+    border: none;
+    transition: background-color 0.5s ease-in-out; 
+}
+
+.btn-custom-exit:hover {
+    color: #000 !important;
+}
+
+
+/* desktop */
+
+@media screen and (min-width: 1024px) {
+    
+    .container__banner {
+        height: 220px;
+    }
+
+    .banner__title {
+        font-size: 40px;
+        padding-top: 20px;
+        padding-left: 50px;
+    }
+
+    .banner__text {
+        font-size: 20px;
+        padding-top: 30px;
+    }
 }
