@@ -134,7 +134,7 @@
 
 /* container desktop */
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
     .container__values {
         display: flex;
         margin-top: 35px;
