@@ -70,7 +70,7 @@ a {
     background-color: var(--white);
 }
 
-@media(max-width:768px) {
+@media(max-width:850px) {
 
     header {
         z-index: 100;
@@ -115,7 +115,19 @@ a {
     }
 
     .nav-item {
-        margin: 16px 0;
+        margin: 5px 0;
+        background-color: #6CB21E;
+        border-radius: 10px;
+        width: 200px !important;
+        padding: 10px 20px; 
+
+
+    }
+
+    .nav-link {
+        border: 2px solid #6CB21E; 
+        border-radius: 10px; 
+        transition: 0.3s;
     }
 
     .nav-menu.active {
