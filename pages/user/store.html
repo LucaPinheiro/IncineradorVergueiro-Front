@@ -45,6 +45,7 @@
     </header>
 
     <main>
+
         <section class="container__banner">
             <div class="banner__title">Loja</div>
             <div class="banner__text">
@@ -53,163 +54,18 @@
         </section>
 
         <div class="container__title">Produtos</div>
-
-        <section class="container__products__item container-fluid row">
-            <div class="row">
-                <!-- Tomato -->
-                <div class="col-6 col-md-6 col-lg-3 col-xl-3">
-                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#tomatoModal">
-                        <div style="width: 10rem; padding-top: 1em; border: 0;">
-                            <img src="../../assets/store/products/tomato-popUp.jpg"
-                                class="card-img-top w-75 rounded-4 imageCard" alt="...">
-                            <div class="card-body p-0">
-                                <p class="card-text m-0">Tomates Orgânicos</p>
-                                <p class="card-text">R$ 7.50</p>
-                            </div>
-                        </div>
-                    </button>
-                </div>
-                <!-- Modal para Tomate -->
-                <div class="modal fade" id="tomatoModal" data-bs-backdrop="static" data-bs-keyboard="false"
-                    tabindex="-1" aria-labelledby="tomatoModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="tomatoModalLabel">Quer adicionar ao carrinho?</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="../../assets/store/products/tomato-popUp.jpg" class="card-img-top" alt="...">
-                                <!-- Conteúdo do modal para Tomate -->
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary btn-custom-exit"
-                                    data-bs-dismiss="modal">Sair</button>
-                                <button type="button" class="btn btn-custom-add" id="adicionarTomate">Adicionar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Alface -->
-                <div class="col-6 col-md-6 col-lg-3 col-xl-3">
-                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#alfaceModal">
-                        <div style="width: 10rem; padding-top: 1em; border: 0;">
-                            <img src="../../assets/store/products/lettuce-popUp.jpg"
-                                class="card-img-top w-75 rounded-4 imageCard" alt="...">
-                            <div class="card-body p-0">
-                                <p class="card-text m-0">Alface</p>
-                                <p class="card-text">R$ 5.00/Bandeja</p>
-                            </div>
-                        </div>
-                    </button>
-                </div>
-                <!-- Modal para Alface -->
-                <div class="modal fade" id="alfaceModal" data-bs-backdrop="static" data-bs-keyboard="false"
-                    tabindex="-1" aria-labelledby="alfaceModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="alfaceModalLabel">Quer adicionar ao carrinho?</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="../../assets/store/products/lettuce-popUp.jpg" class="card-img-top" alt="...">
-                                <!-- Conteúdo do modal para Alface -->
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary btn-custom-exit"
-                                    data-bs-dismiss="modal">Sair</button>
-                                <button type="button" class="btn btn-custom-add" id="adicionarAlface">Adicionar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <!-- Couve Manteiga -->
-                <div class="col-6 col-md-6 col-lg-3 col-xl-3">
-                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#cabbageModal">
-                        <div style="width: 10rem; padding-top: 1em; border: 0;">
-                            <img src="../../assets/store/products/cabbage-popUp.jpg"
-                                class="card-img-top w-75 rounded-4 imageCard" alt="...">
-                            <div class="card-body p-0">
-                                <p class="card-text m-0">Couve Manteiga</p>
-                                <p class="card-text">R$ 7.50/Maço</p>
-                            </div>
-                        </div>
-                    </button>
-                </div>
-                <!-- Modal para Couve Manteiga -->
-                <div class="modal fade" id="cabbageModal" data-bs-backdrop="static" data-bs-keyboard="false"
-                    tabindex="-1" aria-labelledby="cabbageModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="cabbageModalLabel">Quer adicionar ao carrinho?</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="../../assets/store/products/cabbage-popUp.jpg" class="card-img-top" alt="...">
-                                <!-- Conteúdo do modal para Couve Manteiga -->
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary btn-custom-exit"
-                                    data-bs-dismiss="modal">Sair</button>
-                                <button type="button" class="btn btn-custom-add"
-                                    id="adicionarCabbage">Adicionar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Cenoura -->
-                <div class="col-6 col-md-6 col-lg-3 col-xl-3">
-                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#carrotModal">
-                        <div style="width: 10rem; padding-top: 1em; border: 0;">
-                            <img src="../../assets/store/products/carrot-popUp.jpg"
-                                class="card-img-top w-75 rounded-4 imageCard" alt="...">
-                            <div class="card-body p-0">
-                                <p class="card-text m-0">Cenoura</p>
-                                <p class="card-text">R$ 4.99/Kg</p>
-                            </div>
-                        </div>
-                    </button>
-                </div>
-                <!-- Modal para Cenoura -->
-                <div class="modal fade" id="carrotModal" data-bs-backdrop="static" data-bs-keyboard="false"
-                    tabindex="-1" aria-labelledby="carrotModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="carrotModalLabel">Quer adicionar ao carrinho?</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="../../assets/store/products/carrot-popUp.jpg" class="card-img-top" alt="...">
-                                <!-- Conteúdo do modal para Cenoura -->
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary btn-custom-exit"
-                                    data-bs-dismiss="modal">Sair</button>
-                                <button type="button" class="btn btn-custom-add" id="adicionarCarrot">Adicionar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        
+        <section id="productSection" class="container__products__item container-fluid row">
+            <!-- products -->
         </section>
+        
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script src="../../scripts/home/navbar/navbar.js" type="module"></script>
+    <script type="module" src="../../scripts/store/mainProducts.js"></script>
 </body>
 
 </html>
