@@ -1,5 +1,4 @@
 export function generateProductHTML(productName, productImageSrc, productPrice) {
-    // Crie um elemento de coluna
     const column = document.createElement("div");
     column.className = "col-6 col-sm-6 col-md-4 col-lg-3";
 
