@@ -25,8 +25,10 @@
 
 .banner__text {
   color: var(--white);
-  font-size: 12px;
+  font-size: 13px;
   margin-top: 27px;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 .banner__button {
@@ -48,7 +50,115 @@
     background-color: #4C7E16;
 }
 
-.title {
-    font-size: 24px;
-    color: var(--green);
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 10px 25px;
 }
+
+.title {
+  font-size: 24px;
+  color: var(--green);
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.title__line {
+  border: none;
+  height: 2px;
+  width: 90%;
+  background-color: var(--green);
+  margin-bottom: 23px;
+  margin-top: 15px;
+}
+
+
+
+.title__supporters {
+  font-size: 22px;
+  color: black;
+  margin-top: 20px
+  
+  }
+
+  .container__values {
+    margin-top: 20px;
+  }
+  
+  .container__values__box__first {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .container__values__text {
+    font-size: 12.5px;
+    margin-left: 20px;
+  }
+  
+  .container__values__img {
+    max-width: 100%;
+    margin-right: 20px;
+    width: 216px;
+    height: 213px;
+  }
+  
+  .container__values__box__second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container__values__content {
+    display: flex;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+  
+  .container__values__text__caldeiras {
+    margin: 25px;
+    font-size: 12px;
+    width: 340px;
+  }
+  
+  .container__values__content img {
+    max-width: 100%;
+  }
+  
+  .container__values__box__third {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container__values__text__Missao_Ambiental {
+    margin: 30px 42px 20px 42px;
+    font-size: 12px;
+  }
+
+  .container__values__img__Missao__Ambiental {
+    max-width: 100%;
+    margin-right: 0px;
+    width: 544px;
+    height: 143px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+
+  .supporters__link {
+    color: black;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 45px;
+    margin-bottom: 40px;
+  }
+
+  .supporters__link__text {
+    color: blue;
+    text-decoration: underline;
+  }
