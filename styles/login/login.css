@@ -1,0 +1,87 @@
+@import url("../home/header.css");
+@import url("../home/footer.css");
+@import url("../../global.css");
+
+
+main {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('../../assets/register/BackgroundImage.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.container__form {
+    display: inline-block;
+    text-align: left;
+    padding: 40px 40px 40px 40px;
+    border-radius:10px;
+    background-color: #141414;
+    opacity: 80%;
+    
+}
+
+.container__form-label {
+    color: white;
+    font-size: 13px;
+}
+
+.text-after-button {
+    color: white;
+}
+
+.text-after-button-link {
+    text-decoration: underline;
+    color: white;
+}
+
+.container__form-input {
+    border: none;
+}
+
+.container__form input {
+    background-color: #3D3D3D;
+    color: white;
+    width: 300px;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.container__form label,
+.container__form input {
+    display: block;
+    margin-bottom: 25px;
+}
+
+.container__form button {
+    display: block;
+    margin: 20px auto;
+    padding: 8px 50px;
+    margin-top: 25px;
+    background-color: var(--green);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.5s ease;
+}
+
+.container__form-button:hover {
+    background-color: var(--green-hover);
+}
+
+.container__form-text {
+    text-align: center;
+}
+
+p {
+    margin-top: 30px;
+    font-size: 11px;
+}

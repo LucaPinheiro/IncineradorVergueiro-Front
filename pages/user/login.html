@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../../styles/login/login.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-branding"><img class="home-icon" src="/assets/home/icon.svg" alt="Icon"></a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../../index.html" class="nav-link">Página Inicial</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../user/market.html" class="nav-link">Loja</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../user/support.html" class="nav-link">Apoie</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../user/about.html" class="nav-link">Sobre nós</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../user/newEvent.html" class="nav-link">Agendamentos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../user/register.html" class="nav-link">Minha Conta</a>
+                </li>
+            </ul>
+            <div class="hamburguer">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <form class="login-form">
+            <div class="container__form">
+                <div class="container__form__items">
+                    <label class="container__form-label" for="username">Email:</label>
+                    <input class="container__form-input" type="text" id="username" name="username" required>
+
+                    <label class="container__form-label" for="password">Senha:</label>
+                    <input class="container__form-input" type="password" id="password" name="password" required>
+
+                    <button class="container__form-button" type="submit">Login</button>
+                    <div class="container__form-text">
+                        <p class="text-after-button">Não possui uma conta? <a href="../user/register.html"
+                                class="text-after-button-link">Cadastre-se</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+
+    </main>
+    <footer class="footer">
+        <h2 class="first-title">Usina Eco-Cultural</h2>
+        <h3 class="second-title">Rua Breno Ferraz do Amaral 415, São Paulo/SP</h3>
+        <h3 class="third-title">CEP 04124-020</h3>
+        <h2 class="fourth-title">Sede Adminstrativa @usinaecocultural</h2>
+        <hr class="white-line">
+        <h4 class="fifith-title">Incinerador Vergueiro | IMT - 2023</h4>
+        <h4 class="fifith-title">Desenvolvido por Imtech Mauá</h4>
+    </footer>
+    <script type="module" src="../../scripts/home/navbar/navbar.js"></script>
+
+</body>
+
+</html>

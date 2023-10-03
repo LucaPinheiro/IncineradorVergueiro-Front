@@ -118,9 +118,6 @@ input {
 
 }
 
-/* ... (unchanged imports) ... */
-
-
 
 @media screen and (min-width:1024px) {
     .container {
