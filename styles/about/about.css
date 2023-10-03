@@ -261,3 +261,34 @@
     font-size: 16px;
     margin-right: 4vw;
 }
+
+.video__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: black;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    background-color: #FAF1E4;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    width: 320px;
+    height: 100%;
+}
+
+.black-line-about {
+    border: 1px solid black; 
+    margin-bottom: 37px; 
+}
