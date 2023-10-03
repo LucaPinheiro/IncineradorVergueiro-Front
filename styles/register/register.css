@@ -49,6 +49,7 @@ input {
     width: 100%;
     padding: 8px;
     margin-bottom: 16px;
+    border: none;
     box-sizing: border-box;
     background-color: #3D3D3D;
     color: white;
@@ -149,12 +150,12 @@ input {
     }
 
     .container__first-box {
-        width: 48%; 
+        width: 220px;
     }
 
     .container__second-box {
-        width: 48%; 
-        margin-top: 95px;
+        width: 300px;
+        margin-top: 96px;
         margin-left: 10px;
     }
 
