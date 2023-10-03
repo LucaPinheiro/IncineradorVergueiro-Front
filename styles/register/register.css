@@ -73,6 +73,83 @@ input {
     margin-bottom: 10px;
 }
 
+.container__footer-text {
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.container__text-link {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 820px) {
+    .container {
+        padding:  0px 70px 0px 70px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        
+    }
+
+    .container__event__title {
+        font-size: 24px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    
+
+    #registrationForm {
+        width: 600px;
+    }
+
+    .container__button button {
+        margin-left: 60px;
+        gap: 70px;
+        font-size: 14px;
+    }
+
+    .container__footer-text {
+        font-size: 15px;
+    }
+
+
+}
+
+/* ... (unchanged imports) ... */
 
 
 
+@media screen and (min-width:1024px) {
+    .container {
+        padding: 10px 200px 10px 200px;
+    }
+
+    .container__form {
+        display: flex;
+    }
+
+
+    .container__event__title {
+        font-size: 36px;
+        text-align: left;
+        
+    }
+
+    .container__first-box {
+        
+    }
+
+    
+
+
+
+
+
+
+
+    
+    
+}
