@@ -7,6 +7,7 @@ for (const product of products) {
     product.name,
     product.imageSrc,
     product.price,
+    product.id,
     "productSection"
   );
 }

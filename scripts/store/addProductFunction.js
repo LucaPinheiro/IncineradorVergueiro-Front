@@ -1,19 +1,19 @@
 export function generateProductHTML(
   productName,
   productImageSrc,
-  productPrice
+  productPrice,
+  id
 ) {
   const column = document.createElement("div");
   column.className = "col-6 col-sm-6 col-md-4 col-lg-3";
 
-  // Criação do modal dinâmico
   const modal = document.createElement("div");
   modal.className = "modal fade";
-  modal.id = `${productName}Modal`;
+  modal.id = `Modal${id}`;
   modal.setAttribute("data-bs-backdrop", "static");
   modal.setAttribute("data-bs-keyboard", "false");
   modal.tabIndex = "-1";
-  modal.setAttribute("aria-labelledby", `${productName}ModalLabel`);
+  modal.setAttribute("aria-labelledby", `ModalLabel${id}`);
   modal.setAttribute("aria-hidden", "true");
 
   const modalDialog = document.createElement("div");
@@ -27,7 +27,7 @@ export function generateProductHTML(
 
   const modalTitle = document.createElement("h1");
   modalTitle.className = "modal-title fs-5";
-  modalTitle.id = `${productName}ModalLabel`;
+  modalTitle.id = `ModalLabel${id}`;
   modalTitle.textContent = `Quer adicionar ao carrinho?`;
 
   const modalCloseButton = document.createElement("button");
@@ -61,7 +61,7 @@ export function generateProductHTML(
   const modalAddButton = document.createElement("button");
   modalAddButton.type = "button";
   modalAddButton.className = "btn btn-custom-add";
-  modalAddButton.id = `adicionar${productName}`;
+  modalAddButton.id = `adicionar${id}`;
   modalAddButton.textContent = "Adicionar";
 
   modalFooter.appendChild(modalExitButton);
@@ -75,9 +75,8 @@ export function generateProductHTML(
 
   modal.appendChild(modalDialog);
 
-  // HTML do produto
   column.innerHTML = `
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#${productName}Modal">
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Modal${id}">
             <div style="width: 10rem; padding-top: 1em; border: 0;">
                 <img src="${productImageSrc}" class="card-img-top w-75 rounded-4 imageCard" alt="...">
                 <div class="card-body p-0">
@@ -88,7 +87,6 @@ export function generateProductHTML(
         </button>
     `;
 
-  // Retorna tanto o elemento do produto quanto o modal
   return { column, modal };
 }
 
@@ -96,16 +94,17 @@ export function addProductToSection(
   productName,
   productImageSrc,
   productPrice,
+  id,
   sectionId
 ) {
   const section = document.getElementById(sectionId);
   const { column, modal } = generateProductHTML(
     productName,
     productImageSrc,
-    productPrice
+    productPrice,
+    id
   );
   section.appendChild(column);
 
-  // Adiciona o modal ao corpo do documento
   document.body.appendChild(modal);
 }
