@@ -8,10 +8,10 @@
     background-color: #cedebd;
     display: flex;
     flex-direction: column;
-    padding-top: 80px;
+    padding-top: 7px;
     align-items: center;
     justify-content: space-between;
-    height: 60vh;   
+    height: 34vh;   
 }
 
 .section1 img{
@@ -19,7 +19,7 @@
 }
 
 .section1 p{
-    margin-bottom: 6%;
+    margin-bottom: 5%;
 }
 
 .section2{
@@ -28,7 +28,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 18vh;
+    height: 13vh;
     padding-top: 2.5%;
     padding-bottom: 2.5%;   
 }
@@ -58,7 +58,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 45vh;   
+    height: 30vh;   
 }
 
 .section3 .FirstImg{
@@ -84,7 +84,13 @@
     background-color: white;
     display: flex;
     flex-direction: column;
-    height: 250vh;   
+    height: 195vh;   
+}
+
+.section4 .background1 {
+    background-color: #cedebd;
+    margin-bottom: 4%;
+    height: 33vh;
 }
 
 .section4 .TitleContainer{
@@ -93,7 +99,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 18vh;
+    height: 12vh;
 }
 
 .section4 .TitleDiv{
@@ -102,7 +108,7 @@
     align-items: center;
     justify-content: space-between;
     width: 35%;
-    height: 8vh;
+    height: 5vh;
 }
 
 .section4 .LabelTitle{
@@ -127,6 +133,7 @@
     justify-content: space-between;
     width: 10%;
     margin-left: 10%;
+    margin-top: 4%;
 }
 
 .section4 .YearRow{
@@ -142,11 +149,11 @@
 
 .section4 .YearRow .BarLeft{
     display: flex;
-    width: 0.2vw;
-    height: 5vh;
+    width: 0.15vw;
+    height: 2vh;
     background-color: black;
-    margin-left: 2vw;
-    margin-bottom: 2vh;
+    margin-left: 1vw;
+    margin-bottom: 1.7vh;
 }
 
 .section4 .YearLeft .Stripe{
@@ -161,17 +168,55 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    height: 38vh;
+    justify-content: space-between;
+    height: 25vh;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
-.section4 .TextContainer{
+.section4 .TextContainer1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 53%;
+    height: 66%;
+}
+
+.section4 .TextContainer2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    height: 75%;
+}
+
+.section4 .TextContainer3{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     width: 50%;
     height: 70%;
+}
+
+.section4 .TextContainer4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    height: 55%;
+}
+
+.section4 .TextContainer5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    height: 80%;
 }
 
 .section4 .Text{

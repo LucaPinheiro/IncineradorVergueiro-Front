@@ -1,0 +1,99 @@
+@import url("../home/header.css");
+@import url("../home/footer.css");
+@import url("../../global.css");
+
+body {
+    font-family: var(--main-font-family) !important;
+}
+
+/* mobile */
+
+.header-item {
+    color: #fff !important;
+    transition: color 0.5s !important; 
+}
+
+.header-item:hover {
+    color: #000 !important; 
+}
+
+
+.container__banner {
+    background-color: var(--black);
+    background-image: url("../../assets/store/Organicos.png");
+    background-size: cover;
+    background-position: center;
+    height: 175px;
+    position: relative;
+}
+
+.banner__title {
+    color: var(--white);
+    font-size: 32px;
+    padding-top: 8px;
+    padding-left: 30px;
+}
+
+.banner__text {
+    color: var(--white);
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.container__title {
+    display: flex;
+    justify-content: center;
+    padding-top: 24px;
+    font-size: 22px;
+}
+
+.imageCard{
+    background-color: #D9D9D9;
+    padding: 0.5em;
+    margin: 0 auto;
+}
+
+.btn-custom-add {
+    background-color: var(--green-hover) !important;
+    color: #fff !important;
+    border: none;
+    transition: background-color 0.5s ease-in-out; 
+}
+
+.btn-custom-add:hover {
+    background-color: var(--green) !important;
+    color: #000 !important;
+}
+
+btn-custom-exit {
+    color: #fff !important;
+    border: none;
+    transition: background-color 0.5s ease-in-out; 
+}
+
+.btn-custom-exit:hover {
+    color: #000 !important;
+}
+
+
+/* desktop */
+
+@media screen and (min-width: 1024px) {
+    
+    .container__banner {
+        height: 220px;
+    }
+
+    .banner__title {
+        font-size: 40px;
+        padding-top: 20px;
+        padding-left: 50px;
+    }
+
+    .banner__text {
+        font-size: 20px;
+        padding-top: 30px;
+    }
+}
