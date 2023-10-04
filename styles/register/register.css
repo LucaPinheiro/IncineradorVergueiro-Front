@@ -85,18 +85,18 @@ input {
 
 @media screen and (min-width: 820px) {
     .container {
-        padding:  0px 70px 0px 70px;
+        padding:  0px 50px 0px 50px;
         margin-top: 50px;
         margin-bottom: 50px;
         
     }
 
     .container__event__title {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     label {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     
@@ -108,48 +108,47 @@ input {
     .container__button button {
         margin-left: 60px;
         gap: 70px;
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .container__footer-text {
-        font-size: 15px;
+        font-size: 13px;
     }
 
 
 }
 
-/* ... (unchanged imports) ... */
-
-
 
 @media screen and (min-width:1024px) {
     .container {
-        padding: 10px 200px 10px 200px;
+        padding:  0px 80px 0px 80px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        
     }
 
-    .container__form {
-        display: flex;
+    .container__box-input {
+        font-size: 14px;
+        width: 100%;
     }
 
+    .container__box-label {
+        font-size: 17px;
+    }
 
     .container__event__title {
-        font-size: 36px;
-        text-align: left;
-        
+        font-size: 22px;
     }
 
-    .container__first-box {
-        
+
+    .container__button button {
+        margin-left: 60px;
+        gap: 70px;
+        font-size: 13px;
     }
 
-    
+    .container__footer-text {
+        font-size: 13px;
+    }
 
-
-
-
-
-
-
-    
-    
 }
