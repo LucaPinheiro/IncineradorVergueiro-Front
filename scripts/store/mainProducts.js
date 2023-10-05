@@ -9,5 +9,5 @@ for (const product of products) {
 
 const clearCartIcon = document.getElementById("clearCartIcon");
 clearCartIcon.addEventListener("click", () => {
-  clearCart(); // Chame a função para limpar o carrinho
+  clearCart(); 
 });
