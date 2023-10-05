@@ -1,294 +1,328 @@
+:root{
+    --var-white: #fff;
+    --var-light-green: #cedebd;
+    --var-black: #000;
+    --var-beige: #FAF1E4;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.section1 {
-    background-color: #cedebd;
+/* INCINERADOR IMAGE */
+.image_incinerador {
     display: flex;
-    flex-direction: column;
-    padding-top: 7px;
-    align-items: center;
-    justify-content: space-between;
-    height: 34vh;   
-}
-
-.section1 img{
-    margin-top: 5%;
-}
-
-.section1 p{
-    margin-bottom: 5%;
-}
-
-.section2{
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 13vh;
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;   
-}
-
-.section2 .Stripe{
-    background-color: black;
-    width: 100%;
-    height: 1%;
-}
-
-.section2 .Container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
-    width: 80%;
+    padding: 1em;
+    margin-bottom: 1em;
+    background-color: var(--var-light-green);
 }
 
-.section2 .Label{
-    font-size: 15px;
-    text-align: center;
+.image_incinerador img {
+    filter: brightness(50%);
 }
 
-.section3{
-    background-color: #cedebd;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 30vh;   
-}
-
-.section3 .FirstImg{
-    margin-top: 8%;
-}
-
-.section3 .Container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 68%;
-    margin-bottom: 2%;
-}
-
-.section3 .Label{
-    font-size: 14px;
-    text-align: center;
-    color: #224402;
-}
-
-.section4{
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    height: 195vh;   
-}
-
-.section4 .background1 {
-    background-color: #cedebd;
-    margin-bottom: 4%;
-    height: 33vh;
-}
-
-.section4 .TitleContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 12vh;
-}
-
-.section4 .TitleDiv{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 35%;
-    height: 5vh;
-}
-
-.section4 .LabelTitle{
-    display: flex;
-    font-size: 16px;
-    text-align: center;
-    margin-top: 7%;
-}
-
-.section4 .Stripe{
-    display: flex;
-    background-color: black;
-    width: 100%;
-    height: 1%;
-    margin-bottom: 9%;
-}
-
-.section4 .YearLeft{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 10%;
-    margin-left: 10%;
-    margin-top: 4%;
-}
-
-.section4 .YearRow{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.section4 .YearLabel{
-    font-size: 16px;
-}
-
-.section4 .YearRow .BarLeft{
-    display: flex;
-    width: 0.15vw;
-    height: 2vh;
-    background-color: black;
-    margin-left: 1vw;
-    margin-bottom: 1.7vh;
-}
-
-.section4 .YearLeft .Stripe{
-    background-color: black;
-    width: 100%;
-    height: 0.2vh;
-    margin-right: 2vw;
-    margin-top: -1vh;
-}
-
-.section4 .Combo{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 25vh;
-    margin-left: 3%;
-    margin-right: 3%;
-}
-
-.section4 .TextContainer1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 53%;
-    height: 66%;
-}
-
-.section4 .TextContainer2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 50%;
-    height: 75%;
-}
-
-.section4 .TextContainer3{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 50%;
-    height: 70%;
-}
-
-.section4 .TextContainer4{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 50%;
-    height: 55%;
-}
-
-.section4 .TextContainer5{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 50%;
-    height: 80%;
-}
-
-.section4 .Text{
-    font-size: 10px;
-    text-align: justify;
-}
-
-.section4 .YearRight{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 10%;
-    margin-left: 80%;
-}
-
-.section4 .YearRow{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.section4 .YearRight .Stripe{
-    background-color: black;
-    width: 100%;
-    height: 0.2vh;
-    margin-right: 2vw;
-    margin-top: -1vh;
-}
-
-.section4 .YearRow .BarRight{
-    display: flex;
-    width: 0.2vw;
-    height: 5vh;
-    background-color: black;
-    margin-right: 2vw;
-    margin-bottom: 2vh;
-}
-
-.section4 .YearLabelRight{
-    font-size: 16px;
-    margin-right: 4vw;
-}
-
-.video__title {
-    font-size: 20px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    text-align: center;
-    color: black;
-}
-
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    background-color: #FAF1E4;
-}
-
-.video-container iframe {
+.text_image {
     position: absolute;
-    top: 50%;
-    left: 50%; 
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
-    width: 320px;
-    height: 100%;
+    top: 7.5em;
+    color: var(--var-white);
+    font-size: 1.5em;
+    text-transform: uppercase;
 }
 
-.black-line-about {
-    border: 1px solid black; 
-    margin-bottom: 37px; 
+/* POLO ECOLOGICO */
+.division {
+    height: .5px;
+    width: 100%;
+    background-color: var(--var-black);
+}
+
+.title {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1em 3em;
+}
+
+.image_polo-ecologico {
+    background-color: var(--var-light-green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 1em;
+    padding: 1em;
+    gap: 1em;
+}
+
+.text_polo{
+    text-transform: uppercase;
+}
+
+/* TIMELINE */
+.title_timeline{
+    margin: 1em;
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+/* CARD TIMELINE */
+.card_timeline {
+    background-color: var(--var-light-green);
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.card_data{
+    text-decoration: underline;
+    padding: 0 .3em;
+    border-right: #000 solid 1px;
+}
+
+.box-body{
+    margin-top: 1em;
+    display: flex;
+    gap: 1em;
+}
+
+.card_text-body{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.7em;
+    gap: 1em;
+}
+
+.box-body-reverse{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1em;
+}
+.reverse_data{
+    display: flex;
+    justify-content: end;
+}
+
+.reverse_data .card_data{
+    border-right: none;
+    border-left:#000 solid 1px;
+}
+
+.link_fonts{
+    display: flex;
+    justify-content: center;
+    margin-top: .5em;
+}
+
+.link_fonts a{
+    color: var(--var-black);
+    text-decoration: underline;
+}
+
+/* UM POUCO DE NOS */
+.video{
+    display: flex;
+    justify-content: center;
+    background-color: var(--var-beige);
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.video iframe{
+    width: 100%;
+    height: 220px;
+    border-radius: .5em;
+}
+
+/* MAPA INCINERADOR */
+.map{
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+.map iframe {
+    width: 80%;
+    height: 250px;
+    border-radius: 30px;
+}
+
+
+@media screen and (min-width: 820px) {
+
+    .image_incinerador {
+        display: flex;
+        justify-content: center;
+        padding: 1em;
+        margin-bottom: 1em;
+        background-color: var(--var-light-green);
+        
+    }
+    
+    .image_incinerador img {
+        filter: brightness(50%);
+        width: 600px;
+    }
+
+    .image_polo-ecologico img {
+        width: 430px;
+        height: 250px;
+    }
+
+    
+    .text_image{
+        position: absolute;
+        top: 10.5em;
+        color: var(--var-white);
+        font-size: 1.5em;
+        text-transform: uppercase;
+    }
+    
+    /* POLO ECOLOGICO */
+    .division {
+        height: .5px;
+        width: 100%;
+        background-color: var(--var-black);
+    }
+    
+    .title {
+        text-transform: uppercase;
+        text-align: center;
+        padding: 1em 3em;
+        font-size: 1.2em;
+    }
+    
+    .image_polo-ecologico {
+        background-color: var(--var-light-green);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 1em;
+        padding: 1em;
+        gap: 1em;
+    }
+    
+    .text_polo{
+        text-transform: uppercase;
+        font-size: 1.2em;
+    }
+    
+    /* TIMELINE */
+    .title_timeline{
+        margin: 1em;
+        text-align: center;
+        font-size: 1.6em;
+        text-decoration: underline;
+    }
+    
+    /* CARD TIMELINE */
+    .card_timeline {
+        background-color: var(--var-light-green);
+        padding: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .card_data{
+        text-decoration: underline;
+        padding: 0 .3em;
+        /* border-right: #000 solid 1px; */
+        border: none;
+    }
+
+    .card_title {
+        display: flex;
+        justify-content: center;
+    }
+
+    
+    
+    .box-body{
+        margin-top: 1em;
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        margin-left: 12%;
+        margin-right: 14%;
+    }
+
+    .box-body img {
+        height: 210px;
+    }
+
+
+    .card_text-body{
+        display: flex;
+        flex-direction: column;
+        font-size: 0.9em;
+        gap: 1em;
+        text-align: justify;
+    }
+    
+    .box-body-reverse{
+        margin-top: 1em;
+        display: flex;
+        align-items: center;
+        margin-left: 14%;
+        margin-right: 12%;
+        flex-direction: row-reverse;
+        gap: 1em;
+    }
+
+    .box-body-reverse img {
+        height: 210px;
+    }
+
+    .reverse_data{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .reverse_data .card_data{
+        border-right: none;
+        /* border-left:#000 solid 1px; */
+        border: none;
+    }
+    
+    .link_fonts{
+        display: flex;
+        justify-content: center;
+        margin-top: .5em;
+    }
+    
+    .link_fonts a{
+        color: var(--var-black);
+        text-decoration: underline;
+    }
+    
+    /* UM POUCO DE NOS */
+    .video{
+        display: flex;
+        justify-content: center;
+        background-color: var(--var-beige);
+        padding: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .video iframe{
+        width: 100%;
+        height: 220px;
+        border-radius: .5em;
+    }
+    
+    /* MAPA INCINERADOR */
+    .map{
+        display: flex;
+        justify-content: center;
+        padding: 1em;
+    }
+    
+    .map iframe {
+        width: 80%;
+        height: 250px;
+        border-radius: 30px;
+    }
+    
 }
