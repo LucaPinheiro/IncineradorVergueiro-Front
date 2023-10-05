@@ -23,6 +23,7 @@ export function addProductToSection(
   document.body.appendChild(modal);
 
   const addButton = document.getElementById(`adicionar${id}`);
+  addButton.setAttribute("data-bs-dismiss", "modal");
   addButton.addEventListener("click", () => {
     if (!itemsInCart[id]) {
       const trashImageSrc = "../../../assets/store/trash.svg";

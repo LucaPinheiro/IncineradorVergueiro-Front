@@ -1,4 +1,10 @@
-export function addToCart(productName, productPrice, trashImageSrc) {
+import { updateTotal } from "./cartTotal.js";
+import { removeCartItem } from "./removeCartItem.js";
+import { updateProductTotal } from "./updateProductTotal.js";
+
+let itemsInCart = {};
+
+export function addToCart(productName, productPrice, id, trashImageSrc) {
   const cartTableBody = document.querySelector("#cartTable tbody");
 
   const newRow = cartTableBody.insertRow();
@@ -16,6 +22,7 @@ export function addToCart(productName, productPrice, trashImageSrc) {
     </div>
   `;
   productPriceCell.textContent = productPrice;
+  productPriceCell.classList.add("product-price");
 
   const trashImg = document.createElement("img");
   trashImg.src = "../../../assets/store/trash.svg";
@@ -23,16 +30,9 @@ export function addToCart(productName, productPrice, trashImageSrc) {
   trashImg.className = "trash-icon";
   deleteButtonCell.appendChild(trashImg);
 
+  //button to remove a product from the table
   trashImg.addEventListener("click", () => {
-    const row = trashImg.closest("tr");
-
-    if (row) {
-      row.classList.add("fade-out");
-
-      setTimeout(() => {
-        cartTableBody.removeChild(row);
-      }, 500);
-    }
+    removeCartItem(newRow);
   });
 
   const plusButton = productQuantityCell.querySelector(".plus");
@@ -43,6 +43,10 @@ export function addToCart(productName, productPrice, trashImageSrc) {
     let quantity = parseInt(quantityValue.textContent);
     quantity++;
     quantityValue.textContent = quantity;
+
+    updateProductTotal(newRow, productPrice);
+
+    updateTotal();
   });
 
   minusButton.addEventListener("click", () => {
@@ -50,6 +54,18 @@ export function addToCart(productName, productPrice, trashImageSrc) {
     if (quantity > 1) {
       quantity--;
       quantityValue.textContent = quantity;
+
+      updateProductTotal(newRow, productPrice);
+
+      updateTotal();
     }
   });
+
+  if (itemsInCart[id]) {
+    itemsInCart[id] += 1;
+  } else {
+    itemsInCart[id] = 1;
+  }
+
+  updateTotal();
 }
