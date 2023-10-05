@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agendamento de Eventos</title>
     <link rel="stylesheet" href="../../styles/newEvent/newEvent.css">
+    <link rel="stylesheet" href="../../styles/newEvent/responsive.css">
 </head>
 
 <body>
-
     <header>
         <nav class="navbar">
             <a href="#" class="nav-branding"><img src="/assets/home/icon.svg" alt="Logo"></a>
@@ -42,53 +42,50 @@
         </nav>
     </header>
     
-    <div class="container__event">
-        <h1 class="container__event__title">Agendamento de Eventos</h1>
-        <form>
-            <div class="form-row-first-box">
-                <div class="form-row">
-                    <label class="wide-label" for="eventName">Nome do Evento:</label>
-                    <input class="large-textbox" type="text" id="eventName" name="eventName" required>
-                </div>
-                <div class="form-row">
-                    <label class="wide-label" for="hostName">Nome do Anfitrião:</label>
-                    <input class="large-textbox" type="text" id="hostName" name="hostName" required>
-                </div>
+    <main>
+        <h1 class="title">Agendamento de Eventos</h1>
+        <form class="form-container">
+            <div class="form-box">
+                <label class="form-box_title" for="">Nome do Evento:</label>
+                <input type="text">
+            </div>
 
-                <div class="form-row">
-                    <label class="wide-label" for="eventDate">Data do Evento:</label>
-                    <input class="large-textbox" type="date" id="eventDate" name="eventDate" required>
+            <div class="form-box">
+                <label class="form-box_title" for="">Nome do Anfitrião:</label>
+                <input type="text">
+            </div>
+
+            <div class="form-box">
+                <label class="form-box_title" for="">Data do Evento:</label>
+                <input type="date">
+            </div>
+
+            <div class="multiple-box">
+                <div class="form-box">
+                    <label class="form-box_title" for="">Horário de Início:</label>
+                    <input type="time">
+                </div>
+                <div class="form-box">
+                    <label class="form-box_title" for="">Horário de Término:</label>
+                    <input type="time">
                 </div>
             </div>
-            <div class="form-row-start-finish">
-                <div class="form-row">
-                    <label class="wide-label" for="startTime">Horário de Início:</label>
-                    <input class="large-textbox" type="time" id="startTime" name="startTime" required>
-                </div>
-                <div class="form-row">
-                    <label class="wide-label" for="endTime">Horário de Término:</label>
-                    <input class="large-textbox" type="time" id="endTime" name="endTime" required>
-                </div>
+
+            <div class="form-box">
+                <label class="form-box_title" for="">Número de Participantes:</label>
+                <input type="number">
             </div>
-            <div class="form-row-second-box">
-                <div class="form-row">
-                    <label class="wide-label" for="numParticipants">Número de Participantes:</label>
-                    <input class="large-textbox" type="number" id="numParticipants" name="numParticipants" required>
-                </div>
-                <div class="form-row">
-                    <label class="wide-label" for="eventDescription">Descrição do Evento:</label>
-                    <textarea class="large-textbox" id="eventDescription" name="eventDescription" rows="4" cols="50"
-                        required></textarea>
-                </div>
-                <div>
+
+            <div class="form-box">
+                <label class="form-box_title" for="">Descrição do Evento:</label>
+                <textarea rows="4" cols="50"></textarea>
             </div>
-            <div>
-                <div class="form-row-button">
-                    <input id="newEvent" type="submit" value="Agendar Evento">
-                </div>
+
+            <div class="btn-box">
+                <button class="btn-event">Agendar Evento</button>
             </div>
         </form>
-    </div>
+    </main>
 
     <footer class="footer">
         <h2 class="first-title">Usina Eco-Cultural</h2>
