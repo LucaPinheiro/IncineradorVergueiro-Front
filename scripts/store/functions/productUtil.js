@@ -112,6 +112,7 @@ export function addProductToSection(
 
   const addButton = document.getElementById(`adicionar${id}`);
   addButton.addEventListener("click", () => {
-    addToCart(productName, productPrice);
+    const trashImageSrc = "../../../assets/store/trash.svg";
+    addToCart(productName, productPrice, id, trashImageSrc);
   });
 }
