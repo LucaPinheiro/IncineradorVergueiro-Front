@@ -1,4 +1,8 @@
-export function addToCart(productName, productPrice, trashImageSrc) {
+import { updateTotal } from "./cartTotal.js";
+
+let itemsInCart = {};
+
+export function addToCart(productName, productPrice, id, trashImageSrc) {
   const cartTableBody = document.querySelector("#cartTable tbody");
 
   const newRow = cartTableBody.insertRow();
@@ -34,6 +38,14 @@ export function addToCart(productName, productPrice, trashImageSrc) {
       }, 500);
     }
   });
+
+  if (itemsInCart[id]) {
+    itemsInCart[id] += 1;
+  } else {
+    itemsInCart[id] = 1;
+  }
+
+  updateTotal();
 
   const plusButton = productQuantityCell.querySelector(".plus");
   const minusButton = productQuantityCell.querySelector(".minus");
