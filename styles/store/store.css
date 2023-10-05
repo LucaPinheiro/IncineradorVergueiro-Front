@@ -78,11 +78,22 @@ btn-custom-exit {
 }
 
 .container__cart__title {
+    display: flex;
+}
+
+.cart-title-left {
     margin-left: 5px;
     background-color: var(--grey);
     display: inline-block; 
     padding: 1px 2px;
     border-radius: 5px;
+    margin-right: 254px;
+}
+
+#clearCartIcon {
+    height: 20px;
+    width: 20px;
+    opacity: 0.7;
 }
 
 .cart__table__header {
