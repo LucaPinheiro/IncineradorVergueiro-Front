@@ -19,7 +19,7 @@
 .second-line {
     margin-top: 10px;
     border: 1px solid black;
-   
+
 }
 
 .container__first-box {
@@ -40,11 +40,20 @@
     border-radius: 5px;
     padding: 3px 9px;
     font-family: var(--main-font-family);
+    border-width: 1px;
 }
 
 .third-line {
     border: 1px solid black;
     margin-top: 60px;
+}
+
+.container__empty {
+    margin: 20px 20px;
+    overflow: scroll;
+    overflow-x: hidden;
+    scroll-snap-type: both mandatory;
+    scroll-padding: 10px;
 }
 
 .container__second-box {
@@ -74,9 +83,9 @@
 }
 
 .container__fifth-box {
-    display: block;
     margin: 20px 20px;
     overflow: scroll;
+    overflow-x: hidden;
     scroll-snap-type: both mandatory;
     scroll-padding: 10px;
 }
@@ -99,18 +108,7 @@
 
 .container__button {
     display: flex;
-    justify-content: space-around;  
-}
-
-#first-button {
-    padding: 5px;
-    margin-left: 60px;
-}
-
-#second-button {
-    padding: 10px;
-    margin-right: 60px;
-
+    justify-content: space-around;
 }
 
 .container__button button {
@@ -123,6 +121,21 @@
     margin-bottom: 20px;
 }
 
+#button {
+    padding: 3px 9px 3px 9px;
+    border-width: 1px;
+}
+
+.container__first-box__button:hover {
+    background-color: rgb(235, 232, 232);
+    transition: 0.5s;
+}
+
+#button:hover {
+    background-color: rgb(235, 232, 232); 
+    transition: 0.5s;
+}
+
 @media screen and (min-width: 820px) {
     .title {
         font-size: 18px;
@@ -131,34 +144,34 @@
     .line {
         width: 250px;
     }
-    
-    .container__first-box { 
+
+    .container__first-box {
         margin: 60px 15px 0px 15px;
         font-size: 14px;
     }
-        
+
     .container__first-box__button {
         border-radius: 5px;
         padding: 3px 9px;
-        font-size: 14px;
+        font-size: 12px;
         width: 170px;
     }
-    
+
     .container__second-box {
         margin: 10px 15px 0px 15px;
         font-size: 14px;
     }
-    
+
     .container__third-box {
         margin: 40px 15px 0px 15px;
         font-size: 14px;
     }
-    
+
     .container__fourth-box {
         margin: 10px 15px 10px 15px;
         font-size: 14px;
     }
-    
+
     .container__fifth-box {
         display: flex;
         justify-content: space-between;
@@ -173,27 +186,102 @@
     .container__fifth-box__first-group {
         width: 100%;
     }
-        
+
     .fifth-box-line {
         margin: 5px 20px 0px 20px;
         width: 95%;
     }
-    
-    #first-button {
-        padding: 4px;
-        margin-left: 60px;
-        width: 170px;
-        font-size: 13px;
+
+    #button {
+        width: 160px;
+        font-size: 12px;
+        border-width: 1px;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .title {
+        font-size: 22px;
+    }
+
+    .line {
+        width: 350px;
+    }
+
+    .container__section {
+        padding: 1em 4em;
+        display: flex;
+        gap: 4em;
     }
     
-    #second-button {
-        padding: 8px;
-        margin-right: 60px;
-        width: 170px;
-        font-size: 13px;
+    .container__first-box {
+        margin: 60px 30px 0px 30px;
+        font-size: 16px;
+    }
+
+    .container___section-first {
+        width: 50%;
+    }
+
+    .container__section-second {
+        width: 50%;
+        margin-top: 26px;
+    }
+
+    .container__first-box__button {
+        padding: 2px 6px;
+        font-size: 11px;
+        width: 120px;
+    }
+
+    .container__second-box {
+        margin: 10px 30px 0px 30px;
+        font-size: 16px;
+    }
+
+    .container__third-box {
+        margin: 40px 30px 0px 30px;
+        font-size: 16px;
+    }
+
+    .container__fourth-box {
+        margin: 15px 80px 30px 80px;
+        font-size: 16px;
+    }
+
+    .container__fourth-box {
+        margin: 15px 80px 30px 80px;
+        font-size: 16px;
+    }
+
+    .container__fifth-box {
+        margin: 30px 30px;
+        font-size: 16px;
+    }
+
+    .fifth-box-line {
+        margin: 5px 20px 5px 20px;
+    }
+
+    .fifth-line {
+        margin-top: 30px;
+    }
+
+    .container__button {
+        display: flex;
+        justify-content: end;
+        gap: 30px;
+        margin-right: 200px;
+    }
+
+    #button {
+        width: 140px;
+        font-size: 11px;
+        border-width: 1px;
+
     }
     
 }
-
 
 
