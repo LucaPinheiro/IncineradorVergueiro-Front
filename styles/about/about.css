@@ -1,4 +1,4 @@
-:root{
+:root {
     --var-white: #fff;
     --var-light-green: #cedebd;
     --var-black: #000;
@@ -11,7 +11,6 @@
     box-sizing: border-box;
 }
 
-/* INCINERADOR IMAGE */
 .image_incinerador {
     display: flex;
     justify-content: center;
@@ -32,7 +31,6 @@
     text-transform: uppercase;
 }
 
-/* POLO ECOLOGICO */
 .division {
     height: .5px;
     width: 100%;
@@ -56,73 +54,71 @@
     gap: 1em;
 }
 
-.text_polo{
+.text_polo {
     text-transform: uppercase;
 }
 
-/* TIMELINE */
-.title_timeline{
+.title_timeline {
     margin: 1em;
     text-align: center;
     font-size: 1.5em;
     text-decoration: underline;
 }
 
-/* CARD TIMELINE */
 .card_timeline {
     background-color: var(--var-light-green);
     padding: 1em;
     margin-bottom: 1em;
 }
 
-.card_data{
+.card_data {
     text-decoration: underline;
     padding: 0 .3em;
     border-right: #000 solid 1px;
 }
 
-.box-body{
+.box-body {
     margin-top: 1em;
     display: flex;
     gap: 1em;
 }
 
-.card_text-body{
+.card_text-body {
     display: flex;
     flex-direction: column;
     font-size: 0.7em;
     gap: 1em;
 }
 
-.box-body-reverse{
+.box-body-reverse {
     margin-top: 1em;
     display: flex;
     flex-direction: row-reverse;
     gap: 1em;
 }
-.reverse_data{
+
+.reverse_data {
     display: flex;
     justify-content: end;
 }
 
-.reverse_data .card_data{
+.reverse_data .card_data {
     border-right: none;
-    border-left:#000 solid 1px;
+    border-left: #000 solid 1px;
 }
 
-.link_fonts{
+.link_fonts {
     display: flex;
     justify-content: center;
     margin-top: .5em;
 }
 
-.link_fonts a{
+.link_fonts a {
     color: var(--var-black);
     text-decoration: underline;
 }
 
-/* UM POUCO DE NOS */
-.video{
+.video {
     display: flex;
     justify-content: center;
     background-color: var(--var-beige);
@@ -130,14 +126,13 @@
     margin-bottom: 1em;
 }
 
-.video iframe{
+.video iframe {
     width: 100%;
     height: 220px;
     border-radius: .5em;
 }
 
-/* MAPA INCINERADOR */
-.map{
+.map {
     display: flex;
     justify-content: center;
     padding: 1em;
@@ -158,9 +153,9 @@
         padding: 1em;
         margin-bottom: 1em;
         background-color: var(--var-light-green);
-        
+
     }
-    
+
     .image_incinerador img {
         filter: brightness(50%);
         width: 600px;
@@ -171,29 +166,28 @@
         height: 250px;
     }
 
-    
-    .text_image{
+
+    .text_image {
         position: absolute;
         top: 10.5em;
         color: var(--var-white);
         font-size: 1.5em;
         text-transform: uppercase;
     }
-    
-    /* POLO ECOLOGICO */
+
     .division {
         height: .5px;
         width: 100%;
         background-color: var(--var-black);
     }
-    
+
     .title {
         text-transform: uppercase;
         text-align: center;
         padding: 1em 3em;
         font-size: 1.2em;
     }
-    
+
     .image_polo-ecologico {
         background-color: var(--var-light-green);
         display: flex;
@@ -204,31 +198,28 @@
         padding: 1em;
         gap: 1em;
     }
-    
-    .text_polo{
+
+    .text_polo {
         text-transform: uppercase;
         font-size: 1.2em;
     }
-    
-    /* TIMELINE */
-    .title_timeline{
+
+    .title_timeline {
         margin: 1em;
         text-align: center;
         font-size: 1.6em;
         text-decoration: underline;
     }
-    
-    /* CARD TIMELINE */
+
     .card_timeline {
         background-color: var(--var-light-green);
         padding: 1em;
         margin-bottom: 1em;
     }
-    
-    .card_data{
+
+    .card_data {
         text-decoration: underline;
         padding: 0 .3em;
-        /* border-right: #000 solid 1px; */
         border: none;
     }
 
@@ -237,9 +228,9 @@
         justify-content: center;
     }
 
-    
-    
-    .box-body{
+
+
+    .box-body {
         margin-top: 1em;
         display: flex;
         align-items: center;
@@ -253,15 +244,15 @@
     }
 
 
-    .card_text-body{
+    .card_text-body {
         display: flex;
         flex-direction: column;
         font-size: 0.9em;
         gap: 1em;
         text-align: justify;
     }
-    
-    .box-body-reverse{
+
+    .box-body-reverse {
         margin-top: 1em;
         display: flex;
         align-items: center;
@@ -275,54 +266,227 @@
         height: 210px;
     }
 
-    .reverse_data{
+    .reverse_data {
         display: flex;
         justify-content: center;
     }
-    
-    .reverse_data .card_data{
+
+    .reverse_data .card_data {
         border-right: none;
-        /* border-left:#000 solid 1px; */
         border: none;
     }
-    
-    .link_fonts{
+
+    .link_fonts {
         display: flex;
         justify-content: center;
         margin-top: .5em;
     }
-    
-    .link_fonts a{
+
+    .link_fonts a {
         color: var(--var-black);
         text-decoration: underline;
     }
-    
+
     /* UM POUCO DE NOS */
-    .video{
+    .video {
         display: flex;
         justify-content: center;
         background-color: var(--var-beige);
         padding: 1em;
         margin-bottom: 1em;
     }
-    
-    .video iframe{
+
+    .video iframe {
         width: 100%;
         height: 220px;
         border-radius: .5em;
     }
-    
+
     /* MAPA INCINERADOR */
-    .map{
+    .map {
         display: flex;
         justify-content: center;
         padding: 1em;
     }
-    
+
     .map iframe {
         width: 80%;
         height: 250px;
         border-radius: 30px;
     }
-    
+
+}
+
+@media screen and (min-width: 1703px) {
+
+    .image_incinerador {
+        display: flex;
+        justify-content: center;
+        padding: 4em;
+        margin-bottom: 1em;
+        background-color: var(--var-light-green);
+
+    }
+
+    .image_incinerador img {
+        filter: brightness(50%);
+        width: 1357px;
+        height: 595px;
+    }
+
+    .image_polo-ecologico img {
+        width: 1000px;
+        height: 400px;
+    }
+
+
+    .text_image {
+        position: absolute;
+        top: 12.5em;
+        color: var(--var-white);
+        font-size: 2.2em;
+        text-transform: uppercase;
+    }
+
+    .division {
+        height: .5px;
+        width: 100%;
+        background-color: var(--var-black);
+    }
+
+    .title {
+        text-transform: uppercase;
+        text-align: center;
+        padding: 1em 3em;
+        font-size: 2em;
+    }
+
+    .image_polo-ecologico {
+        background-color: var(--var-light-green);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 1em;
+        padding: 2.7em;
+        gap: 1em;
+    }
+
+    .text_polo {
+        text-transform: uppercase;
+        font-size: 1.8em;
+    }
+
+    .title_timeline {
+        margin: 1em;
+        text-align: center;
+        font-size: 2em;
+        text-decoration: underline;
+    }
+
+    .card_timeline {
+        background-color: var(--var-light-green);
+        padding: 1em 0em;
+        margin-bottom: 1em;
+    }
+
+    .card_data {
+        text-decoration: underline;
+        padding: 0 .3em;
+        border: none;
+        font-size: 1.7em;
+    }
+
+    .card_title {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    .box-body {
+        margin-top: 1em;
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        margin-left: 16%;
+        margin-right: 16%;
+    }
+
+    .box-body img {
+        height: 350px;
+        width: 718;
+    }
+
+
+    .card_text-body {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.6em;
+        gap: 1em;
+        text-align: justify;
+
+    }
+
+    .box-body-reverse {
+        margin-top: 1em;
+        display: flex;
+        align-items: center;
+        margin-left: 16%;
+        margin-right: 16%;
+        flex-direction: row-reverse;
+        gap: 1em;
+    }
+
+    .box-body-reverse img {
+        height: 350px;
+        width: 718px;
+    }
+
+    .reverse_data {
+        display: flex;
+        justify-content: center;
+    }
+
+    .reverse_data .card_data {
+        border-right: none;
+        border: none;
+    }
+
+    .link_fonts {
+        display: flex;
+        justify-content: center;
+        margin-top: .5em;
+    }
+
+    .link_fonts a {
+        color: var(--var-black);
+        text-decoration: underline;
+    }
+
+    .video {
+        display: flex;
+        justify-content: center;
+        background-color: var(--var-beige);
+        padding: 1em;
+        margin-bottom: 1em;
+    }
+
+    .video iframe {
+        width: 100%;
+        height: 220px;
+        border-radius: .5em;
+    }
+
+    .map {
+        display: flex;
+        justify-content: center;
+        padding: 1em;
+    }
+
+    .map iframe {
+        width: 80%;
+        height: 250px;
+        border-radius: 30px;
+    }
 }
