@@ -1,5 +1,7 @@
 import { addToCart } from "./cartUtils.js";
 
+let itemAdd = false;
+
 export function generateProductHTML(
   productName,
   productImageSrc,
@@ -112,7 +114,10 @@ export function addProductToSection(
 
   const addButton = document.getElementById(`adicionar${id}`);
   addButton.addEventListener("click", () => {
-    const trashImageSrc = "../../../assets/store/trash.svg";
-    addToCart(productName, productPrice, id, trashImageSrc);
+    if (!itemAdd) {
+      const trashImageSrc = "../../../assets/store/trash.svg";
+      addToCart(productName, productPrice, id, trashImageSrc);
+      itemAdd = true;
+    }
   });
 }
