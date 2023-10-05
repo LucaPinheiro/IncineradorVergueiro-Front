@@ -90,21 +90,3 @@ export function generateProductHTML(
   return { column, modal };
 }
 
-export function addProductToSection(
-  productName,
-  productImageSrc,
-  productPrice,
-  id,
-  sectionId
-) {
-  const section = document.getElementById(sectionId);
-  const { column, modal } = generateProductHTML(
-    productName,
-    productImageSrc,
-    productPrice,
-    id
-  );
-  section.appendChild(column);
-
-  document.body.appendChild(modal);
-}

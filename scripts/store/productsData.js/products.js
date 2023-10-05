@@ -23,4 +23,16 @@ export const products = [
     price: "R$ 4.99/Kg",
     id: "004",
   },
+  {
+    name: "Mamão",
+    imageSrc: "../../assets/store/products/mamao.jpg",
+    price: "R$ 6.90/Kg",
+    id: "005",
+  },
+  {
+    name: "Banana Prata",
+    imageSrc: "../../assets/store/products/banana.png",
+    price: "R$ 10.80/Kg",
+    id: "006",
+  },
 ];
