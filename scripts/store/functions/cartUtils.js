@@ -25,7 +25,7 @@ export function addToCart(productName, productPrice, id, trashImageSrc) {
       <button class="quantity-btn plus">+</button>
     </div>
   `;
-  productPriceCell.textContent = productPrice;
+  productPriceCell.textContent = `R$ ${productPrice}`;
   productPriceCell.classList.add("product-price");
 
   const trashImg = document.createElement("img");
