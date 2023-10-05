@@ -1,0 +1,54 @@
+:root{
+    --var-white: #fff;
+    --var-green: #69A625;
+}
+
+.title{
+    text-align: center;
+    margin: 1em 0;
+    font-size: 1.5em;
+}
+
+.form-container{
+    width: 100%;
+    padding: 0 2em 2em 2em;
+    gap: 1.5em;
+}
+
+.form-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.multiple-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10%;
+}
+
+.form-box_title{
+    font-size: 1.2em;
+}
+
+.btn-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-event{
+    background-color: var(--var-green);
+    border: none;
+    padding: 1em;
+    color: var(--var-white);
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 1024px){
+    .btn-box{
+        display: flex;
+        justify-content: end;
+    }
+}
