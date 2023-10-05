@@ -78,10 +78,10 @@ btn-custom-exit {
 }
 
 .container__cart__title {
-    margin-left: 20px;
+    margin-left: 5px;
     background-color: var(--grey);
     display: inline-block; 
-    padding: 3px 10px;
+    padding: 1px 2px;
     border-radius: 5px;
 }
 
