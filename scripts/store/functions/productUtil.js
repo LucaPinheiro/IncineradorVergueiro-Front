@@ -81,7 +81,7 @@ export function generateProductHTML(
                 <img src="${productImageSrc}" class="card-img-top w-75 rounded-4 imageCard" alt="...">
                 <div class="card-body p-0">
                     <p class="card-text m-0">${productName}</p>
-                    <p class="card-text">${productPrice}</p>
+                    <p class="card-text">R$${productPrice}</p>
                 </div>
             </div>
         </button>
