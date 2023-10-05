@@ -3,11 +3,17 @@
 @import url("../../global.css");
 
 .banner {
-  background-image: url("/assets/support/SupportImage.png");
+  background-image: url("/assets/support/supportimage.png");
   background-size: cover;
   background-position: center;
   height: 191px;
   position: relative;
+}
+
+.container__cards {
+  display: flex;
+  flex-direction: column;
+
 }
 
 .banner__box {
@@ -158,7 +164,116 @@
     margin-bottom: 40px;
   }
 
+  .container__values__box__fourth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container__values__text__Maua {
+    margin: 30px 42px 20px 42px;
+    font-size: 12px;
+  }
+
+  .container__values__img__maua {
+    height: 146px;
+    width: 344px;
+    margin-top: 20px;
+
+
+  }
+
   .supporters__link__text {
     color: blue;
     text-decoration: underline;
   }
+
+
+@media screen and (min-width: 450px) {
+
+  .banner {
+    background-image: url("/assets/support/supportimage.png");
+    background-size: cover;
+    background-position: center;
+    height: 191px;
+    position: relative;
+  }
+  
+  .title {
+    font-size: 36px;
+    color: var(--green);
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+
+  .title__supporters {
+    font-size: 36px;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+
+
+
+}
+
+@media screen and (min-width: 1024px) {
+  
+  .banner {
+    background-image: url("/assets/support/supportimage.png");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    position: relative;
+    
+  }
+  
+  .container__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .container__values {
+    margin-top: 20px;
+    width: 50%;;
+  }
+
+  .container__values__box__first {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 20px;
+    gap: 25px;
+  }
+  
+  .container__values__text {
+    font-size: 20px;
+    margin-left: 20px;
+    width: 85%;
+  }
+
+  .container__values__box__second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container__values__content {
+    display: flex;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+  
+  .container__values__text__caldeiras {
+    margin: 25px;
+    font-size: 20px;
+    width: 80%;
+
+  }
+
+
+}
