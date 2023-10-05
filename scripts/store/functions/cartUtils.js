@@ -19,7 +19,8 @@ export function addToCart(productName, productPrice, id, trashImageSrc) {
       <button class="quantity-btn plus">+</button>
     </div>
   `;
-  productPriceCell.textContent = productPrice;
+  productPriceCell.textContent = productPrice; 
+  productPriceCell.classList.add("product-price"); 
 
   const trashImg = document.createElement("img");
   trashImg.src = "../../../assets/store/trash.svg";
@@ -27,15 +28,29 @@ export function addToCart(productName, productPrice, id, trashImageSrc) {
   trashImg.className = "trash-icon";
   deleteButtonCell.appendChild(trashImg);
 
-  trashImg.addEventListener("click", () => {
-    const row = trashImg.closest("tr");
+  const plusButton = productQuantityCell.querySelector(".plus");
+  const minusButton = productQuantityCell.querySelector(".minus");
+  const quantityValue = productQuantityCell.querySelector(".quantity-value");
 
-    if (row) {
-      row.classList.add("fade-out");
+  plusButton.addEventListener("click", () => {
+    let quantity = parseInt(quantityValue.textContent);
+    quantity++;
+    quantityValue.textContent = quantity;
 
-      setTimeout(() => {
-        cartTableBody.removeChild(row);
-      }, 500);
+    updateProductTotal(newRow, productPrice);
+
+    updateTotal();
+  });
+
+  minusButton.addEventListener("click", () => {
+    let quantity = parseInt(quantityValue.textContent);
+    if (quantity > 1) {
+      quantity--;
+      quantityValue.textContent = quantity;
+
+      updateProductTotal(newRow, productPrice);
+
+      updateTotal();
     }
   });
 
@@ -46,22 +61,14 @@ export function addToCart(productName, productPrice, id, trashImageSrc) {
   }
 
   updateTotal();
+}
 
-  const plusButton = productQuantityCell.querySelector(".plus");
-  const minusButton = productQuantityCell.querySelector(".minus");
-  const quantityValue = productQuantityCell.querySelector(".quantity-value");
+function updateProductTotal(row, productPrice) {
+  const productPriceCell = row.querySelector(".product-price");
+  const quantityValue = row.querySelector(".quantity-value");
 
-  plusButton.addEventListener("click", () => {
-    let quantity = parseInt(quantityValue.textContent);
-    quantity++;
-    quantityValue.textContent = quantity;
-  });
+  const quantity = parseInt(quantityValue.textContent);
+  const total = productPrice * quantity;
 
-  minusButton.addEventListener("click", () => {
-    let quantity = parseInt(quantityValue.textContent);
-    if (quantity > 1) {
-      quantity--;
-      quantityValue.textContent = quantity;
-    }
-  });
+  productPriceCell.textContent = `R$ ${total.toFixed(2)}`;
 }
