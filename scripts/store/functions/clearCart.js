@@ -1,5 +1,3 @@
-// clearCart.js
-
 import { updateTotal } from "./cartTotal.js";
 
 export function clearCart() {
@@ -17,6 +15,7 @@ export function clearCart() {
     updateTotal(0);
   }, 500);
 }
+
 
 
 

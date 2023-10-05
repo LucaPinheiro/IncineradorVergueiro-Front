@@ -1,4 +1,5 @@
 import { updateTotal } from "./cartTotal.js";
+import { removeCartItem } from "./removeCartItem.js";
 
 let itemsInCart = {};
 
@@ -27,6 +28,11 @@ export function addToCart(productName, productPrice, id, trashImageSrc) {
   trashImg.alt = "Remover";
   trashImg.className = "trash-icon";
   deleteButtonCell.appendChild(trashImg);
+
+  //button to remove a product from the table
+  trashImg.addEventListener("click", () => {
+    removeCartItem(newRow); 
+  });
 
   const plusButton = productQuantityCell.querySelector(".plus");
   const minusButton = productQuantityCell.querySelector(".minus");
