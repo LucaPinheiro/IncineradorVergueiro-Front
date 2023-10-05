@@ -2,8 +2,6 @@ import { updateTotal } from "./cartTotal.js";
 import { removeCartItem } from "./removeCartItem.js";
 import { updateProductTotal } from "./updateProductTotal.js";
 
-let itemsInCart = {};
-
 export function addToCart(productName, productPrice, id, trashImageSrc) {
   const cartTableBody = document.querySelector("#cartTable tbody");
 
@@ -12,6 +10,12 @@ export function addToCart(productName, productPrice, id, trashImageSrc) {
   const productQuantityCell = newRow.insertCell(1);
   const productPriceCell = newRow.insertCell(2);
   const deleteButtonCell = newRow.insertCell(3);
+
+  const rows = cartTableBody.getElementsByTagName("tr");
+
+  for (let i = 0; i < rows.length; i++) {
+    rows[i].setAttribute("data-id", id);
+  }
 
   productNameCell.textContent = productName;
   productQuantityCell.innerHTML = `
@@ -60,12 +64,6 @@ export function addToCart(productName, productPrice, id, trashImageSrc) {
       updateTotal();
     }
   });
-
-  if (itemsInCart[id]) {
-    itemsInCart[id] += 1;
-  } else {
-    itemsInCart[id] = 1;
-  }
 
   updateTotal();
 }
