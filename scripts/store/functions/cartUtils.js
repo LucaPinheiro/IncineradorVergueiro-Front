@@ -1,5 +1,6 @@
 import { updateTotal } from "./cartTotal.js";
 import { removeCartItem } from "./removeCartItem.js";
+import { updateProductTotal } from "./updateProductTotal.js";
 
 let itemsInCart = {};
 
@@ -20,8 +21,8 @@ export function addToCart(productName, productPrice, id, trashImageSrc) {
       <button class="quantity-btn plus">+</button>
     </div>
   `;
-  productPriceCell.textContent = productPrice; 
-  productPriceCell.classList.add("product-price"); 
+  productPriceCell.textContent = productPrice;
+  productPriceCell.classList.add("product-price");
 
   const trashImg = document.createElement("img");
   trashImg.src = "../../../assets/store/trash.svg";
@@ -31,7 +32,7 @@ export function addToCart(productName, productPrice, id, trashImageSrc) {
 
   //button to remove a product from the table
   trashImg.addEventListener("click", () => {
-    removeCartItem(newRow); 
+    removeCartItem(newRow);
   });
 
   const plusButton = productQuantityCell.querySelector(".plus");
@@ -67,14 +68,4 @@ export function addToCart(productName, productPrice, id, trashImageSrc) {
   }
 
   updateTotal();
-}
-
-function updateProductTotal(row, productPrice) {
-  const productPriceCell = row.querySelector(".product-price");
-  const quantityValue = row.querySelector(".quantity-value");
-
-  const quantity = parseInt(quantityValue.textContent);
-  const total = productPrice * quantity;
-
-  productPriceCell.textContent = `R$ ${total.toFixed(2)}`;
 }
