@@ -24,7 +24,7 @@
     filter: brightness(50%);
 }
 
-.text_image{
+.text_image {
     position: absolute;
     top: 7.5em;
     color: var(--var-white);
@@ -174,7 +174,7 @@
     
     .text_image{
         position: absolute;
-        top: 9.5em;
+        top: 10.5em;
         color: var(--var-white);
         font-size: 1.5em;
         text-transform: uppercase;
