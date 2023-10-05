@@ -77,6 +77,46 @@ btn-custom-exit {
     color: #000 !important;
 }
 
+.container__cart__title {
+    margin-left: 20px;
+    background-color: var(--grey);
+    display: inline-block; 
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+
+.cart__table__header {
+    background-color: var(--grey);
+}
+
+.quantity {
+    display: flex;
+}
+
+.quantity-btn {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .plus {
+    margin-left: 10px;
+  }
+  
+  .minus {
+    margin-right: 10px;
+  }
+
+
+
 
 /* desktop */
 

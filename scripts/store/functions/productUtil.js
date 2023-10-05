@@ -1,3 +1,5 @@
+import { addToCart } from "./cartUtils.js";
+
 export function generateProductHTML(
   productName,
   productImageSrc,
@@ -107,4 +109,9 @@ export function addProductToSection(
   section.appendChild(column);
 
   document.body.appendChild(modal);
+
+  const addButton = document.getElementById(`adicionar${id}`);
+  addButton.addEventListener("click", () => {
+    addToCart(productName, productPrice);
+  });
 }
