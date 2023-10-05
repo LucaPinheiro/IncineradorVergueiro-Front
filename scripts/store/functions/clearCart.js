@@ -1,3 +1,7 @@
+// clearCart.js
+
+import { updateTotal } from "./cartTotal.js";
+
 export function clearCart() {
   const cartTableBody = document.querySelector("#cartTable tbody");
   const cartItems = Array.from(cartTableBody.querySelectorAll("tr"));
@@ -10,5 +14,10 @@ export function clearCart() {
     cartItems.forEach((item) => {
       item.remove();
     });
+    updateTotal(0);
   }, 500);
 }
+
+
+
+
