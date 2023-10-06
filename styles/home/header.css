@@ -105,7 +105,7 @@ a {
         position: fixed;
         left: 100%;
         top: 70px;
-        gap: 0;
+        gap: 5px;
         flex-direction: column;
         background-color: var(--green);
         width: 100%;
@@ -114,20 +114,16 @@ a {
         z-index: 100;
     }
 
-    .nav-item {
+    .nav-link {
+        display: block;
+        border: 2px #4C7E16; 
+        border-radius: 10px; 
+        transition: 0.3s;
         margin: 5px 0;
         background-color: #6CB21E;
         border-radius: 10px;
-        width: 200px !important;
-        padding: 10px 20px; 
-
-
-    }
-
-    .nav-link {
-        border: 2px solid #6CB21E; 
-        border-radius: 10px; 
-        transition: 0.3s;
+        padding: 10px 10px;
+        width: 200px;
     }
 
     .nav-menu.active {
