@@ -1,6 +1,7 @@
 @import url("../home/header.css");
 @import url("../home/footer.css");
 @import url("../../global.css");
+@import url("../home/maps.css");
 
 .banner {
   background-image: url("/assets/support/supportimage.png");
@@ -189,8 +190,12 @@
     text-decoration: underline;
   }
 
+  .img__pc {
+    display: none;
+  }
 
-@media screen and (min-width: 450px) {
+
+@media screen and (min-width: 500px) {
 
   .banner {
     background-image: url("/assets/support/supportimage.png");
@@ -214,8 +219,80 @@
     margin-bottom: 20px;
   }
 
+  .container__values__box__first {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 20px;
+  }
 
+  .container__values__text {
+    font-size: 16px;
+    margin-left: 20px;
+    width: 60%;
+    margin-right: 20px;
+  }
 
+  .container__values__box__second {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .container__values__text__caldeiras {
+    margin: 25px;
+    font-size: 16px;
+    width: 60%;
+    margin-right: 20px;
+  }
+
+  .container__values__box__second img {
+    margin-right: 20px;
+  }
+
+  .container__values__box__third {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .container__values__text__Missao_Ambiental {
+    margin: 30px 42px 20px 42px;
+    font-size: 16px;
+    width: 60%;
+    margin-right: 20px;
+  }
+
+  .container__values__img__Missao_Ambiental {
+    margin-left: 20px;
+  }
+
+  .container__values__box__fourth {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .container__values__text__Maua {
+    margin: 30px 42px 20px 42px;
+    font-size: 16px;
+    width: 60%;
+  }
+
+  .container__values__img__maua {
+    margin-right: 20px;
+  }
+
+  .title-container {
+    margin-top: 60px;
+  }
+
+  .supporters__link {
+    color: black;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
 
 }
 
@@ -251,8 +328,9 @@
   
   .container__values__text {
     font-size: 20px;
-    margin-left: 20px;
+
     width: 85%;
+    margin: 10px 35px 0px 35px;
   }
 
   .container__values__box__second {
@@ -272,8 +350,54 @@
     margin: 25px;
     font-size: 20px;
     width: 80%;
+    margin: 41px 35px 0px 35px;
 
   }
 
+  .container__values__box__third {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .container__values__text__Missao_Ambiental {
+    font-size: 20px;
+    margin: 41px;
+    margin-bottom: 100px;
+    margin-left: 60px;
+    
+  }
+
+  .container__values__img__Missao_Ambiental {
+    margin-top: 20px;
+  }
+
+  .container__values__box__fourth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container__values__text__Maua {
+    font-size: 20px;
+    margin: 43px 41px 0px 10px;
+    
+  }
+
+  .supporters__link {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .img__pc {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+  .img__pc img {
+    width: 500px;
+  }
 }
