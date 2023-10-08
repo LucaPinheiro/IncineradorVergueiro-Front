@@ -132,9 +132,9 @@ btn-custom-exit {
 }
 
 .container__cart__total {
-    display: flex; /* Torna o elemento pai um flex container */
-    justify-content: space-between; /* Espaço entre os elementos filhos */
-    align-items: center; /* Alinha os elementos verticalmente */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
     margin-right: 20px;
 }
 
