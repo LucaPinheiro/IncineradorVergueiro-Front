@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title {
+    text-align: center;
+    border-bottom: black solid 1px;
+    padding: 4%;
+    margin: 0 20%;
+    font-size: 30px;
+}
+
+.event-card {
+    border: #cedebd solid 3px;
+    border-radius: 5%;
+    margin: 2%;
+    padding: 3%;
+}
+
+.card-title {
+    color: green;
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+
+.card-button {
+    padding: 10px 20px;
+    background-color: var(--green);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--green);
+}
+
+.reverse-button {
+    margin-left: 65%;
+}
+
+.card-button:hover {
+    background-color: var(--green-hover);
+}
