@@ -150,6 +150,21 @@ body {
     transition: 0.5s;
 }
 
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
 @media screen and (min-width: 820px) {
     .title {
         font-size: 18px;

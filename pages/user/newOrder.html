@@ -59,13 +59,23 @@
                 </div>
                 <hr class="second-line">
 
-                <div class="container__empty">
-
+                <div class="container__cart__table">
+                    <table id="cartTable" class="table">
+                        <thead>
+                            <tr>
+                                <th>Produto</th>
+                                <th>Quantidade</th>
+                                <th>Preço</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- products in cart -->
+                        </tbody>
+                    </table>
                 </div>
-
-                <hr class="third-line">
-                <div class="container__second-box">
-                    <p>Total:</p>
+                <hr class="black-line">
+                <div class="container__cart__total">
+                    <p id="cartTotal" class="container__cart__total__text">Total: R$ 0.00</p>
                 </div>
             </div>
 
@@ -170,6 +180,7 @@
         </section>
     </footer>
     <script type="module" src="../../scripts/home/navbar/navbar.js"></script>
+    <script type="module" src="../../scripts/newOrder/mainNewOrder.js"></script>
 </body>
 
 </html>
