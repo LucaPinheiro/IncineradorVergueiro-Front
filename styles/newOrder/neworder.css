@@ -2,6 +2,20 @@
 @import url("../home/footer.css");
 @import url("../../global.css");
 
+body {
+    font-family: var(--main-font-family) !important;
+}
+
+/* mobile */
+
+.header-item {
+    color: #fff !important;
+    transition: color 0.5s !important;
+}
+
+.header-item:hover {
+    color: #000 !important;
+}
 
 .title {
     text-align: center;
@@ -132,7 +146,7 @@
 }
 
 #button:hover {
-    background-color: rgb(235, 232, 232); 
+    background-color: rgb(235, 232, 232);
     transition: 0.5s;
 }
 
@@ -214,7 +228,7 @@
         display: flex;
         gap: 4em;
     }
-    
+
     .container__first-box {
         margin: 60px 30px 0px 30px;
         font-size: 16px;
@@ -281,7 +295,5 @@
         border-width: 1px;
 
     }
-    
+
 }
-
-
