@@ -1,3 +1,6 @@
+import { clearCart } from "./functions/clearCart.js";
+import { updateTotal } from "./functions/updateTotal.js";
+
 document.addEventListener("DOMContentLoaded", () => {
   const cartDataJSON = localStorage.getItem("cartData");
 
@@ -6,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const cartTable = document.getElementById("cartTable");
     const cartTableBody = cartTable.querySelector("tbody");
-    cartTableBody.innerHTML = ""; 
+    cartTableBody.innerHTML = "";
 
     cartData.items.forEach((item) => {
       const newRow = cartTableBody.insertRow();
@@ -55,23 +58,3 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-function updateTotal() {
-  const cartDataJSON = localStorage.getItem("cartData");
-  if (cartDataJSON) {
-    const cartData = JSON.parse(cartDataJSON);
-    let total = 0;
-    cartData.items.forEach((item) => {
-      total += item.price;
-    });
-    const cartTotalElement = document.getElementById("cartTotal");
-    cartTotalElement.textContent = `Total: R$ ${total.toFixed(2)}`;
-  }
-}
-
-function clearCart() {
-  const cartTable = document.getElementById("cartTable");
-  const cartTableBody = cartTable.querySelector("tbody");
-  cartTableBody.innerHTML = "";
-  updateTotal();
-  localStorage.removeItem("cartData");
-}
