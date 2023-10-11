@@ -1,0 +1,97 @@
+@import url("../home/header.css");
+@import url("../home/footer.css");
+@import url("../../global.css");
+
+.title {
+    text-align: center;
+    font-size: 28px;
+    margin-top: 12px;
+}
+
+.line {
+    height: 1px;
+    width: 65%;
+    margin: 0 auto; /* Isso centraliza a linha */
+    color: #000; 
+    background-color: #000; 
+    border: none; 
+  }
+  
+
+  .container__information {
+    text-align: center;
+    margin-top: 50px;
+}
+
+table {
+    margin: 0 auto;
+    text-align: left;
+}
+
+input {
+    width: 309px;
+    height: 25px;
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 4px;
+}
+
+
+table + table {
+    margin-top: 20px;
+}
+
+.container__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px; 
+}
+
+.container__second__footer {
+    margin-top: 66px;
+}
+
+
+
+@media screen and (min-width: 820px) {
+    label {
+        margin-bottom: 5px; 
+        font-size: 25px;
+    }
+    .title {
+        font-size: 40px;
+        margin-top: 38px;
+    }
+   
+    .container__image img {
+        width: 55px; 
+        height: auto; 
+    }
+    input {
+        width: 547px;
+        height: 30px;
+        margin-bottom: 10px;
+    }
+    .line {
+        height: 2px;
+    }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .container__image img {
+        width: 65px; 
+    }
+    input {
+        font-size: 20px;
+        margin-top: 15px; 
+    }
+    label {
+        margin-bottom: 10px;
+    }
+    .line {
+        height: 3px;
+    }
+}
