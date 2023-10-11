@@ -74,6 +74,10 @@
     color: white;
     border: none;
 }
+button:hover {
+    color: var(--green-hover);
+    transition: 0.5s ease;
+}
 
 @media screen and (min-width: 820px) {
     
