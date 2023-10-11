@@ -58,3 +58,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+//clearCartNewOrder
+const clearCartBtn = document.getElementById("clearCartBtn");
+clearCartBtn.addEventListener("click", clearCart);
