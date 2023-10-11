@@ -1,0 +1,32 @@
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 1.4em;
+    border-bottom: black solid 1.8px;
+    padding: 3%;
+    margin: 0 13%;
+}
+
+.card_title {
+    color: #69A625;
+    font-size: 1.4em;
+    margin:5% 8%;
+}
+
+.card_box {
+    border: #cedebd solid 3px;
+    border-radius: 15px;
+    
+}
+
+.text {
+    font-size: 1em;
+    margin: 2% 3%;
+}
+
+.container_event {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 8px ;
+}
