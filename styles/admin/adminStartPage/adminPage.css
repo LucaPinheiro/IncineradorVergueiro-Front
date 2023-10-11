@@ -1,6 +1,6 @@
-@import url("../home/header.css");
-@import url("../home/footer.css");
-@import url("../../global.css");
+@import url("../../../styles/home/header.css");
+@import url("../../../styles/home/footer.css");
+@import url("../../../global.css");
 
 .container {
     text-align: center;
