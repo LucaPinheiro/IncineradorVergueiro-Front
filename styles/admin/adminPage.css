@@ -1,0 +1,68 @@
+@import url("../home/header.css");
+@import url("../home/footer.css");
+@import url("../../global.css");
+
+.container {
+    text-align: center;
+}
+
+.container__title {
+    margin-bottom: 5px; 
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.line {
+    width: 50%; 
+    margin: auto;
+}
+
+.container__links {
+    background-color: #CEDEBD;
+    padding: 20px 20px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.container__links-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.container__links-list-link {
+    background-color: #69A625;
+    text-align: center;
+    width: 100%;
+    padding: 5px ;
+    border-radius: 5px;
+}
+
+
+
+
+
+@media screen and (min-width: 820px) {  
+    .container__title {
+        font-size: 22px;
+    }
+    
+    .container__links-list-link {
+        width: 80%;
+        font-size: 16px;
+
+    }    
+}
+
+@media screen and (min-width: 1024px) {
+    .container__title {
+        font-size: 24px;
+    }
+
+    .container__links-list-link {
+        width: 65%;
+        font-size: 18px;
+        padding: 8px;
+    }   
+}
