@@ -317,12 +317,12 @@
 
 }
 
-@media screen and (min-width: 1703px) {
+@media screen and (min-width: 1024px) {
 
     .image_incinerador {
         display: flex;
         justify-content: center;
-        padding: 4em;
+        padding: 2.5em;
         margin-bottom: 1em;
         background-color: var(--var-light-green);
 
@@ -330,21 +330,21 @@
 
     .image_incinerador img {
         filter: brightness(50%);
-        width: 1357px;
-        height: 595px;
+        width: 750px;
+        height: 340px;
     }
 
     .image_polo-ecologico img {
-        width: 1000px;
-        height: 400px;
+        width: 680px;
+        height: 300px;
     }
 
 
     .text_image {
         position: absolute;
-        top: 12.5em;
+        top: 12.2em;
         color: var(--var-white);
-        font-size: 2.2em;
+        font-size: 1.5em;
         text-transform: uppercase;
     }
 
@@ -358,7 +358,7 @@
         text-transform: uppercase;
         text-align: center;
         padding: 1em 3em;
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     .image_polo-ecologico {
@@ -374,13 +374,13 @@
 
     .text_polo {
         text-transform: uppercase;
-        font-size: 1.8em;
+        font-size: 1.4em;
     }
 
     .title_timeline {
         margin: 1em;
         text-align: center;
-        font-size: 2em;
+        font-size: 1.5em;
         text-decoration: underline;
     }
 
@@ -394,7 +394,7 @@
         text-decoration: underline;
         padding: 0 .3em;
         border: none;
-        font-size: 1.7em;
+        font-size: 1.4em;
     }
 
     .card_title {
@@ -409,12 +409,12 @@
         display: flex;
         align-items: center;
         gap: 1em;
-        margin-left: 16%;
-        margin-right: 16%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
     .box-body img {
-        height: 350px;
+        height: 300px;
         width: 718;
     }
 
@@ -422,7 +422,7 @@
     .card_text-body {
         display: flex;
         flex-direction: column;
-        font-size: 1.6em;
+        font-size: 1.2em;
         gap: 1em;
         text-align: justify;
 
@@ -432,14 +432,14 @@
         margin-top: 1em;
         display: flex;
         align-items: center;
-        margin-left: 16%;
-        margin-right: 16%;
+        margin-left: 10%;
+        margin-right: 10%;
         flex-direction: row-reverse;
         gap: 1em;
     }
 
     .box-body-reverse img {
-        height: 350px;
+        height: 300px;
         width: 718px;
     }
 
