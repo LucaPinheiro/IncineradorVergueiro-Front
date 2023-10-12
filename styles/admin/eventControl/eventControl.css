@@ -30,3 +30,32 @@
     gap: 8px;
     margin: 8px ;
 }
+
+.buttons {
+    margin-left: 60%;
+}
+
+.button {
+    padding: 5px 7px;
+    background-color: var(--green);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--green);
+}
+
+.add {
+    padding: 3px 3px;
+    background-color: var(--green);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+    margin-left: 84%;
+    margin-right: 4%;
+    border: 1px solid var(--green);
+    font-size: 22px;
+}
