@@ -1,5 +1,7 @@
 @import url("reset.css");
 @import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Marcellus+SC&display=swap');
+
 
 :root {
     --background-color: #FFFFFF;
@@ -9,6 +11,7 @@
     --black: #000000;
     --grey: #D9D9D9;
     --green-hover: #4C7E16;
+    --body-font: "Gabarito";
 
 }
 
