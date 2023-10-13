@@ -17,7 +17,7 @@
 
 body {
     background-color: var(--background-color);
-    font-family: var(--main-font-family);
+    font-family: var(--body-font);
 }
 
 body,
