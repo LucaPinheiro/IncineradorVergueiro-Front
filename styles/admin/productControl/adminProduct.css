@@ -24,13 +24,13 @@
 
 .third__container {
     background-color: #CEDEBD;
-    padding: 10%;
+    padding: 5%;
     margin-top: 15px;
 }
 
 .third__container-border {
     border: black 1px solid;
-    padding: 40%;
+    padding: 30%;
 }
 
 .fourth__container {
@@ -80,6 +80,78 @@ button:hover {
 }
 
 @media screen and (min-width: 820px) {
-    
+    .first__container {
+        font-size: 22px;
+    }
+
+    .line{
+        margin-top: 10px;
+    }
+
+    .second__container {
+        font-size: 18px;
+        margin-left: 40px;
+    }
+
+    .third__container {
+        padding: 5%;
+    }
+
+    .third__container-border {
+        border: black 1px solid;
+        padding: 20%;
+    }
+
+    .fourth__container-form-title{
+        font-size: 18px;
+        margin-left: 40px;
+    }
+
+    .fourth__container label {
+        font-size: 14px;
+        margin-bottom: 10px;
+    } 
 }
 
+@media screen and (min-width: 1024px) {
+    .first__container {
+        font-size: 28px;
+    }
+
+    .second__container {
+        font-size: 22px;
+        margin-left: 50px;
+    }
+
+    .third__container {
+        padding: 3%;
+    }
+
+    .third__container-border {
+        border: black 1px solid;
+        padding: 13%;
+    }
+
+    .fourth__container-form-title{
+        font-size: 22px;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+
+    .fourth__container label {
+        font-size: 18px;
+        width: 85%;
+    } 
+
+    .fourth__container input {
+        width: 85%;
+        height: 30%;
+        font-size: 14px;
+    }
+
+    .fourth__container-form-button {
+        font-size: 16px;
+        padding: 1.5%;
+    }
+
+}
