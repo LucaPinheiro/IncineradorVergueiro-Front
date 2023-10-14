@@ -1,21 +1,8 @@
 import eventsData from '../eventControl/data/eventsControlData.js';
+import { deleteEvent } from './functions/eventsUtil.js';
+import { openConfirmationModal } from './modalRemove/modalUtils.js';
 
 const eventCardsContainer = document.getElementById('eventCards');
-
-function deleteEvent(eventId) {
-    const eventIndex = eventsData.findIndex(event => event.id === eventId);
-
-    if (eventIndex !== -1) {
-        const eventCard = document.getElementById(`event-${eventId}`);
-        if (eventCard) {
-            eventCard.classList.add('fade-out');
-            setTimeout(() => {
-                eventsData.splice(eventIndex, 1);
-                eventCard.remove();
-            }, 300);
-        }
-    }
-}
 
 eventsData.forEach(event => {
     const card = document.createElement('div');
@@ -47,7 +34,7 @@ eventsData.forEach(event => {
     deleteButton.className = 'button';
     deleteButton.textContent = 'Apagar';
     deleteButton.addEventListener('click', () => {
-        deleteEvent(event.id);
+        openConfirmationModal(eventsData, event.id);
     });
     buttons.appendChild(deleteButton);
 

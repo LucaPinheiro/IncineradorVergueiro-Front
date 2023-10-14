@@ -1,0 +1,48 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background: white;
+    max-width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal h2 {
+    font-size: 1.5em;
+}
+
+.modal p {
+    font-size: 1.2em;
+}
+
+.modal-buttons {
+    margin-top: 20px;
+}
+
+.modal-buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-buttons button#confirmDeleteButton {
+    background-color: red;
+    color: white;
+}
+
+.modal-buttons button#cancelDeleteButton {
+    background-color: #ccc;
+    color: black;
+}

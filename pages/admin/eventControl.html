@@ -16,13 +16,16 @@
 
             <ul class="nav-menu" style="margin-right: 30px;">
                 <li class="nav-item">
+                    <a href="./adminPage.html" class="nav-link">Administração</a>
+                </li>
+                <li class="nav-item">
                     <a href="./productControl.html" class="nav-link">Loja</a>
                 </li>
                 <li class="nav-item">
                     <a href="./eventControl.html" class="nav-link">Eventos</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./userControl.html" class="nav-link">Usuários</a>
+                    <a href="../../index.html" class="nav-link">Sair</a>
                 </li>
             </ul>
             <div class="hamburguer">
@@ -41,6 +44,18 @@
             <div id="eventCards"></div>
         </section>
     </main>
+
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <h2>Confirmação</h2>
+            <p>Tem certeza de que deseja remover este evento?</p>
+            <div class="modal-buttons">
+                <button id="confirmDeleteButton">Confirmar</button>
+                <button id="cancelDeleteButton">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
 
     <footer class="footer">
         <hr class="white-line-footer">
