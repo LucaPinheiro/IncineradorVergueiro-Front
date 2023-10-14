@@ -16,6 +16,7 @@
     text-align: center;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 .modal h2 {
@@ -35,6 +36,7 @@
     margin: 0 10px;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .modal-buttons button#confirmDeleteButton {
