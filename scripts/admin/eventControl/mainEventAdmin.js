@@ -8,11 +8,11 @@ function deleteEvent(eventId) {
     if (eventIndex !== -1) {
         const eventCard = document.getElementById(`event-${eventId}`);
         if (eventCard) {
-            eventCard.classList.add('fade-out'); // Adicione a classe 'fade-out'
+            eventCard.classList.add('fade-out');
             setTimeout(() => {
                 eventsData.splice(eventIndex, 1);
                 eventCard.remove();
-            }, 300); // Remova o elemento após 300ms (0.3 segundos)
+            }, 300);
         }
     }
 }
