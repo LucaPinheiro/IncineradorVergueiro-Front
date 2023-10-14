@@ -53,6 +53,12 @@
     background-color: var(--green-hover); 
 }
 
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+}
+
+
 @media screen and (min-width: 820px) {
     .title {
         font-size: 1.8em;
