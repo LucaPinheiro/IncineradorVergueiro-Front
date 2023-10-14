@@ -86,8 +86,10 @@
 .card_text-body {
     display: flex;
     flex-direction: column;
-    font-size: 0.7em;
+    font-size: 10px;
     gap: 1em;
+    font-family: var(--body-font);
+    line-height: 15px;
 }
 
 .box-body-reverse {
@@ -110,7 +112,13 @@
 .link_fonts {
     display: flex;
     justify-content: center;
-    margin-top: .5em;
+    margin-top: 1em;
+    transition: 0.5s ease;
+    font-family: var(--body-font);
+}
+
+.link_fonts a:hover {
+    color: rgb(111, 141, 157);
 }
 
 .link_fonts a {
@@ -422,9 +430,10 @@
     .card_text-body {
         display: flex;
         flex-direction: column;
-        font-size: 1.2em;
+        font-size: 1.4em;
         gap: 1em;
         text-align: justify;
+        line-height: 25px;
 
     }
 
@@ -457,6 +466,7 @@
         display: flex;
         justify-content: center;
         margin-top: .5em;
+        font-size: 14px;
     }
 
     .link_fonts a {

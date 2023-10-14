@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agendamento de Eventos</title>
-    <link rel="stylesheet" href="../../styles/newEvent/newEvent.css">
+    <!-- <link rel="stylesheet" href="../../styles/newEvent/newEvent.css"> -->
     <link rel="stylesheet" href="../../styles/newEvent/responsive.css">
+    <link rel="stylesheet" href="../../styles/home/style.css">
 </head>
 
 <body>
@@ -47,41 +48,42 @@
     
     <main>
         <h1 class="title">Agendamento de Eventos</h1>
+        <hr class="line">
         <form class="form-container">
             <div class="form-box">
                 <label class="form-box_title" for="">Nome do Evento:</label>
-                <input type="text">
+                <input class="form-box-input"  type="text">
             </div>
 
             <div class="form-box">
                 <label class="form-box_title" for="">Nome do Anfitrião:</label>
-                <input type="text">
+                <input class="form-box-input" type="text">
             </div>
 
             <div class="form-box">
                 <label class="form-box_title" for="">Data do Evento:</label>
-                <input type="date">
+                <input class="form-box-input" type="date">
             </div>
 
             <div class="multiple-box">
                 <div class="form-box">
                     <label class="form-box_title" for="">Horário de Início:</label>
-                    <input type="time">
+                    <input class="form-box-input" type="time">
                 </div>
                 <div class="form-box">
                     <label class="form-box_title" for="">Horário de Término:</label>
-                    <input type="time">
+                    <input class="form-box-input" type="time">
                 </div>
             </div>
 
             <div class="form-box">
                 <label class="form-box_title" for="">Número de Participantes:</label>
-                <input type="number">
+                <input class="number" type="number">
             </div>
 
             <div class="form-box">
                 <label class="form-box_title" for="">Descrição do Evento:</label>
-                <textarea rows="4" cols="50"></textarea>
+                <textarea class="text-area" rows="4" cols="50"></textarea>
             </div>
 
             <div class="btn-box">

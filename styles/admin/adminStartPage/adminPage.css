@@ -41,7 +41,7 @@
 }
 
 a:hover {
-    color: var(--green-hover);
+    background-color: var(--green-hover);
 
 }
 
