@@ -2,21 +2,27 @@
     display: flex;
     justify-content: center;
     font-size: 1.4em;
-    border-bottom: black solid 1.8px;
     padding: 3%;
+    border-bottom: black solid 1.8px;
     margin: 0 13%;
 }
 
 .card_title {
     color: #69A625;
     font-size: 1.4em;
-    margin:5% 8%;
+    margin-left: 5px;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .card_box {
     border: #cedebd solid 3px;
     border-radius: 15px;
-    
 }
 
 .text {
@@ -24,15 +30,12 @@
     margin: 2% 3%;
 }
 
-.container_event {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin: 8px ;
-}
-
 .buttons {
     margin-left: 60%;
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+    margin-right: 5px;
 }
 
 .button {
@@ -41,152 +44,68 @@
     color: white;
     text-decoration: none;
     border-radius: 6px;
-    transition: background-color 0.3s;
-    margin-left: 10px;
-    margin-bottom: 10px;
+    transition: background-color 0.3s ease-out, color 0.3s ease-out;
+    margin: 10px 10px 10px 10px; 
     border: 1px solid var(--green);
 }
 
-.add {
-    padding: 3px 3px;
-    background-color: var(--green);
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    transition: background-color 0.3s;
-    margin-left: 84%;
-    margin-right: 4%;
-    border: 1px solid var(--green);
-    font-size: 22px;
+.button:hover {
+    background-color: var(--green-hover); 
 }
 
 @media screen and (min-width: 820px) {
     .title {
-        display: flex;
-        justify-content: center;
         font-size: 1.8em;
-        border-bottom: black solid 1.8px;
         padding: 3%;
+        border-bottom: black solid 1.8px;
         margin: 0 14%;
     }
-    
-    .card_title {
-        color: #69A625;
-        font-size: 1.6em;
-        margin:4% 8%;
+
+    .container {
+        margin: 1em 3em;
     }
-    
+
     .card_box {
-        border: #cedebd solid 3px;
-        border-radius: 15px;
         margin: 0 5%;
-        
     }
-    
-    .text {
-        font-size: 1em;
-        margin: 2% 3%;
-    }
-    
+
     .container_event {
-        display: flex;
-        flex-direction: column;
         gap: 8px;
-        margin: 8px ;
+        margin: 8px;
     }
-    
+
     .buttons {
-        margin-left: 77%;
+        margin-left: 80%;
+        margin-top: 10px;
     }
-    
+
     .button {
-        padding: 5px 7px;
-        background-color: var(--green);
-        color: white;
-        text-decoration: none;
-        border-radius: 6px;
-        transition: background-color 0.3s;
-        margin-left: 10px;
-        margin-bottom: 10px;
-        border: 1px solid var(--green);
-    }
-    
-    .add {
-        padding: 2px 2px;
-        background-color: var(--green);
-        color: white;
-        text-decoration: none;
-        border-radius: 6px;
-        transition: background-color 0.3s;
-        margin-left: 88%;
-        margin-right: 7%;
-        border: 1px solid var(--green);
-        font-size: 22px;
+        font-size: 17px;
     }
 }
 
 @media screen and (min-width: 1024px) {
     .title {
-        display: flex;
-        justify-content: center;
         font-size: 1.9em;
-        border: black solid 1.8px;
         padding: 4%;
+        border: black solid 1.8px;
         margin: 5% 28%;
     }
-    
+
     .card_title {
-        color: #69A625;
         font-size: 1.8em;
-        margin:3% 10%;
     }
-    
-    .card_box {
-        border: #cedebd solid 3px;
-        border-radius: 15px;
-        margin: 0 8%;
-        
-    }
-    
+
     .text {
         font-size: 1.4em;
-        margin: 2% 3%;
     }
-    
+
     .container_event {
-        display: flex;
-        flex-direction: column;
         gap: 8px;
-        margin: 8px ;
     }
-    
+
     .buttons {
-        margin-left: 75%;
+        margin-left: 100%; 
     }
-    
-    .button {
-        padding: 5px 7px;
-        background-color: var(--green);
-        color: white;
-        text-decoration: none;
-        border-radius: 6px;
-        transition: background-color 0.3s;
-        margin-left: 10px;
-        margin-bottom: 10px;
-        border: 1px solid var(--green);
-        font-size: 17px;
-    }
-    
-    .add {
-        padding: 3px 3px;
-        background-color: var(--green);
-        color: white;
-        text-decoration: none;
-        border-radius: 6px;
-        transition: background-color 0.3s;
-        margin-left: 86%;
-        margin-right: 9%;
-        border: 1px solid var(--green);
-        font-size: 25px;
-    }
+
 }

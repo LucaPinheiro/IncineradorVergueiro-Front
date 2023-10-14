@@ -34,46 +34,12 @@
     </header>
     <main>
         <section>
-            <h1 class="title">Ajustes Eventos</h1>
-        </section>
-
-        <section>
-            <h2 class="card_title">Eventos Atuais :</h2>
-            <div class="container_event">
-                <button class="add">+</button>
-                <div class="card_box">
-                    <p class="text">Nome do Evento :</p>
-                    <p class="text">Descrição :</p>
-                    <p class="text">ID Evento :</p>
-                </div>
-                <div class="buttons">
-                    <button class="button">Apagar</button>
-                    <button class="button">Editar</button>
-                </div>
-
-                <div class="card_box">
-                    <p class="text">Nome do Evento :</p>
-                    <p class="text">Descrição :</p>
-                    <p class="text">ID Evento :</p>
-                </div>
-                <div class="buttons">
-                    <button class="button">Apagar</button>
-                    <button class="button">Editar</button>
-                </div>
-
-                <div class="card_box">
-                    <p class="text">Nome do Evento :</p>
-                    <p class="text">Descrição :</p>
-                    <p class="text">ID Evento :</p>
-                </div>
-                <div class="buttons">
-                    <button class="button">Apagar</button>
-                    <button class="button">Editar</button>
-                </div>
+            <div class="container">
+                <h2 class="card_title">Eventos Atuais:</h2>
+                <button class="button">+</button>
             </div>
-
+            <div id="eventCards"></div>
         </section>
-
     </main>
 
     <footer class="footer">
@@ -103,7 +69,8 @@
         </section>
     </footer>
 
-    <script src="/scripts/home/navbar/navbar.js" type="module"></script>
+    <script src="../../scripts/home/navbar/navbar.js" type="module"></script>
+    <script type="module" src="../../scripts/admin/eventControl/mainEventAdmin.js"></script>
 </body>
 
 </html>
