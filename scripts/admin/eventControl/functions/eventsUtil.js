@@ -19,12 +19,12 @@ export function openConfirmationModal(eventId) {
   const cancelDeleteButton = document.getElementById("cancelDeleteButton");
 
   confirmDeleteButton.addEventListener("click", () => {
-    deleteEvent(eventId); // Exclui o evento se o usuário confirmar
+    deleteEvent(eventId);
     confirmationModal.style.display = "none";
   });
 
   cancelDeleteButton.addEventListener("click", () => {
-    confirmationModal.style.display = "none"; // Fecha o modal sem excluir
+    confirmationModal.style.display = "none";
   });
 
   confirmationModal.style.display = "block";
