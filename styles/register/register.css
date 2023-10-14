@@ -12,9 +12,8 @@ main {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    background-image: url('../../assets/register/BackgroundImage.svg');
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(to bottom right,#091c01, #89fa5a); 
+    font-family: var(--body-font);
 }
 
 .container {
@@ -41,7 +40,7 @@ form {
 
 #registrationForm label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     color: white;
 }
 
@@ -64,6 +63,10 @@ input {
 
 }
 
+.container__button button:hover {
+    background-color: var(--green-hover);
+}
+
 .container__button button {
     background-color: #69A625;
     color: white;
@@ -73,6 +76,8 @@ input {
     cursor: pointer;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-family: var(--body-font);
+    transition: 0.3s ease;
 }
 
 .container__footer-text {
@@ -83,15 +88,20 @@ input {
 
 .container__text-link {
     text-decoration: underline;
+    transition: 0.5s ease;
+}
+
+.container__text-link:hover{
+    color: var(--green-hover);
 }
 
 /* tablet */
 
 @media screen and (min-width: 820px) {
     .container {
-        padding:  0px 70px 0px 70px;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        padding:  10px 50px 10px 50px;
+        margin-top: 100px;
+        margin-bottom: 100px;
         
     }
 
@@ -99,13 +109,16 @@ input {
         font-size: 24px;
     }
 
-    label {
-        font-size: 16px;
-    }
 
     #registrationForm {
         width: 600px;
     }
+
+    #registrationForm label {
+        font-size: 18px;
+    }
+    
+
 
     .container__button button {
         margin-left: 60px;

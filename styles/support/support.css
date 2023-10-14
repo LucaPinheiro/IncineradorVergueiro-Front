@@ -17,6 +17,7 @@
 
 }
 
+
 .banner__box {
   display: flex;
   flex-direction: column;
@@ -36,6 +37,7 @@
   margin-top: 27px;
   margin-right: 15px;
   margin-left: 15px;
+  font-family: var(--body-font);
 }
 
 .banner__button {
@@ -45,12 +47,13 @@
     transform: translateX(-50%);
     background-color: var(--green);
     color: var(--white);
-    padding: 10px 20px;
+    padding: 1%;
     border-radius: 12px;
     text-decoration: none;
     transition: background-color 0.3s ease;
     margin-top: 0px;
     width: 135px;
+    font-family: var(--body-font);
 }
 
 .banner__button:hover {
@@ -63,21 +66,20 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 10px 25px;
+  margin-top: 15px;
+  margin-bottom: 30px;
 }
 
 .title {
-  font-size: 24px;
+  font-size: 22px;
   color: var(--green);
   margin-bottom: 5px;
   margin-top: 10px;
 }
 
 .title__line {
-  border: none;
   height: 2px;
-  width: 90%;
-  background-color: var(--green);
+  width: 100%;
   margin-bottom: 23px;
   margin-top: 15px;
 }
@@ -87,8 +89,7 @@
 .title__supporters {
   font-size: 22px;
   color: black;
-  margin-top: 20px
-  
+  margin-top: 20px;
   }
 
   .container__values {
@@ -99,16 +100,19 @@
     display: flex;
     align-items: center;
     margin-top: 20px;
+    gap: 10px;
   }
   
   .container__values__text {
-    font-size: 12.5px;
-    margin-left: 20px;
+    font-size: 12px;
+    margin-left: 10px;
+    font-family: var(--body-font);
+    line-height: 15px;
   }
   
   .container__values__img {
     max-width: 100%;
-    margin-right: 20px;
+    margin-right: 10px;
     width: 216px;
     height: 213px;
   }
@@ -130,6 +134,8 @@
     margin: 25px;
     font-size: 12px;
     width: 340px;
+    font-family: var(--body-font);
+    line-height: 15px;
   }
   
   .container__values__content img {
@@ -146,6 +152,8 @@
   .container__values__text__Missao_Ambiental {
     margin: 30px 42px 20px 42px;
     font-size: 12px;
+    font-family: var(--body-font);
+    line-height: 15px;
   }
 
   .container__values__img__Missao__Ambiental {
@@ -175,6 +183,8 @@
   .container__values__text__Maua {
     margin: 30px 42px 20px 42px;
     font-size: 12px;
+    font-family: var(--body-font);
+    line-height: 15px;
   }
 
   .container__values__img__maua {
@@ -195,7 +205,7 @@
   }
 
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 820px) {
 
   .banner {
     background-image: url("/assets/support/supportimage.png");
@@ -231,6 +241,7 @@
     margin-left: 20px;
     width: 60%;
     margin-right: 20px;
+    line-height: 20px;
   }
 
   .container__values__box__second {
@@ -244,6 +255,7 @@
     font-size: 16px;
     width: 60%;
     margin-right: 20px;
+    line-height: 20px;
   }
 
   .container__values__box__second img {
@@ -261,6 +273,7 @@
     font-size: 16px;
     width: 60%;
     margin-right: 20px;
+    line-height: 20px;
   }
 
   .container__values__img__Missao_Ambiental {
@@ -277,6 +290,7 @@
     margin: 30px 42px 20px 42px;
     font-size: 16px;
     width: 60%;
+    line-height: 20px;
   }
 
   .container__values__img__maua {
@@ -299,12 +313,15 @@
 @media screen and (min-width: 1024px) {
   
   .banner {
-    background-image: url("/assets/support/supportimage.png");
-    background-size: cover;
-    background-position: center;
     height: 300px;
-    position: relative;
-    
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .title__supporters {
+    font-size: 28px;
   }
   
   .container__cards {
@@ -327,10 +344,10 @@
   }
   
   .container__values__text {
-    font-size: 20px;
-
+    font-size: 18px;
     width: 85%;
     margin: 10px 35px 0px 35px;
+    line-height: 30px;
   }
 
   .container__values__box__second {
@@ -351,6 +368,7 @@
     font-size: 20px;
     width: 80%;
     margin: 41px 35px 0px 35px;
+    line-height: 30px;
 
   }
 
@@ -365,6 +383,7 @@
     margin: 41px;
     margin-bottom: 100px;
     margin-left: 60px;
+    line-height: 30px;
     
   }
 
@@ -381,6 +400,7 @@
   .container__values__text__Maua {
     font-size: 20px;
     margin: 43px 41px 0px 10px;
+    line-height: 30px;
     
   }
 

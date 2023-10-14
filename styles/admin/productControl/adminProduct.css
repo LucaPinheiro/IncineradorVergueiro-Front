@@ -75,7 +75,7 @@
     border: none;
 }
 button:hover {
-    color: var(--green-hover);
+    background-color: var(--green-hover);
     transition: 0.5s ease;
 }
 
