@@ -1,119 +1,158 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página do Administrador</title>
-    <link rel="stylesheet" href="../../styles/admin/userControl/usercontrol.css">
-    <link rel="stylesheet" href="../../styles/home/style.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="../../styles/admin/userControl/usercontrol.css"
+    />
+    <link rel="stylesheet" href="../../styles/home/style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="navbar">
-            <a href="./adminPage.html" class="nav-branding"><img src="../../assets/home/icon.svg" alt="Logo"></a>
+      <nav class="navbar">
+        <a href="../../index.html" class="nav-branding"
+          ><img src="../../assets/home/icon.svg" alt="Logo"
+        /></a>
 
-            <ul class="nav-menu" style="margin-right: 30px;">
-                <li class="nav-item">
-                    <a href="./adminPage.html" class="nav-link">Administração</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./productControl.html" class="nav-link">Loja</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./eventControl.html" class="nav-link">Eventos</a>
-                </li>
-                <li class="nav-item">
-                    <a href="../../index.html" class="nav-link">Sair</a>
-                </li>
-            </ul>
-            <div class="hamburguer">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="../../index.html" class="nav-link">Página Inicial</a>
+          </li>
+          <li class="nav-item">
+            <a href="./store.html" class="nav-link">Loja</a>
+          </li>
+          <li class="nav-item">
+            <a href="./support.html" class="nav-link">Apoie</a>
+          </li>
+          <li class="nav-item">
+            <a href="./about.html" class="nav-link">Sobre nós</a>
+          </li>
+          <li class="nav-item">
+            <a href="./event.html" class="nav-link">Eventos</a>
+          </li>
+          <li class="nav-item">
+            <a href="./newEvent.html" class="nav-link">Agendamentos</a>
+          </li>
+          <li class="nav-item">
+            <a href="../../pages/user/login.html" class="nav-link"
+              >Minha Conta</a
+            >
+          </li>
+        </ul>
+        <div class="hamburguer">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
     </header>
+
     <main>
-        <section>
-            <h1 class="title">Ajustes Usuários</h1>
-        </section>
+      <h1 class="title">Ajustes Usuários</h1>
 
-        <section>
-            <h1 class="sub_title">Usuários Cadastrados :</h1>
-            <div class="table">
-                <div class="subline">
-                    <p><strong>ID</strong></p>
-                    <p>001</p>
-                    <p>002</p>
-                    <p>003</p>
-                </div>
+      <section>
+        <h1 class="sub_title">Usuários Cadastrados :</h1>
+        <table class="table">
+          <tr>
+            <th class="firstline" style="width: 10%"><strong>ID</strong></th>
+            <th class="firstline" style="width: 30%">Nome</th>
+            <th class="firstline" style="width: 20%">Telefone</th>
+            <th class="firstline" style="width: 30%">CPF</th>
+            <th class="first__line" style="width: 10%">Apagar</th>
+          </tr>
 
-                <div class="subline">
-                    <p><strong>Nome</strong></p>
-                    <p>João Silva</p>
-                    <p>Sergio Perreira</p>
-                    <p>Julia Pires</p>
-                </div>
+          <tr>
+            <td>001</td>
+            <td><p>João Silva</p></td>
+            <td>(11)984526217</td>
+            <td>987.654.321-00</td>
+            <td><img src="../../assets/store/trash.svg" alt="Lixeira" /></td>
+          </tr>
 
-                <div class="subline">
-                    <p><strong>Telefone</strong></p>
-                    <p>(11)984526217</p>
-                    <p>(11)987654321</p>
-                    <p>(11)945685741</p>
-                </div>
+          <tr>
+            <td>001</td>
+            <td><p>João Silva</p></td>
+            <td>(11)984526217</td>
+            <td>987.654.321-00</td>
+            <td><img src="../../assets/store/trash.svg" alt="Lixeira" /></td>
+          </tr>
 
-                <div class="subline">
-                    <p><strong>CPF</strong></p>
-                    <p>987.654.321-00</p>
-                    <p>123.456.789-00</p>
-                    <p>333.456.789-00</p>
-                </div>
-            </div>
+          <tr>
+            <td>001</td>
+            <td><p>João Silva</p></td>
+            <td>(11)984526217</td>
+            <td>987.654.321-00</td>
+            <td><img src="../../assets/store/trash.svg" alt="Lixeira" /></td>
+          </tr>
 
-        </section>
-
-        <section>
-            <h2 class="sub_title">Deletar Usuários:</h2>
-            <div class="text">
-                <input type="text" id="text" placeholder="Digite o ID do usuário">
-            </div>
-            <div class="button_location">
-                <button class="button">Confirmar</button>
-            </div>
-        </section>
-
+          <tr>
+            <td>001</td>
+            <td><p>João Silva</p></td>
+            <td>(11)984526217</td>
+            <td>987.654.321-00</td>
+            <td><img src="../../assets/store/trash.svg" alt="Lixeira" /></td>
+          </tr>
+        </table>
+      </section>
     </main>
 
     <footer class="footer">
-        <hr class="white-line-footer">
-        <section class="container__first__footer">
-            <p class="container__footer__title">Grupos que apoiam a causa</p>
-            <div class="container__footer__supporters">
-                <img class="suportters-image" src="../../assets/home/footer/cades.png" alt="Cades">
-                <img class="suportters-image" src="../../assets/home/footer/missaoAmbiental.png" alt="Missão Ambiental">
-                <img class="suportters-image" src="../../assets/home/footer/mudaIpiranga.png" alt="Muda Ipiranga">
-            </div>
-            <div class="container__footer__supporters">
-                <img class="suportters-image" src="../../assets/home/footer/sosAbelhas.png" alt="SOS Abelhas">
-                <img class="suportters-image" src="../../assets/home/footer/supporterFlower.png">
-                <img class="suportters-image" src="../../assets/home/footer/casao.png">
-                <img class="suportters-image" src="../../assets/home/footer/chicoScience.png" alt="Chico Science">
-            </div>
-        </section>
-        <section class="container__second__footer">
-            <h2>Usina Eco-Cultural</h2>
-            <h3>Rua Breno Ferraz do Amaral 415, São Paulo/SP</h3>
-            <h3>CEP 04124-020</h3>
-            <h2>Sede Adminstrativa @usinaecocultural</h2>
-            <hr class="white-line">
-            <h4>Incinerador Vergueiro | IMT - 2023</h4>
-            <h4>Desenvolvido por Imtech Mauá</h4>
-        </section>
+      <hr class="white-line-footer" />
+      <section class="container__first__footer">
+        <p class="container__footer__title">Grupos que apoiam a causa</p>
+        <div class="container__footer__supporters">
+          <img
+            class="suportters-image"
+            src="../../assets/home/footer/cades.png"
+            alt="Cades"
+          />
+          <img
+            class="suportters-image"
+            src="../../assets/home/footer/missaoAmbiental.png"
+            alt="Missão Ambiental"
+          />
+          <img
+            class="suportters-image"
+            src="../../assets/home/footer/mudaIpiranga.png"
+            alt="Muda Ipiranga"
+          />
+        </div>
+        <div class="container__footer__supporters">
+          <img
+            class="suportters-image"
+            src="../../assets/home/footer/sosAbelhas.png"
+            alt="SOS Abelhas"
+          />
+          <img
+            class="suportters-image"
+            src="../../assets/home/footer/supporterFlower.png"
+          />
+          <img
+            class="suportters-image"
+            src="../../assets/home/footer/casao.png"
+          />
+          <img
+            class="suportters-image"
+            src="../../assets/home/footer/chicoScience.png"
+            alt="Chico Science"
+          />
+        </div>
+      </section>
+      <section class="container__second__footer">
+        <h2>Usina Eco-Cultural</h2>
+        <h3>Rua Breno Ferraz do Amaral 415, São Paulo/SP</h3>
+        <h3>CEP 04124-020</h3>
+        <h2>Sede Adminstrativa @usinaecocultural</h2>
+        <hr class="white-line" />
+        <h4>Incinerador Vergueiro | IMT - 2023</h4>
+        <h4>Desenvolvido por Imtech Mauá</h4>
+      </section>
     </footer>
 
     <script src="/scripts/home/navbar/navbar.js" type="module"></script>
-</body>
-
+  </body>
 </html>
