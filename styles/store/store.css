@@ -31,7 +31,7 @@ body {
     color: var(--white);
     font-size: 32px;
     padding-top: 8px;
-    padding-left: 30px;
+    text-align: center;
 }
 
 .banner__text {
@@ -40,6 +40,7 @@ body {
     display: flex;
     justify-content: center;
     padding-top: 30px;
+    text-align: center;
 }
 
 .container__title {
@@ -180,7 +181,6 @@ btn-custom-exit {
     .banner__title {
         font-size: 40px;
         padding-top: 20px;
-        padding-left: 50px;
     }
 
     .banner__text {
