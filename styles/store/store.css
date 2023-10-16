@@ -81,6 +81,10 @@ btn-custom-exit {
     display: flex;
 }
 
+#productSection {
+    
+}
+
 .cart-title-left {
     margin-left: 5px;
     background-color: var(--grey);
@@ -163,6 +167,176 @@ btn-custom-exit {
 .btn-newOrder-link {
     color: white;
     text-decoration: none;
+}
+
+
+@media screen and (min-width: 820px) {
+    body {
+        font-family: var(--main-font-family) !important;
+    }
+    
+    /* mobile */
+    
+    .header-item {
+        color: #fff !important;
+        transition: color 0.5s !important;
+    }
+    
+    .header-item:hover {
+        color: #000 !important;
+    }
+    
+    
+    .container__banner {
+        background-color: var(--black);
+        background-image: url("../../assets/store/Organicos.png");
+        background-size: cover;
+        background-position: center;
+        height: 175px;
+        position: relative;
+    }
+    
+    .banner__title {
+        color: var(--white);
+        font-size: 32px;
+        padding-top: 8px;
+        padding-left: 30px;
+    }
+    
+    .banner__text {
+        color: var(--white);
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+    }
+    
+    .container__title {
+        display: flex;
+        justify-content: center;
+        padding-top: 24px;
+        font-size: 22px;
+    }
+    
+    .imageCard {
+        background-color: #D9D9D9;
+        padding: 0.5em;
+        margin: 0 auto;
+    }
+    
+    .btn-custom-add {
+        background-color: var(--green-hover) !important;
+        color: #fff !important;
+        border: none;
+        transition: background-color 0.5s ease-in-out;
+    }
+    
+    .btn-custom-add:hover {
+        background-color: var(--green) !important;
+        color: #000 !important;
+    }
+    
+    btn-custom-exit {
+        color: #fff !important;
+        border: none;
+        transition: background-color 0.5s ease-in-out;
+    }
+    
+    .btn-custom-exit:hover {
+        color: #000 !important;
+    }
+    
+    .container__cart__title {
+        display: flex;
+    }
+    
+    #productSection {
+        margin: 0 4%;
+    }
+    
+    .cart-title-left {
+        margin-left: 5px;
+        background-color: var(--grey);
+        display: inline-block;
+        padding: 1px 2px;
+        border-radius: 5px;
+        margin-right: 254px;
+    }
+    
+    #clearCartIcon {
+        height: 20px;
+        width: 20px;
+        opacity: 0.7;
+    }
+    
+    .cart__table__header {
+        background-color: var(--grey);
+    }
+    
+    .quantity {
+        display: flex;
+    }
+    
+    .quantity-btn {
+        width: 20px;
+        height: 20px;
+        border: 2px solid #ccc;
+        border-radius: 50%;
+        background-color: transparent;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        margin: 0;
+    }
+    
+    .plus {
+        margin-left: 10px;
+    }
+    
+    .minus {
+        margin-right: 10px;
+    }
+    
+    .fade-out {
+        opacity: 0;
+        transition: opacity 0.3s ease-out;
+    }
+    
+    .container__cart__total {
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        margin-right: 20px;
+    }
+    
+    .container__cart__total__text {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+    
+    .btn-newOrder {
+        padding: 10px 20px;
+        background-color: var(--green);
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        border: 1px solid var(--green);
+        transition: 0.3s ease-in-out;
+    }
+    
+    .btn-newOrder:hover {
+        background-color: var(--green-hover);
+    }
+    
+    .btn-newOrder-link {
+        color: white;
+        text-decoration: none;
+    }
 }
 
 
