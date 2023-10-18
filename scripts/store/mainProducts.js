@@ -32,16 +32,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     );
   }
 
-  for (const product of existingProducts) {
-    addProductToSection(
-      product.name,
-      product.imageSrc,
-      product.price,
-      product.id,
-      "productSection"
-    );
-  }
-
   const clearCartIcon = document.getElementById("clearCartIcon");
   clearCartIcon.addEventListener("click", () => {
     clearCart();
