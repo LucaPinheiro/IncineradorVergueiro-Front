@@ -11,6 +11,7 @@ async function getProductsFromAPI() {
       throw new Error("Erro ao obter produtos da API");
     }
     const products = await response.json();
+    console.log(products);
     return products;
   } catch (error) {
     console.error(error);
