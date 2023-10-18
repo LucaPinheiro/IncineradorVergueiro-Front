@@ -38,7 +38,7 @@ newOrderBtn.addEventListener("click", (event) => {
   }
 });
 
-// localStorage
+// localStorage start
 newOrderBtn.addEventListener("click", (event) => {
     const cartTable = document.getElementById("cartTable");
     const cartItems = cartTable.querySelectorAll("tbody tr");
