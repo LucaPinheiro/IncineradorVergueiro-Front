@@ -94,4 +94,12 @@ main {
     .form-box-input {
         font-size: 14px;
     }
+
+    .number {
+        font-size: 14px;
+    }
+
+    .text-area {
+        font-size: 14px;
+    }
 }

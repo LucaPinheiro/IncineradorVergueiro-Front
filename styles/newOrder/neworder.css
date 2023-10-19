@@ -255,7 +255,7 @@ body {
 
     .container__section-second {
         width: 50%;
-        margin-top: 26px;
+        margin-top: 20px;
     }
 
     .container__first-box__button {
@@ -301,7 +301,7 @@ body {
         display: flex;
         justify-content: end;
         gap: 30px;
-        margin-right: 200px;
+        margin-right: 150px;
     }
 
     #button {
