@@ -75,6 +75,8 @@ main {
     background-color: var(--green-hover);
 }
 
+
+
 @media screen and (min-width: 820px) {
     .title {
         font-size: 28px;
@@ -90,6 +92,10 @@ main {
 
     .reverse-button {
         margin-left: 80%;
+    }
+
+    .card-button {
+        margin-left: 600px;
     }
 
 }
@@ -119,5 +125,6 @@ main {
 
     .card-button {
         font-size: 14px;
+        margin-left: 1100px;
     }
 }
