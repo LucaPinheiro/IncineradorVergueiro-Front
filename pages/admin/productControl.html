@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajuste da Loja</title>
     <link rel="stylesheet" href="../../styles/admin/productControl/adminProduct.css">
+    <link rel="stylesheet" href="../../styles/admin/createEvent/createEvent.css">
 </head>
 
 <body>
@@ -58,20 +59,50 @@
             <h2 class="fourth__container-form-title">Adicionar Produtos</h2>
             <form class="fourth__container-form" id="addProductForm">
 
-                <label for="productCode">Código do Produto:</label>
-                <input type="text" id="productCode" name="productCode" required placeholder="Digite o código do produto..."> 
 
                 <label for="productName">Nome do Produto:</label>
-                <input type="text" id="productName" name="productName" required placeholder="Digite o nome do produto...">
+                <input type="text" id="productName" name="productName" required
+                    placeholder="Digite o nome do produto...">
 
                 <label for="productValue">Valor do Produto:</label>
-                <input type="number" id="productValue" name="productValue" step="0.01" required placeholder="Digite o valor do produto...">
+                <input type="number" id="productValue" name="productValue" step="0.01" required
+                    placeholder="Digite o valor do produto...">
 
                 <label for="productImage">Imagem do Produto (URL):</label>
-                <input type="text" id="productImage" name="productImage" required placeholder="Insira a url da imagem...">
+                <input type="text" id="productImage" name="productImage" required
+                    placeholder="Insira a url da imagem...">
 
                 <button class="fourth__container-form-button" type="submit">Adicionar Produto</button>
             </form>
+
+            <div id="confirmationModal" class="modal">
+                <div class="modal-content">
+                    <p>Tem certeza de que deseja criar o evento?</p>
+                    <button id="confirmButton">Confirmar</button>
+                    <button id="cancelButton" class="btn-close">Cancelar</button>
+                </div>
+            </div>
+
+            <div id="successModal" class="modal">
+                <div class="modal-content">
+                    <p>Evento criado com sucesso!</p>
+                    <button id="closeSuccessButton">Fechar</button>
+                </div>
+            </div>
+
+            <div id="errorModal" class="modal">
+                <div class="modal-content">
+                    <p>Erro ao criar o evento.</p>
+                    <button id="closeErrorButton">Fechar</button>
+                </div>
+            </div>
+
+            <div id="emptyFieldsModal" class="modal">
+                <div class="modal-content">
+                    <p>Por favor, preencha todos os campos antes de criar o evento.</p>
+                    <button id="closeEmptyFieldsButton">Fechar</button>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -103,6 +134,7 @@
     </footer>
 
     <script type="module" src="../../scripts/home/navbar/navbar.js"></script>
+    <script type="module" src="../../scripts/admin/productControl/mainProductControl.js"></script>
 </body>
 
 </html>
