@@ -79,6 +79,22 @@ button:hover {
     transition: 0.5s ease;
 }
 
+/* product list */
+.product-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 5px 0;
+  }
+  
+  .delete-button {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+
 @media screen and (min-width: 820px) {
     .first__container {
         font-size: 22px;
