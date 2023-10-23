@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajuste da Loja</title>
     <link rel="stylesheet" href="../../styles/admin/productControl/adminProduct.css">
-    <link rel="stylesheet" href="../../styles/admin/createEvent/createEvent.css">
+    <link rel="stylesheet" href="../../styles/admin/productControl/modalProduct.css">
 </head>
 
 <body>
@@ -75,33 +75,34 @@
                 <button class="fourth__container-form-button" type="submit">Adicionar Produto</button>
             </form>
 
-            <div id="confirmationModal" class="modal">
-                <div class="modal-content">
-                    <p>Tem certeza de que deseja criar o evento?</p>
-                    <button id="confirmButton">Confirmar</button>
-                    <button id="cancelButton" class="btn-close">Cancelar</button>
-                </div>
-            </div>
+        </div>
 
-            <div id="successModal" class="modal">
-                <div class="modal-content">
-                    <p>Evento criado com sucesso!</p>
-                    <button id="closeSuccessButton">Fechar</button>
-                </div>
+        <div id="confirmationModal" class="modal">
+            <div class="modal-content">
+                <p>Tem certeza de que deseja criar o produto?</p>
+                <button id="confirmButton">Confirmar</button>
+                <button id="cancelButton" class="btn-close">Cancelar</button>
             </div>
+        </div>
 
-            <div id="errorModal" class="modal">
-                <div class="modal-content">
-                    <p>Erro ao criar o evento.</p>
-                    <button id="closeErrorButton">Fechar</button>
-                </div>
+        <div id="successModal" class="modal">
+            <div class="modal-content">
+                <p>Produto criado com sucesso!</p>
+                <button id="closeSuccessButton">Fechar</button>
             </div>
+        </div>
 
-            <div id="emptyFieldsModal" class="modal">
-                <div class="modal-content">
-                    <p>Por favor, preencha todos os campos antes de criar o evento.</p>
-                    <button id="closeEmptyFieldsButton">Fechar</button>
-                </div>
+        <div id="errorModal" class="modal">
+            <div class="modal-content">
+                <p>Erro ao criar o produto.</p>
+                <button id="closeErrorButton">Fechar</button>
+            </div>
+        </div>
+
+        <div id="emptyFieldsModal" class="modal">
+            <div class="modal-content">
+                <p>Por favor, preencha todos os campos antes de criar o evento.</p>
+                <button id="closeEmptyFieldsButton">Fechar</button>
             </div>
         </div>
     </main>
