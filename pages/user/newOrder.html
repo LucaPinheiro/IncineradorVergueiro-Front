@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agendamento de pedido</title>
     <link rel="stylesheet" href="../../styles/newOrder/neworder.css">
-    <link rel="stylesheet" href="../../styles/home/style.css">
+    <link rel="stylesheet" href="../../styles/home/header.css">
+    <link rel="stylesheet" href="../../styles/home/style.css">    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../styles/home/header.css">
+    
 </head>
 
 <body>
-
     <header class="header-text">
-        <nav style="padding: 0 20px;" class="navbar">
+        <nav style="padding: 0 30px;" class="navbar">
             <a href="../../index.html" class="nav-branding"><img src="../../assets/home/icon.svg" alt="Logo"></a>
 
             <ul class="nav-menu">
@@ -80,7 +80,7 @@
                 </div>
                 <hr class="black-line">
                 <div class="container__cart__total">
-                    <p id="cartTotal" class="container__cart__total__text">Total: R$ 0.00</p>
+                    <p id="cartTotal" class="container__cart__total__text" style="margin-left: 15px;">Total: R$ 0.00</p>
                 </div>
             </div>
 
@@ -95,6 +95,12 @@
                     <p class="container__fourth-box__text">Ter</p>
                     <p class="container__fourth-box__text">Qua</p>
                     <p class="container__fourth-box__text">Qui</p>
+                </div>
+                <div class="container__fourth-box-radio-buttons">
+                    <input type="radio" id="option1" name="options" class="radius-button">
+                    <input type="radio" id="option2" name="options" class="radius-button">
+                    <input type="radio" id="option3" name="options" class="radius-button">
+                    <input type="radio" id="option4" name="options" class="radius-button">
                 </div>
                 <hr class="fifth-line">
 
@@ -153,7 +159,7 @@
 
 
         <div class="container__button">
-            <button id="button" type="submit"><a style="color: var(--black);" href="./store.html">Voltar à loja</a></button>
+            <button id="button" type="submit"><a style="color: var(--white); text-decoration: none;"  href="./store.html">Voltar à loja</a></button>
             <button id="button" type="submit">Adicionar Pedido</button>
         </div>
     </main>

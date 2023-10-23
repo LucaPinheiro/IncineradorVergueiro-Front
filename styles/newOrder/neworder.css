@@ -3,7 +3,7 @@
 @import url("../../global.css");
 
 body {
-    font-family: var(--main-font-family) !important;
+    font-family: var(--body-font);
 }
 
 /* mobile */
@@ -21,6 +21,7 @@ body {
     text-align: center;
     margin-top: 20px;
     font-size: 14px;
+    font-family: var(--main-font-family);
 }
 
 .line {
@@ -43,6 +44,10 @@ body {
     align-items: center;
 }
 
+.container__first-box p {
+    font-family: var(--main-font-family);
+}
+
 .container__first-box__section {
     display: flex;
     justify-content: flex-end;
@@ -50,11 +55,16 @@ body {
 }
 
 .container__first-box__button {
-    background-color: white;
+    background-color: #69A625;
     border-radius: 5px;
     padding: 3px 9px;
+    font-family: var(--body-font);
+    color: white;
+    border: none;
+}
+
+.container__cart__total {
     font-family: var(--main-font-family);
-    border-width: 1px;
 }
 
 .third-line {
@@ -80,6 +90,10 @@ body {
     margin: 40px 15px 0px 15px;
 }
 
+.container__third-box__text {
+    font-family: var(--main-font-family);
+}
+
 .fourth-line {
     border: 1px solid black;
     margin-top: 10px;
@@ -88,7 +102,13 @@ body {
 .container__fourth-box {
     display: flex;
     justify-content: space-around;
-    margin: 10px 15px 10px 15px;
+    margin: 10px 15px 0px 15px;
+}
+
+.container__fourth-box-radio-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 15px;
 }
 
 .fifth-line {
@@ -126,14 +146,16 @@ body {
 }
 
 .container__button button {
-    font-family: var(--main-font-family);
-    background-color: white;
-    color: black;
-    border: solid 1px black;
+    font-family: var(--body-font);
+    background-color: #69A625;
+    color: white;
+    border: none;
     border-radius: 5px;
     margin-top: 10px;
     margin-bottom: 20px;
 }
+
+
 
 #button {
     padding: 3px 9px 3px 9px;
@@ -141,13 +163,13 @@ body {
 }
 
 .container__first-box__button:hover {
-    background-color: rgb(235, 232, 232);
-    transition: 0.5s;
+    background-color: var(--green-hover);
+    transition: 0.5s ease;
 }
 
 #button:hover {
-    background-color: rgb(235, 232, 232);
-    transition: 0.5s;
+    background-color: var(--green-hover);
+    transition: 0.5s ease;
 }
 
 .fade-out {
@@ -197,7 +219,7 @@ body {
     }
 
     .container__fourth-box {
-        margin: 10px 15px 10px 15px;
+        margin: 10px 15px 0px 15px;
         font-size: 14px;
     }
 
@@ -230,6 +252,9 @@ body {
 
 
 @media screen and (min-width: 1024px) {
+    .navbar {
+        font-size: 16px;
+    }
     .title {
         font-size: 22px;
     }
@@ -248,6 +273,7 @@ body {
         margin: 60px 30px 0px 30px;
         font-size: 16px;
     }
+
 
     .container___section-first {
         width: 50%;
@@ -280,9 +306,14 @@ body {
     }
 
     .container__fourth-box {
-        margin: 15px 80px 30px 80px;
+        margin: 15px 80px 0px 80px;
         font-size: 16px;
     }
+
+    .container__fourth-box-radio-buttons {
+        margin: 0 80px;
+    }
+
 
     .container__fifth-box {
         margin: 30px 30px;
@@ -294,7 +325,7 @@ body {
     }
 
     .fifth-line {
-        margin-top: 30px;
+        margin-top: 20px;
     }
 
     .container__button {
