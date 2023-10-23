@@ -1,9 +1,6 @@
-// productList.js
-
 document.addEventListener("DOMContentLoaded", () => {
     const productsContainer = document.getElementById("products");
   
-    // Função para carregar e listar os produtos
     const loadProducts = async () => {
       try {
         const response = await fetch("http://localhost:3000/products");
@@ -13,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
         const products = await response.json();
   
-        productsContainer.innerHTML = ""; // Limpa o conteúdo anterior
+        productsContainer.innerHTML = ""; 
   
         products.forEach((product) => {
           const productElement = document.createElement("div");
@@ -42,7 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     };
   
-    // Função para excluir um produto
     const deleteProduct = async (productId) => {
       if (confirm("Tem certeza de que deseja excluir este produto?")) {
         try {
@@ -52,10 +48,9 @@ document.addEventListener("DOMContentLoaded", () => {
   
           if (response.ok) {
             console.log("Produto excluído com sucesso!");
-            // Remover o produto da lista após a exclusão
             const productToDelete = productsContainer.querySelector(`[data-id="${productId}"]`);
             if (productToDelete) {
-              productToDelete.style.transition = "opacity 0.5s"; // Adicione a transição
+              productToDelete.style.transition = "opacity 0.5s";
               productToDelete.style.opacity = 0;
               setTimeout(() => {
                 productToDelete.remove();
@@ -71,6 +66,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     };
   
-    loadProducts(); // Carregar os produtos quando a página carregar
+    loadProducts();
   });
   
