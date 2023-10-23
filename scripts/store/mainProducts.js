@@ -170,3 +170,25 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+// button to remove all from cart
+const clearCartBtn = document.getElementById("clearCartIcon");
+
+clearCartBtn.addEventListener("click", () => {
+  const cartTable = document.getElementById("cartTable");
+  const cartTableBody = cartTable.querySelector("tbody");
+
+  cartTableBody.classList.add("fade-out");
+
+  setTimeout(() => {
+    cartTableBody.innerHTML = '';
+
+    const cartTotalElement = document.getElementById("cartTotal");
+    cartTotalElement.textContent = 'Total: R$ 0.00';
+
+    cartTableBody.classList.remove("fade-out");
+
+    localStorage.removeItem("cartData");
+  }, 300);
+});
+
