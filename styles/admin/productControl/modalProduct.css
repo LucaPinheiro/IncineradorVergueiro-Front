@@ -44,6 +44,6 @@
 }
 
 .modal #cancelButton:hover {
-    background-color: grey;
-    color: black;
+    background-color: rgb(185, 8, 8);
+    color: var(--white);
 }
