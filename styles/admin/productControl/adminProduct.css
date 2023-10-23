@@ -79,6 +79,44 @@ button:hover {
     transition: 0.5s ease;
 }
 
+/* product List */
+
+#createConfirmButton { 
+background-color: red;
+color: var(--white);
+}
+
+#createConfirmButton:hover {
+    background-color: rgb(185, 8, 8);
+    transition: 0.5s ease;
+}
+
+.btn-close {
+    cursor: pointer;
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.btn-close:hover {
+    background-color: var(--green-hover);
+    transition: 0.5s ease;
+}
+
+.product-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.delete-button {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
 @media screen and (min-width: 820px) {
     .first__container {
         font-size: 22px;
