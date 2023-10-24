@@ -22,13 +22,15 @@
 }
 
 .container__values__text {
-    font-size: 9px;
+    font-size: 11px;
     margin-left: 20px;
     margin-top: 46px;
     margin-right: 16px;
     width: 150px;
     font-family: var(--body-font);
 }
+
+
 
 .container__values__box {
     background-color: #FAF1E4;
@@ -37,6 +39,8 @@
     justify-content: space-between;
     color: var(--black);
 }
+
+
 
 .imagem {
     width: 190px;
@@ -53,10 +57,11 @@
 }
 
 .text_second {
-    font-size: 8px;
+    font-size: 10px;
     height: 158px;
-    margin-top: 44px;
+    margin-top: 10px;
 }
+
 
 /* container tablet */
 
@@ -149,6 +154,7 @@
 
     #imagem {
         height: 170px;
+        margin-right: 0px;
     }
 
     .first {
@@ -183,11 +189,9 @@
 
     .container__values__text,
     .text_second {
-        font-size: 12px;
-        margin-left: 20px;
+        font-size: 14px;
         margin-top: 30px;
-        margin-right: 16px;
-        width: 300px;
+        width: 275px;
     }
 
     .container__values__box__left {
