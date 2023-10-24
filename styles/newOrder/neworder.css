@@ -37,6 +37,14 @@ body {
 
 }
 
+.container___section-first{
+    font-family: var(--body-font);
+}
+
+.container__section-second{
+    font-family: var(--body-font);
+}
+
 .container__first-box {
     display: flex;
     justify-content: space-between;
