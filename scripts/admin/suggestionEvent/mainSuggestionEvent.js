@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
   loadSuggestionEvents();
 
   function showRemoveConfirmation(eventSection, eventId) {
-    overlay.style.display = "flex"; 
+    overlay.style.display = "flex";
     const confirmRemoveButton = document.getElementById("confirmRemoveButton");
     const cancelRemoveButton = document.getElementById("cancelRemoveButton");
 
@@ -89,30 +89,45 @@ document.addEventListener("DOMContentLoaded", () => {
       eventSection.style.opacity = 0;
       eventSection.style.height = 0;
 
-      try {
-        const response = await fetch(
-          `http://localhost:3000/suggestion-events/${eventId}`,
-          {
-            method: "DELETE",
-          }
-        );
-
-        if (response.ok) {
-          alert("Evento removido com sucesso!");
-        } else {
-          alert("Erro ao remover o evento.");
-        }
-      } catch (error) {
-        console.error("Erro durante a solicitação:", error);
-      }
+      deleteSuggestionEvent(eventId);
 
       setTimeout(() => {
-        overlay.style.display = "none"; 
-      }, 500); 
+        overlay.style.display = "none";
+      }, 500);
     };
 
     cancelRemoveButton.onclick = () => {
-      overlay.style.display = "none"; 
+      overlay.style.display = "none";
     };
+  }
+
+  async function deleteSuggestionEvent(eventId) {
+    try {
+      // token localStorage
+      const token = localStorage.getItem("token");
+
+      if (!token) {
+        alert("Token de autorização não encontrado. Faça o login.");
+        return;
+      }
+
+      const response = await fetch(
+        `http://localhost:3000/suggestion-events/${eventId}`,
+        {
+          method: "DELETE",
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+
+      if (response.ok) {
+        alert("Evento removido com sucesso!");
+      } else {
+        alert("Erro ao remover o evento.");
+      }
+    } catch (error) {
+      console.error("Erro durante a solicitação:", error);
+    }
   }
 });
