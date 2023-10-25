@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../styles/admin/suggestionEvent/suggestionEvent.css">
+    <link rel="stylesheet" href="../../styles/admin/suggestionEvent/modal.css">
     <link rel="stylesheet" href="../../styles/home/style.css">
     <title>Sugestões de Eventos</title>
 </head>
@@ -52,41 +53,17 @@
 
         <hr class="second-line">
 
-        <section class="container__section">
-            <div class="contaienr__first-box">
-                <div class="container__first-box-texts">
-                    <p class="first-box-text">Nome do Evento: Visita Educativa </p>
-                    <p class="first-box-text">Nome do Anfitrião: Marcela </p>
-                    <p class="first-box-text">Data: 21/12/2023</p>
-                    <p class="first-box-text">Numero de Participantes: 15</p>
-                    <p class="first-box-text">Descrição: Passeio para os alunos aprederem mais sobre a geofrafia de São
-                        Paulo. </p>
-                </div>
+        <div id="suggestion-events">
+            <!-- suggestion events -->
+        </div>
+
+        <div class="overlay" style="display: none">
+            <div class="confirmation-container">
+                <h1>Deseja mesmo remover o evento?</h1>
+                <button id="confirmRemoveButton" class="confirm-button">Sim</button>
+                <button id="cancelRemoveButton" class="cancel-button">Não</button>
             </div>
-        </section>
-
-        <section class="container__section-button">
-            <button class="container__button">Validar Evento</button>
-            <button class="container__second-button">Remover Evento</button>
-        </section>
-
-        <section class="container__section">
-            <div class="contaienr__first-box">
-                <div class="container__first-box-texts">
-                    <p class="first-box-text">Nome do Evento: Feijoada Maluca</p>
-                    <p class="first-box-text">Nome do Anfitrião: Paola</p>
-                    <p class="first-box-text">Data: 25/12/23</p>
-                    <p class="first-box-text">Numero de Participantes: 25</p>
-                    <p class="first-box-text">Descrição: Feijuca das boas para a comunidade eco cultural encher o buxo!
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="container__section-button">
-            <button class="container__button">Validar Evento</button>
-            <button class="container__second-button">Remover Evento</button>
-        </section>
+        </div>
 
     </main>
 
@@ -123,6 +100,7 @@
     </footer>
 
     <script src="../../scripts/home/navbar/navbar.js" type="module"></script>
+    <script type="module" src="../../scripts/admin/suggestionEvent/mainSuggestionEvent.js"></script>
 </body>
 
 </html>
