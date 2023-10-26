@@ -24,7 +24,7 @@
 
 .border-section {
     display: flex;
-    border: 1px black solid;
+    border: 1px solid rgb(162, 159, 159);
     border-radius: 3px;
     margin-top: 3%;
     width: 70%;
@@ -54,7 +54,7 @@
 
 
 .second-border-section {
-    border: 1px solid rgb(162, 159, 159);
+    border: 1px solid black;
     border-radius: 5px;
     margin: 1em;
     padding: 0.5em;
@@ -108,6 +108,11 @@
 .container__second-columns-text {
     font-family: var(--body-font);
     margin-top: 5px;
+}
+
+.container__second-columns-second-text {
+    font-family: var(--body-font);
+    margin-top: 0.4em;
 }
 
 .container__second-columns-subtext {
@@ -191,4 +196,56 @@
 
 .container__buttons-second-button:hover {
     background-color: #c10000;
+}
+
+@media screen and (min-width: 820px) {
+    .first__container {
+        font-size: 22px;
+    }
+
+    .second__container {
+        font-size: 18px;
+    }
+
+    .border-section {
+        font-size: 14px;
+        border-radius: 5px;
+        width: 50%;
+    }
+
+    .border-section, .fourth__container {
+        margin-top: 0.9em;
+    }
+
+    .container__image {
+        width: 13%;
+    }
+
+    .section-title {
+        font-size: 14px;
+    }
+
+    .mid-items {
+        gap: 14em;
+    }
+    
+
+    .container__second-total  {
+        font-size: 14px;
+    }
+
+    .section-second-title {
+        font-size: 16px;
+    }
+
+    .container__buttons-button {
+        padding: 0.9em;
+        font-size: 10px;
+    }
+
+    .container__buttons-second-button {
+        padding: 0.9em;
+        font-size: 10px;
+    }
+
 }
