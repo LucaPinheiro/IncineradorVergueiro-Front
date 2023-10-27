@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agendamento de Eventos</title>
-    <!-- <link rel="stylesheet" href="../../styles/newEvent/newEvent.css"> -->
     <link rel="stylesheet" href="../../styles/newEvent/responsive.css">
+    <link rel="stylesheet" href="../../styles/newEvent/modal.css">
     <link rel="stylesheet" href="../../styles/home/style.css">
 </head>
 
@@ -17,27 +17,27 @@
 
             <ul class="nav-menu">
                 <li class="nav-item">
-                  <a href="../../index.html" class="nav-link">Página Inicial</a>
+                    <a href="../../index.html" class="nav-link">Página Inicial</a>
                 </li>
                 <li class="nav-item">
-                  <a href="./store.html" class="nav-link">Loja</a>
+                    <a href="./store.html" class="nav-link">Loja</a>
                 </li>
                 <li class="nav-item">
-                  <a href="./support.html" class="nav-link">Apoie</a>
+                    <a href="./support.html" class="nav-link">Apoie</a>
                 </li>
                 <li class="nav-item">
-                  <a href="./about.html" class="nav-link">Sobre nós</a>
+                    <a href="./about.html" class="nav-link">Sobre nós</a>
                 </li>
                 <li class="nav-item">
-                  <a href="./event.html" class="nav-link">Eventos</a>
+                    <a href="./event.html" class="nav-link">Eventos</a>
                 </li>
                 <li class="nav-item">
-                  <a href="./newEvent.html" class="nav-link">Agendamentos</a>
+                    <a href="./newEvent.html" class="nav-link">Agendamentos</a>
                 </li>
                 <li class="nav-item">
-                  <a href="../../pages/user/login.html" class="nav-link">Minha Conta</a>
+                    <a href="../../pages/user/login.html" class="nav-link">Minha Conta</a>
                 </li>
-              </ul>
+            </ul>
             <div class="hamburguer">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -45,51 +45,63 @@
             </div>
         </nav>
     </header>
-    
+
     <main>
         <h1 class="title">Proposta de Eventos</h1>
         <hr class="line">
         <form class="form-container">
             <div class="form-box">
-                <label class="form-box_title" for="">Nome do Evento:</label>
-                <input class="form-box-input"  type="text" placeholder="Digite um nome para seu evento...">
+                <label class="form-box_title" for="eventName">Nome do Evento:</label>
+                <input class="form-box-input" type="text" name="eventName"
+                    placeholder="Digite um nome para seu evento...">
             </div>
 
             <div class="form-box">
-                <label class="form-box_title" for="">Nome do Anfitrião:</label>
-                <input class="form-box-input" type="text" placeholder="De um nome para seu anfitrião...">
+                <label class="form-box_title" for="host">Nome do Anfitrião:</label>
+                <input class="form-box-input" type="text" name="host" placeholder="Dê um nome para seu anfitrião...">
             </div>
 
             <div class="form-box">
-                <label class="form-box_title" for="">Data do Evento:</label>
-                <input class="form-box-input" type="date">
+                <label class="form-box_title" for="date">Data do Evento:</label>
+                <input class="form-box-input" type="date" name="date">
             </div>
 
             <div class="multiple-box">
                 <div class="form-box">
-                    <label class="form-box_title" for="">Horário de Início:</label>
-                    <input class="form-box-input" type="time">
+                    <label class="form-box_title" for="startTime">Horário de Início:</label>
+                    <input class="form-box-input" type="time" name="startTime">
                 </div>
                 <div class="form-box">
-                    <label class="form-box_title" for="">Horário de Término:</label>
-                    <input class="form-box-input" type="time">
+                    <label class="form-box_title" for="endTime">Horário de Término:</label>
+                    <input class="form-box-input" type="time" name="endTime">
                 </div>
             </div>
 
             <div class="form-box">
-                <label class="form-box_title" for="">Número de Participantes:</label>
-                <input class="number" type="number" placeholder="Digite o número de participantes... ">
+                <label class="form-box_title" for="participants">Número de Participantes:</label>
+                <input class="number" type="number" name="participants"
+                    placeholder="Digite o número de participantes... ">
             </div>
 
             <div class="form-box">
-                <label class="form-box_title" for="">Descrição do Evento:</label>
-                <textarea class="text-area" rows="4" cols="50" placeholder="Insira uma descrição para seu evento..."></textarea>
+                <label class="form-box_title" for="description">Descrição do Evento:</label>
+                <textarea class="text-area" rows="4" cols="50" name="description"
+                    placeholder="Insira uma descrição para seu evento..."></textarea>
             </div>
 
             <div class="btn-box">
                 <button class="btn-event">Agendar Evento</button>
             </div>
         </form>
+
+        <div id="success-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close-modal">&times;</span>
+                <h2>Proposta enviada com Sucesso!</h2>
+                <p>Obrigado por usar nosso serviço.</p>
+            </div>
+        </div>
+
     </main>
 
     <footer class="footer">
@@ -120,4 +132,7 @@
     </footer>
 
     <script type="module" src="../../scripts/home/navbar/navbar.js"></script>
+    <script type="module" src="../../scripts/newEvent/mainNewEvent.js"></script>
 </body>
+
+</html>
