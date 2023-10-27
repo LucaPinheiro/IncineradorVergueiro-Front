@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
       suggestionEvents.forEach((event, index) => {
         const eventSection = document.createElement("section");
         eventSection.classList.add("container__section");
+        eventSection.setAttribute("data-eventid", event._id);
 
         const eventElement = document.createElement("div");
         eventElement.classList.add("container__first-box-texts");
@@ -93,9 +94,10 @@ document.addEventListener("DOMContentLoaded", () => {
       eventSection.style.opacity = 0;
       eventSection.style.height = 0;
 
-      deleteSuggestionEvent(eventId);
+      await deleteSuggestionEvent(eventId);
 
       setTimeout(() => {
+        eventSection.remove();
         overlay.style.display = "none";
       }, 500);
     };
@@ -107,15 +109,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
   async function deleteSuggestionEvent(eventId) {
     try {
+      const token = localStorage.getItem("token");
+      if (!token) {
+        alert("Token de autorização não encontrado. Faça o login.");
+        return;
+      }
+
       const response = await fetch(
         `http://localhost:3000/suggestion-events/${eventId}`,
         {
           method: "DELETE",
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
         }
       );
 
       if (response.ok) {
         alert("Evento removido com sucesso!");
+        window.location.reload();
       } else {
         alert("Erro ao remover o evento.");
       }
@@ -124,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  function showValidationPopup(eventId, event) {
+  async function showValidationPopup(eventId, event) {
     const validateEventOverlay = document.getElementById(
       "validateEventOverlay"
     );
@@ -158,6 +170,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (response.ok) {
         alert("Evento validado e criado com sucesso!");
+
+        await deleteSuggestionEvent(event._id);
+
+        const eventSection = document.querySelector(
+          `.container__section[data-eventid="${event._id}"]`
+        );
+        if (eventSection) {
+          eventSection.remove();
+        }
+
+        window.location.reload();
       } else {
         alert("Erro ao criar o evento.");
       }
