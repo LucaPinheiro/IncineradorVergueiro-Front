@@ -71,6 +71,10 @@ document.addEventListener("DOMContentLoaded", () => {
         removeButton.addEventListener("click", () => {
           showRemoveConfirmation(eventSection, event._id);
         });
+
+        validateButton.addEventListener("click", () => {
+          showValidationPopup(event._id, event);
+        });
       });
     } catch (error) {
       console.error("Erro ao carregar eventos sugeridos:", error);
@@ -103,21 +107,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   async function deleteSuggestionEvent(eventId) {
     try {
-      // token localStorage
-      const token = localStorage.getItem("token");
-
-      if (!token) {
-        alert("Token de autorização não encontrado. Faça o login.");
-        return;
-      }
-
       const response = await fetch(
         `http://localhost:3000/suggestion-events/${eventId}`,
         {
           method: "DELETE",
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
         }
       );
 
@@ -129,5 +122,51 @@ document.addEventListener("DOMContentLoaded", () => {
     } catch (error) {
       console.error("Erro durante a solicitação:", error);
     }
+  }
+
+  function showValidationPopup(eventId, event) {
+    const validateEventOverlay = document.getElementById(
+      "validateEventOverlay"
+    );
+    const confirmValidateButton = document.getElementById(
+      "confirmValidateButton"
+    );
+    const cancelValidateButton = document.getElementById(
+      "cancelValidateButton"
+    );
+
+    validateEventOverlay.style.display = "flex";
+
+    confirmValidateButton.onclick = async () => {
+      const eventData = {
+        nameEvent: event.nameEvent,
+        host: event.host,
+        date: event.date,
+        startTime: event.startTime,
+        endTime: event.endTime,
+        participants: event.participants,
+        description: event.description,
+      };
+
+      const response = await fetch("http://localhost:3000/events", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(eventData),
+      });
+
+      if (response.ok) {
+        alert("Evento validado e criado com sucesso!");
+      } else {
+        alert("Erro ao criar o evento.");
+      }
+
+      validateEventOverlay.style.display = "none";
+    };
+
+    cancelValidateButton.onclick = () => {
+      validateEventOverlay.style.display = "none";
+    };
   }
 });
