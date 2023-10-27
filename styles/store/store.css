@@ -364,4 +364,12 @@ btn-custom-exit {
     .cart-title-right {
         margin-left: 63.5%;
     }
+
+    .nav-item {
+        background-color: var(--green);
+    }
+
+    .nav-menu {
+        margin-top: 15px;
+    }
 }
