@@ -126,7 +126,6 @@ document.addEventListener("DOMContentLoaded", () => {
       );
 
       if (response.ok) {
-        alert("Evento removido com sucesso!");
         window.location.reload();
       } else {
         alert("Erro ao remover o evento.");
