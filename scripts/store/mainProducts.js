@@ -181,14 +181,13 @@ clearCartBtn.addEventListener("click", () => {
   cartTableBody.classList.add("fade-out");
 
   setTimeout(() => {
-    cartTableBody.innerHTML = '';
+    cartTableBody.innerHTML = "";
 
     const cartTotalElement = document.getElementById("cartTotal");
-    cartTotalElement.textContent = 'Total: R$ 0.00';
+    cartTotalElement.textContent = "Total: R$ 0.00";
 
     cartTableBody.classList.remove("fade-out");
 
     localStorage.removeItem("cartData");
   }, 300);
 });
-
