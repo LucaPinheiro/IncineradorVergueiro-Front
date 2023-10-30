@@ -9,9 +9,14 @@
     margin-bottom: 40px;
 }
 
+.container__circle__image {
+    margin: 10px 0;
+}
+
 .container__box__maps__title {
     font-size: 20px;
     margin-bottom: 22px;
+    margin-top: 15px;
 }
 
 .container__box__maps__maps {

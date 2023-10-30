@@ -10,14 +10,13 @@ main {
 
 .title {
     text-align: center;
-    padding: 4%;
-    margin: 0 20%;
+    margin: 0.4em;
     font-size: 22px;
     font-family: var(--main-font-family);
 }
 
-.line {
-    margin-top: 5px;
+.black-line {
+    margin-bottom: 3em;
 }
 
 .event-first-card {

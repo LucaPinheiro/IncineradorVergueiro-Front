@@ -9,9 +9,13 @@ main {
 
 .title{
     text-align: center;
-    margin: 1em 0 0.2em 0;
-    font-size: 1.5em;
+    margin: 0.5em 0 0.2em 0;
+    font-size: 18px;
     font-family: var(--main-font-family);
+}
+
+.black-line {
+    margin-bottom: 2em;
 }
 
 .line {
@@ -23,7 +27,6 @@ main {
     width: 100%;
     padding: 0 2em 2em 2em;
     gap: 1.5em;
-    margin-top: 2em;
 }
 
 .form-box{
