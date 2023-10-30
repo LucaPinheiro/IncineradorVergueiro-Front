@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const loginForm = document.querySelector(".login-form");
   const usernameInput = document.getElementById("username");
   const passwordInput = document.getElementById("password");
+  const successModal = document.getElementById("success-modal");
+  const closeModalButton = document.getElementById("close-modal");
 
   loginForm.addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -22,10 +24,20 @@ document.addEventListener("DOMContentLoaded", () => {
         const data = await response.json();
         const token = data.token;
 
-        // Armazene o token no localStorage
+        //token no localStorage
         localStorage.setItem("token", token);
 
-        window.location.href = "../../index.html";
+        successModal.style.display = "block";
+
+        closeModalButton.addEventListener("click", () => {
+          successModal.style.display = "none";
+
+          if (email === "admin@email.com" && password === "admin123") {
+            window.location.href = "../../pages/admin/adminPage.html";
+          } else {
+            window.location.href = "../../index.html";
+          }
+        });
       } else {
         alert("Credenciais inválidas. Verifique seu e-mail e senha.");
       }
