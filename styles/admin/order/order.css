@@ -2,16 +2,23 @@
 @import url("../home/footer.css");
 @import url("../../global.css");
 
+
 .first__container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.title {
     margin-top: 0.4em;
     font-size: 18px;
 }
 
+
 .line {
     margin-top: 0.4em;
+    width: 60%;
 }
 
 

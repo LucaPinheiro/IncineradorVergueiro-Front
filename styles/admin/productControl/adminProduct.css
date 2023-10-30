@@ -5,14 +5,19 @@
 
 .first__container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.title {
     margin-top: 15px;
     font-size: 18px;
 }
 
 .line {
     margin-top: 5px;
+    width: 60%;
 }
 
 .second__container {
@@ -30,7 +35,7 @@
 
 .third__container-border {
     border: black 1px solid;
-    padding: 30%;
+    padding: 10%;
 }
 
 .fourth__container {
@@ -137,7 +142,7 @@ color: var(--white);
 
     .third__container-border {
         border: black 1px solid;
-        padding: 7%;
+        padding: 2%;
     }
 
     .fourth__container-form-title{
@@ -167,7 +172,7 @@ color: var(--white);
 
     .third__container-border {
         border: black 1px solid;
-        padding: 5%;
+        padding: 2%;
     }
 
     .fourth__container-form-title{
