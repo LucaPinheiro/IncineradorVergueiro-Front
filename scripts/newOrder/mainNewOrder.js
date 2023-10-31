@@ -56,6 +56,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
     updateTotal();
   }
+
+
+  let date = new Date()
+  let day = date.getDay()
+  let alteratingDays = document.getElementById("days-of-week");
+
+  const daysOfWeek = ["Seg", "Ter", "Qua", "Qui", "Sex", "Sáb"];
+
+  for (let i = 1; i <= 4; i++) {
+    let days = document.createElement("p");
+    let dayIndex = (day + i - 1) % 6;
+    days.textContent = daysOfWeek[dayIndex];
+
+    if (day === 1 && i === 1) {
+      days.classList.add("container__fourth-box-text");
+    }
+
+    alteratingDays.appendChild(days);
+  }
+
 });
 
 //clearCartNewOrder
@@ -78,4 +98,6 @@ clearCartBtn.addEventListener("click", () => {
     localStorage.removeItem("cartData");
   }, 300);
 });
+
+
 
