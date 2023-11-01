@@ -206,8 +206,8 @@
 }
 
 @media screen and (min-width: 820px) {
-    .first__container {
-        font-size: 22px;
+    .title {
+        font-size: 20px;
     }
 
     .second__container {
@@ -258,8 +258,8 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .first__container {
-        font-size: 28px;
+    .title {
+        font-size: 24px;
     }
 
     .second__container {
