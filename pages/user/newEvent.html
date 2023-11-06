@@ -47,9 +47,13 @@
     </header>
 
     <main>
-        <h1 class="title">Proposta de Eventos</h1>
-        <hr class="black-line">
+        <div class="first__container">
+            <h1 class="title">Proposta de Eventos</h1>
+            <hr class="black-line">
+        </div>
+
         <form class="form-container">
+
             <div class="form-box">
                 <label class="form-box_title" for="eventName">Nome do Evento:</label>
                 <input class="form-box-input" type="text" name="eventName"
@@ -67,14 +71,17 @@
             </div>
 
             <div class="multiple-box">
+
                 <div class="form-box">
                     <label class="form-box_title" for="startTime">Horário de Início:</label>
                     <input class="form-box-input" type="time" name="startTime">
                 </div>
+
                 <div class="form-box">
                     <label class="form-box_title" for="endTime">Horário de Término:</label>
                     <input class="form-box-input" type="time" name="endTime">
                 </div>
+
             </div>
 
             <div class="form-box">
@@ -95,11 +102,13 @@
         </form>
 
         <div id="success-modal" class="modal">
+
             <div class="modal-content">
                 <span class="close" id="close-modal">&times;</span>
                 <h2>Proposta enviada com Sucesso!</h2>
                 <p>Obrigado por usar nosso serviço.</p>
             </div>
+
         </div>
 
     </main>

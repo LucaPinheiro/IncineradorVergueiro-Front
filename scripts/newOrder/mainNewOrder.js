@@ -76,6 +76,32 @@ document.addEventListener("DOMContentLoaded", () => {
     alteratingDays.appendChild(days);
   }
 
+
+document.getElementById("buttonAddOrder").onclick = function() {
+  var radios = document.getElementsByName("options");
+  for (var i = 0; i < radios.length; i++) {
+      if (radios[i].checked) {
+          // Obtém o valor do índice
+          var index = i + 1; // Adiciona 1 porque os índices começam em 0
+
+          console.log("Escolheu: " + radios[i].value);
+      }
+  }
+
+    var radios = document.getElementsByName("options2");
+    for (var i = 0; i < radios.length; i++) {
+        if (radios[i].checked) {
+            // Obtém o valor do índice
+            var index = i + 1; // Adiciona 1 porque os índices começam em 0
+
+            console.log("Escolheu o Horario: " + radios[i].value);
+
+        }
+    }
+};
+
+
+
   const clearCartBtn = document.getElementById("clearCartBtn");
 
 clearCartBtn.addEventListener("click", () => {

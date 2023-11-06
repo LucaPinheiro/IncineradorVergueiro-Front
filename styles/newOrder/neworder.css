@@ -165,9 +165,10 @@ body {
 
 
 
-#button {
+#buttonAddOrder, #buttonBackStore {
     padding: 3px 9px 3px 9px;
     border-width: 1px;
+    transition: 0.5s ease;
 }
 
 .container__first-box__button:hover {
@@ -175,14 +176,21 @@ body {
     transition: 0.5s ease;
 }
 
-#button:hover {
+#buttonAddOrder:hover {
     background-color: var(--green-hover);
-    transition: 0.5s ease;
+}
+
+#buttonBackStore:hover {
+    background-color: var(--green-hover);
 }
 
 .fade-out {
     opacity: 0;
     transition: opacity 0.3s ease;
+}
+
+.container__footer__title{
+    font-family: var(--main-font-family);
 }
 
 @keyframes fadeOut {
@@ -251,7 +259,7 @@ body {
         width: 95%;
     }
 
-    #button {
+    #buttonAddOrder, #buttonBackStore {
         width: 160px;
         font-size: 12px;
         border-width: 1px;
@@ -344,11 +352,15 @@ body {
         margin-right: 150px;
     }
 
-    #button {
+    #buttonAddOrder, #buttonBackStore {
         width: 140px;
         font-size: 11px;
         border-width: 1px;
 
+    }
+
+    .container__cart__total__text {
+        font-size: 14px;
     }
 
 }

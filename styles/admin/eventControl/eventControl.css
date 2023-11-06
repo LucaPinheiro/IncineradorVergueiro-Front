@@ -4,6 +4,25 @@ main {
     font-family: var(--body-font);
 }
 
+.first__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.first__container-title {
+    margin-top: 0.4em;
+    font-size: 18px;
+    font-family: var(--main-font-family);
+}
+
+
+.line {
+    margin-top: 0.4em;
+    width: 60%;
+}
+
 .title {
     display: flex;
     justify-content: center;
@@ -70,6 +89,9 @@ main {
 
 
 @media screen and (min-width: 820px) {
+    .first__container-title {
+        font-size: 20px;
+    }
     .title {
         font-size: 1.8em;
         padding: 3%;
@@ -101,11 +123,8 @@ main {
 }
 
 @media screen and (min-width: 1024px) {
-    .title {
-        font-size: 1.9em;
-        padding: 4%;
-        border: black solid 1.8px;
-        margin: 5% 28%;
+    .first__container-title {
+        font-size: 24px;
     }
 
     .container button {

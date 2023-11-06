@@ -85,6 +85,10 @@ main {
 }
 
 @media screen and (min-width: 1024px){
+    .title {
+        font-size: 24px;
+    }
+    
     .btn-box{
         display: flex;
         justify-content: end;
