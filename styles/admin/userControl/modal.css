@@ -23,10 +23,24 @@
 }
 
 button {
-    background: #d9534f;
+    background: grey;
     color: #fff;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     margin: 0 5px;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background: rgb(86, 86, 86);
+}
+
+#confirmDelete {
+    background-color: red;
+}
+
+#confirmDelete:hover {
+    background-color: #d90f0f;
 }
