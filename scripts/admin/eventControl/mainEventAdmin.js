@@ -1,5 +1,3 @@
-import { openConfirmationModal } from "./modalRemove/modalUtils.js";
-
 const eventCardsContainer = document.getElementById("eventCards");
 
 fetch("http://localhost:3000/events")
@@ -24,12 +22,17 @@ fetch("http://localhost:3000/events")
       }`;
       const datePara = document.createElement("p");
       datePara.className = "text";
-      datePara.textContent = `Data: ${formattedDate}`;
+      datePara.textContent = `Data do evento: ${formattedDate}`;
       cardBox.appendChild(datePara);
+
+      const durationPara = document.createElement("p");
+      durationPara.className = "text";
+      durationPara.textContent = `Duração do evento: ${event.startTime} às ${event.endTime}`;
+      cardBox.appendChild(durationPara);
 
       const descPara = document.createElement("p");
       descPara.className = "text";
-      descPara.textContent = `Descrição: ${event.description}`;
+      descPara.textContent = `Descrição do evento: ${event.description}`;
       cardBox.appendChild(descPara);
 
       const idPara = document.createElement("p");
