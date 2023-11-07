@@ -236,13 +236,16 @@
         gap: 14em;
     }
     
-
     .container__second-total  {
         font-size: 14px;
     }
 
+    .second-total-text {
+        margin-right: 0.3em;
+    }
+
     .section-second-title {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .container__buttons-button {
@@ -295,12 +298,10 @@
         font-size: 14px;
     }
     
-
     .mid-items {
-        gap: 29em;
+        gap: 28em;
     }
     
-
     .container__second-total  {
         font-size: 16px;
     }
