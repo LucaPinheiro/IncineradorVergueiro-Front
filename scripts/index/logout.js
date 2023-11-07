@@ -7,6 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
     logoutLink.className = "nav-link";
     logoutLink.id = "logout";
     logoutLink.textContent = "Sair";
+    
+    logoutLink.style.cursor = "pointer";
+
     logoutLink.addEventListener("click", () => {
       localStorage.removeItem("token");
       window.location.href = "../../pages/user/login.html";
