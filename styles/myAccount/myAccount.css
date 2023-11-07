@@ -103,12 +103,11 @@
 }
 
 .container__columns-subtext {
-  margin-top: 6px;
+  margin-top: 2px;
   font-size: 10px;
   font-family: var(--body-font);
   margin-right: 2em;
 }
-
 .container__second-columns {
   display: flex;
   justify-content: space-around;
@@ -157,8 +156,9 @@
   justify-content: space-between;
 }
 
-.second-total-text {
+.second-total-text  {
   font-family: var(--body-font);
+  margin-right: 1.9em;
 }
 
 .third-border-section {
@@ -238,7 +238,7 @@
   }
 
   .mid-items {
-    gap: 8em;
+    gap: 13em;
   }
 
   .container__second-total {
@@ -247,12 +247,12 @@
   }
 
   .second-total-text {
-    font-size: 18px;
-    margin-right: 3.4em;
+    font-size: 16px;
+    margin-right: 3.6em;
   }
 
   .section-second-title {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .container__buttons-button {
@@ -314,7 +314,7 @@
   }
 
   .mid-items {
-    gap: 11em;
+    gap: 24em;
   }
 
   .container__second-total {
@@ -323,25 +323,15 @@
 
   .second-total-text {
     font-size: 18px;
-    margin-right: 4.3em;
+    margin-right: 6.7em;
   }
 
   .section-second-title {
     font-size: 16px;
   }
 
-  .fifth__container-itens {
-    font-size: 14px;
-  }
-
-  .container__buttons-button {
-    padding: 1em;
-    font-size: 11px;
-  }
-
-  .container__buttons-second-button {
-    padding: 1em;
-    font-size: 11px;
+  .fourth__container-title {
+    font-size: 16px;
   }
 
   .text {
