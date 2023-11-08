@@ -23,9 +23,11 @@ document.addEventListener("DOMContentLoaded", () => {
       if (response.ok) {
         const data = await response.json();
         const token = data.token;
+        const userId = data.userId;
 
         //token no localStorage
         localStorage.setItem("token", token);
+        localStorage.setItem("userId", userId);
 
         successModal.style.display = "block";
 
