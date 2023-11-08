@@ -73,11 +73,10 @@
 .container__text {
   font-family: var(--body-font);
 }
-
 .second-border-section {
   border: 1px solid black;
   border-radius: 5px;
-  margin: 0 0.3em;
+  margin: 0.3em 0.4em 0.5em 0.4em;
   padding: 0.5em;
 }
 
@@ -88,9 +87,7 @@
 .container__columns {
   display: flex;
   justify-content: space-around;
-  margin-top: 0.3em;
-  margin-bottom: 0.3em;
-  margin-right: 1.5em;
+  margin: 0.3em 3em 0.3em 0;
 }
 
 .container__columns-itens {
@@ -102,28 +99,14 @@
   font-family: var(--body-font);
 }
 
-.container__columns-subtext {
-  margin-top: 2px;
-  font-size: 10px;
-  font-family: var(--body-font);
-  margin-right: 2em;
-}
 .container__second-columns {
   display: flex;
-  justify-content: space-around;
-  gap: 1em;
+  justify-content: space-between;
 }
 
 .container__second-columns-itens {
   display: flex;
-  margin-left: 2em;
-}
-
-.mid-items {
-  display: flex;
-  justify-content: space-around;
-  margin-left: 2em;
-  gap: 4em;
+  margin-left: 1em;
 }
 
 .container__second-columns-text {
@@ -137,9 +120,17 @@
 }
 
 .container__second-columns-subtext {
-  margin-right: 1.5em;
+  margin-right: 0.5em;
   font-family: var(--body-font);
   margin-top: 5px;
+}
+
+.mid-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 4em;
+  margin-left: 4.5em;
+  margin-right: 1em;
 }
 
 .fourth-line {
@@ -156,9 +147,8 @@
   justify-content: space-between;
 }
 
-.second-total-text  {
+.second-total-text {
   font-family: var(--body-font);
-  margin-right: 1.9em;
 }
 
 .third-border-section {
@@ -230,43 +220,42 @@
   }
 
   .section-title {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .container__columns {
-    gap: 3em;
+    gap: 4em;
+  }
+
+  .container__second-columns{
+    justify-content: space-around;
   }
 
   .mid-items {
-    gap: 13em;
+    gap: 10em;
+
   }
 
   .container__second-total {
     font-size: 14px;
-    margin-top: 0.7em;
   }
 
   .second-total-text {
+    margin-right: 2.5em;
+    font-size: 18px;
+  }
+
+  .second-total-title {
     font-size: 16px;
-    margin-right: 3.6em;
   }
 
   .section-second-title {
-    font-size: 14px;
+    font-size: 16px;
   }
-
-  .container__buttons-button {
-    padding: 0.9em;
-    font-size: 10px;
-  }
-
-  .container__buttons-second-button {
-    padding: 0.9em;
-    font-size: 10px;
-  }
+  
 
   .fourth__container-title {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .line {
@@ -314,7 +303,7 @@
   }
 
   .mid-items {
-    gap: 24em;
+    gap: 14em;
   }
 
   .container__second-total {
@@ -323,7 +312,7 @@
 
   .second-total-text {
     font-size: 18px;
-    margin-right: 6.7em;
+    margin-right: 3.6em;
   }
 
   .section-second-title {
