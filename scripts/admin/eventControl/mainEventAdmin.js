@@ -1,4 +1,44 @@
 const eventCardsContainer = document.getElementById("eventCards");
+const confirmationModal = document.getElementById("confirmationModal");
+const confirmDeleteButton = document.getElementById("confirmDeleteButton");
+const cancelDeleteButton = document.getElementById("cancelDeleteButton");
+
+function openConfirmationModal(eventId) {
+  confirmDeleteButton.dataset.eventId = eventId;
+
+  confirmationModal.style.display = "block";
+}
+
+function closeConfirmationModal() {
+  confirmationModal.style.display = "none";
+}
+
+cancelDeleteButton.addEventListener("click", closeConfirmationModal);
+
+confirmDeleteButton.addEventListener("click", () => {
+  const eventId = confirmDeleteButton.dataset.eventId;
+
+
+  fetch(`http://localhost:3000/events/${eventId}`, {
+    method: "DELETE",
+  })
+    .then((response) => {
+      if (response.ok) {
+        const eventCard = document.getElementById(`event-${eventId}`);
+        eventCard.style.transition = "opacity 0.3s";
+        eventCard.style.opacity = 0;
+
+        closeConfirmationModal();
+      } else {
+        console.error("Erro ao excluir o evento");
+        closeConfirmationModal();
+      }
+    })
+    .catch((error) => {
+      console.error("Erro ao excluir o evento:", error);
+      closeConfirmationModal();
+    });
+});
 
 fetch("http://localhost:3000/events")
   .then((response) => response.json())
