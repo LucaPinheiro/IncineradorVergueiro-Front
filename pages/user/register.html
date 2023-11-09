@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="../../styles/register/register.css">
   <link rel="stylesheet" href="../../styles/home/style.css">
   <link rel="stylesheet" href="../../styles/register/modal.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
 </head>
 
 <body>
@@ -126,6 +128,15 @@
   <script src="/scripts/home/navbar/navbar.js" type="module"></script>
   <script type="module" src="../../scripts/register/mainRegister.js"></script>
   <script type="module" src="../../scripts/index/logout.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Aplicar a máscara para CPF
+      $("#cpf").inputmask("999.999.999-99");
+  
+      // Aplicar a máscara para telefone
+      $("#phone").inputmask("(99)99999-9999");
+    });
+  </script>
 
 </body>
 
