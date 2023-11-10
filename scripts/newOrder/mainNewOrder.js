@@ -84,7 +84,7 @@ document.getElementById("buttonAddOrder").onclick = function() {
           // Obtém o valor do índice
           var index = i + 1; // Adiciona 1 porque os índices começam em 0
 
-          console.log("Escolheu: " + radios[i].value);
+          console.log("Dia da Semana: " + radios[i].value);
       }
   }
 
@@ -94,7 +94,7 @@ document.getElementById("buttonAddOrder").onclick = function() {
             // Obtém o valor do índice
             var index = i + 1; // Adiciona 1 porque os índices começam em 0
 
-            console.log("Escolheu o Horario: " + radios[i].value);
+            console.log("Horario: " + radios[i].value);
 
         }
     }
