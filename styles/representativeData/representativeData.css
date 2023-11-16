@@ -1,0 +1,43 @@
+@import url("../../styles/home/header.css");
+@import url("../../styles/home/footer.css");
+@import url("../../global.css");
+
+.nav-link {
+    color: white;
+}
+
+.container {
+    text-align: center;
+}
+
+.container__title {
+    margin-bottom: 5px; 
+    margin-top: 15px;
+    font-size: 18px;
+    font-family: var(--main-font-family);
+}
+
+.line {
+    width: 70%; 
+    margin: auto;
+}
+
+.card {
+    margin: 0 auto; 
+    margin-top: 2em; 
+    font-family: var(--body-font);
+}
+
+.card-body a {
+    display: inline-block;
+    justify-content: center;  
+    margin-left: 3em;
+}
+
+.card-body h5 {
+    text-align: center;
+}
+.card-img-top {
+    width: 215px;
+}
+
