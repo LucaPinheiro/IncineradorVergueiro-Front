@@ -15,7 +15,7 @@ export const carouselData = [
   {
     title: "Sobre nós",
     text: "Conheça nossa história! Clique no botão abaixo e seja redirecionado para a aba onde contamos um pouco da história do antigo Incinerador Vergueiro!",
-    buttonText: "Inscreva-se 3",
+    buttonText: "Clique aqui",
     buttonLink: "../../../../pages/user/about.html",
   },
   {
