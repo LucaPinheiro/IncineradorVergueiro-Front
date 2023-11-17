@@ -1,11 +1,14 @@
 import { clearCart } from "./functions/clearCart.js";
 import { updateTotal } from "./functions/updateTotal.js";
 
+let cartData; 
+
 document.addEventListener("DOMContentLoaded", () => {
   const cartDataJSON = localStorage.getItem("cartData");
+  const userId = localStorage.getItem("userId");
 
-  if (cartDataJSON) {
-    const cartData = JSON.parse(cartDataJSON);
+  if (cartDataJSON && userId) {
+    cartData = JSON.parse(cartDataJSON);
 
     const cartTable = document.getElementById("cartTable");
     const cartTableBody = cartTable.querySelector("tbody");
@@ -86,20 +89,48 @@ document.addEventListener("DOMContentLoaded", () => {
         selectedDay = new Date(date);
         selectedDay.setDate(date.getDate() + i);
 
-        var formattedDate = `${selectedDay.getDate()}/${
+        var formattedDate = `${selectedDay.getFullYear()}-${(
           selectedDay.getMonth() + 1
-        }/${selectedDay.getFullYear().toString().slice(-2)}`;
+        )
+          .toString()
+          .padStart(2, "0")}-${selectedDay
+          .getDate()
+          .toString()
+          .padStart(2, "0")}`;
 
         console.log("Data Completa: " + formattedDate);
-      }
-    }
 
-    var selectedTime;
-    var radios = document.getElementsByName("options2");
-    for (var i = 0; i < radios.length; i++) {
-      if (radios[i].checked) {
-        console.log("Horário: " + radios[i].value);
-        selectedTime = radios[i].value;
+        if (cartData) {
+          const order = {
+            userId: userId,
+            orderItems: cartData.items.map((item) => ({
+              productName: item.name,
+              price: item.price,
+              quantity: item.quantity,
+              date: formattedDate,
+            })),
+            totalPrice: cartData.total.toFixed(2),
+          };
+
+          fetch("http://localhost:3000/orders", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(order),
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              console.log("Resposta da API:", data);
+            })
+            .catch((error) => {
+              console.error("Erro na requisição:", error);
+            });
+
+          clearCart();
+          updateTotal();
+        }
+
       }
     }
   };
