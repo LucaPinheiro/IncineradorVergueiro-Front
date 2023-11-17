@@ -1,11 +1,20 @@
 import { clearCart } from "./functions/clearCart.js";
 import { updateTotal } from "./functions/updateTotal.js";
 
+let cartData;
+
+function closeModal() {
+  const modal = document.getElementById("successModal");
+  modal.style.display = "none";
+  window.location.href = "../../index.html";
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const cartDataJSON = localStorage.getItem("cartData");
+  const userId = localStorage.getItem("userId");
 
-  if (cartDataJSON) {
-    const cartData = JSON.parse(cartDataJSON);
+  if (cartDataJSON && userId) {
+    cartData = JSON.parse(cartDataJSON);
 
     const cartTable = document.getElementById("cartTable");
     const cartTableBody = cartTable.querySelector("tbody");
@@ -57,17 +66,17 @@ document.addEventListener("DOMContentLoaded", () => {
     updateTotal();
   }
 
-
-  let date = new Date()
-  let day = date.getDay()
+  let date = new Date();
+  let day = date.getDay();
   let alteratingDays = document.getElementById("days-of-week");
 
-  const daysOfWeek = ["Seg", "Ter", "Qua", "Qui", "Sex", "Sáb"];
+  const daysOfWeek = ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb"];
 
   for (let i = 1; i <= 4; i++) {
     let days = document.createElement("p");
-    let dayIndex = (day + i - 1) % 6;
+    let dayIndex = (day + i - 1) % 7;
     days.textContent = daysOfWeek[dayIndex];
+    days.setAttribute("data-day", daysOfWeek[dayIndex]);
 
     if (day === 1 && i === 1) {
       days.classList.add("container__fourth-box-text");
@@ -76,73 +85,89 @@ document.addEventListener("DOMContentLoaded", () => {
     alteratingDays.appendChild(days);
   }
 
+  document.getElementById("buttonAddOrder").onclick = function () {
+    var selectedDay;
 
-document.getElementById("buttonAddOrder").onclick = function() {
-  var radios = document.getElementsByName("options");
-  for (var i = 0; i < radios.length; i++) {
+    var radios = document.getElementsByName("options");
+    for (var i = 0; i < radios.length; i++) {
       if (radios[i].checked) {
-          // Obtém o valor do índice
-          var index = i + 1; // Adiciona 1 porque os índices começam em 0
+        var dayIndex = (day + i) % 7;
+        selectedDay = new Date(date);
+        selectedDay.setDate(date.getDate() + i);
 
-          console.log("Dia da Semana: " + radios[i].value);
+        var formattedDate = `${selectedDay.getFullYear()}-${(
+          selectedDay.getMonth() + 1
+        )
+          .toString()
+          .padStart(2, "0")}-${selectedDay
+          .getDate()
+          .toString()
+          .padStart(2, "0")}`;
+
+        console.log("Data Completa: " + formattedDate);
+
+        if (cartData) {
+          const order = {
+            userId: userId,
+            orderItems: cartData.items.map((item) => ({
+              productName: item.name,
+              price: item.price,
+              quantity: item.quantity,
+              date: formattedDate,
+            })),
+            totalPrice: cartData.total.toFixed(2),
+          };
+
+          fetch("http://localhost:3000/orders", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(order),
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              console.log("Resposta da API:", data);
+              openModal();
+            })
+            .catch((error) => {
+              console.error("Erro na requisição:", error);
+            });
+
+          clearCart();
+          updateTotal();
+        }
       }
+    }
+  };
+
+  function openModal() {
+    const modal = document.getElementById("successModal");
+    modal.style.display = "block";
   }
 
-    var radios = document.getElementsByName("options2");
-    for (var i = 0; i < radios.length; i++) {
-        if (radios[i].checked) {
-            // Obtém o valor do índice
-            var index = i + 1; // Adiciona 1 porque os índices começam em 0
-
-            console.log("Horario: " + radios[i].value);
-
-        }
-    }
-};
-
-
+  const closeButton = document.getElementById("closeButton");
+  if (closeButton) {
+    closeButton.addEventListener("click", closeModal);
+  }
 
   const clearCartBtn = document.getElementById("clearCartBtn");
 
-clearCartBtn.addEventListener("click", () => {
-  const cartTable = document.getElementById("cartTable");
-  const cartTableBody = cartTable.querySelector("tbody");
+  clearCartBtn.addEventListener("click", () => {
+    const cartTable = document.getElementById("cartTable");
+    const cartTableBody = cartTable.querySelector("tbody");
 
-  cartTableBody.classList.add("fade-out");
+    cartTableBody.classList.add("fade-out");
 
-  setTimeout(() => {
-    cartTableBody.innerHTML = '';
+    setTimeout(() => {
+      cartTableBody.innerHTML = "";
 
-    const cartTotalElement = document.getElementById("cartTotal");
-    cartTotalElement.textContent = 'Total: R$ 0.00';
+      const cartTotalElement = document.getElementById("cartTotal");
+      cartTotalElement.textContent = "Total: R$ 0.00";
 
-    cartTableBody.classList.remove("fade-out");
+      cartTableBody.classList.remove("fade-out");
 
-    localStorage.removeItem("cartData");
-  }, 300);
+      localStorage.removeItem("cartData");
+    }, 300);
+  });
 });
-
-});
-
-//clearCartNewOrder
-const clearCartBtn = document.getElementById("clearCartBtn");
-
-clearCartBtn.addEventListener("click", () => {
-  const cartTable = document.getElementById("cartTable");
-  const cartTableBody = cartTable.querySelector("tbody");
-
-  cartTableBody.classList.add("fade-out");
-
-  setTimeout(() => {
-    cartTableBody.innerHTML = '';
-
-    const cartTotalElement = document.getElementById("cartTotal");
-    cartTotalElement.textContent = 'Total: R$ 0.00';
-
-    cartTableBody.classList.remove("fade-out");
-
-    localStorage.removeItem("cartData");
-  }, 300);
-});
-
-
