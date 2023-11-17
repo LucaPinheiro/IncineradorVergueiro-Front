@@ -1,7 +1,13 @@
 import { clearCart } from "./functions/clearCart.js";
 import { updateTotal } from "./functions/updateTotal.js";
 
-let cartData; 
+let cartData;
+
+function closeModal() {
+  const modal = document.getElementById("successModal");
+  modal.style.display = "none";
+  window.location.href = "../../index.html";
+}
 
 document.addEventListener("DOMContentLoaded", () => {
   const cartDataJSON = localStorage.getItem("cartData");
@@ -122,6 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
             .then((response) => response.json())
             .then((data) => {
               console.log("Resposta da API:", data);
+              openModal();
             })
             .catch((error) => {
               console.error("Erro na requisição:", error);
@@ -130,10 +137,19 @@ document.addEventListener("DOMContentLoaded", () => {
           clearCart();
           updateTotal();
         }
-
       }
     }
   };
+
+  function openModal() {
+    const modal = document.getElementById("successModal");
+    modal.style.display = "block";
+  }
+
+  const closeButton = document.getElementById("closeButton");
+  if (closeButton) {
+    closeButton.addEventListener("click", closeModal);
+  }
 
   const clearCartBtn = document.getElementById("clearCartBtn");
 
