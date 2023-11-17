@@ -57,17 +57,17 @@ document.addEventListener("DOMContentLoaded", () => {
     updateTotal();
   }
 
-
-  let date = new Date()
-  let day = date.getDay()
+  let date = new Date();
+  let day = date.getDay();
   let alteratingDays = document.getElementById("days-of-week");
 
-  const daysOfWeek = ["Seg", "Ter", "Qua", "Qui", "Sex", "Sáb"];
+  const daysOfWeek = ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb"];
 
   for (let i = 1; i <= 4; i++) {
     let days = document.createElement("p");
-    let dayIndex = (day + i - 1) % 6;
+    let dayIndex = (day + i - 1) % 7;
     days.textContent = daysOfWeek[dayIndex];
+    days.setAttribute("data-day", daysOfWeek[dayIndex]);
 
     if (day === 1 && i === 1) {
       days.classList.add("container__fourth-box-text");
@@ -76,73 +76,51 @@ document.addEventListener("DOMContentLoaded", () => {
     alteratingDays.appendChild(days);
   }
 
+  document.getElementById("buttonAddOrder").onclick = function () {
+    var selectedDay;
 
-document.getElementById("buttonAddOrder").onclick = function() {
-  var radios = document.getElementsByName("options");
-  for (var i = 0; i < radios.length; i++) {
+    var radios = document.getElementsByName("options");
+    for (var i = 0; i < radios.length; i++) {
       if (radios[i].checked) {
-          // Obtém o valor do índice
-          var index = i + 1; // Adiciona 1 porque os índices começam em 0
+        var dayIndex = (day + i) % 7;
+        selectedDay = new Date(date);
+        selectedDay.setDate(date.getDate() + i);
 
-          console.log("Dia da Semana: " + radios[i].value);
+        var formattedDate = `${selectedDay.getDate()}/${
+          selectedDay.getMonth() + 1
+        }/${selectedDay.getFullYear().toString().slice(-2)}`;
+
+        console.log("Data Completa: " + formattedDate);
       }
-  }
+    }
 
+    var selectedTime;
     var radios = document.getElementsByName("options2");
     for (var i = 0; i < radios.length; i++) {
-        if (radios[i].checked) {
-            // Obtém o valor do índice
-            var index = i + 1; // Adiciona 1 porque os índices começam em 0
-
-            console.log("Horario: " + radios[i].value);
-
-        }
+      if (radios[i].checked) {
+        console.log("Horário: " + radios[i].value);
+        selectedTime = radios[i].value;
+      }
     }
-};
-
-
+  };
 
   const clearCartBtn = document.getElementById("clearCartBtn");
 
-clearCartBtn.addEventListener("click", () => {
-  const cartTable = document.getElementById("cartTable");
-  const cartTableBody = cartTable.querySelector("tbody");
+  clearCartBtn.addEventListener("click", () => {
+    const cartTable = document.getElementById("cartTable");
+    const cartTableBody = cartTable.querySelector("tbody");
 
-  cartTableBody.classList.add("fade-out");
+    cartTableBody.classList.add("fade-out");
 
-  setTimeout(() => {
-    cartTableBody.innerHTML = '';
+    setTimeout(() => {
+      cartTableBody.innerHTML = "";
 
-    const cartTotalElement = document.getElementById("cartTotal");
-    cartTotalElement.textContent = 'Total: R$ 0.00';
+      const cartTotalElement = document.getElementById("cartTotal");
+      cartTotalElement.textContent = "Total: R$ 0.00";
 
-    cartTableBody.classList.remove("fade-out");
+      cartTableBody.classList.remove("fade-out");
 
-    localStorage.removeItem("cartData");
-  }, 300);
+      localStorage.removeItem("cartData");
+    }, 300);
+  });
 });
-
-});
-
-//clearCartNewOrder
-const clearCartBtn = document.getElementById("clearCartBtn");
-
-clearCartBtn.addEventListener("click", () => {
-  const cartTable = document.getElementById("cartTable");
-  const cartTableBody = cartTable.querySelector("tbody");
-
-  cartTableBody.classList.add("fade-out");
-
-  setTimeout(() => {
-    cartTableBody.innerHTML = '';
-
-    const cartTotalElement = document.getElementById("cartTotal");
-    cartTotalElement.textContent = 'Total: R$ 0.00';
-
-    cartTableBody.classList.remove("fade-out");
-
-    localStorage.removeItem("cartData");
-  }, 300);
-});
-
-
