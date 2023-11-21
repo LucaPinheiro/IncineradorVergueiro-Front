@@ -1,250 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pedidos</title>
-    <link rel="stylesheet" href="../../styles/admin/order/order.css" />
-    <link rel="stylesheet" href="../../styles/home/style.css" />
-  </head>
 
-  <body>
-    <header>
-      <nav class="navbar">
-        <a href="./adminPage.html" class="nav-branding"
-          ><img src="../../assets/home/icon.svg" alt="Logo"
-        /></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pedidos</title>
+  <link rel="stylesheet" href="../../styles/admin/order/order.css" />
+  <link rel="stylesheet" href="../../styles/home/style.css" />
+  <link rel="stylesheet" href="../../styles/admin/order/modal.css">
+</head>
 
-        <ul class="nav-menu" style="margin-right: 30px">
-          <li class="nav-item">
-            <a href="./adminPage.html" class="nav-link">Administração</a>
-          </li>
-          <li class="nav-item">
-            <a href="./eventControl.html" class="nav-link">Eventos</a>
-          </li>
-          <li class="nav-item">
-            <a href="./productControl.html" class="nav-link">Loja</a>
-          </li>
-          <li class="nav-item">
-            <a href="./order.html" class="nav-link">Pedidos</a>
-          </li>
-          <li class="nav-item">
-            <a href="./suggestionEvent.html" class="nav-link"
-              >Sugestão de evento</a
-            >
-          </li>
-        </ul>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="./adminPage.html" class="nav-branding"><img src="../../assets/home/icon.svg" alt="Logo" /></a>
 
-        <div class="hamburguer">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </nav>
-    </header>
+      <ul class="nav-menu" style="margin-right: 30px">
+        <li class="nav-item">
+          <a href="./adminPage.html" class="nav-link">Administração</a>
+        </li>
+        <li class="nav-item">
+          <a href="./eventControl.html" class="nav-link">Eventos</a>
+        </li>
+        <li class="nav-item">
+          <a href="./productControl.html" class="nav-link">Loja</a>
+        </li>
+        <li class="nav-item">
+          <a href="./order.html" class="nav-link">Pedidos</a>
+        </li>
+        <li class="nav-item">
+          <a href="./suggestionEvent.html" class="nav-link">Sugestão de evento</a>
+        </li>
+      </ul>
 
-    <main>
-      <div class="first__container">
-        <h1 class="title">Pedidos</h1>
-        <hr class="line" />
+      <div class="hamburguer">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
+    </nav>
+  </header>
 
-      <div class="second__container">
-        <h2>Pedidos Atuais:</h2>
+  <main>
+    <div class="first__container">
+      <h1 class="title">Pedidos</h1>
+      <hr class="line" />
+    </div>
+
+    <div class="second__container">
+      <h2>Pedidos Atuais:</h2>
+    </div>
+
+    <div id="ordersContainer"></div>
+
+    <div id="confirmationModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <p id="modalText"></p>
+        <button id="confirmButton">Confirmar</button>
+        <button onclick="closeModal()">Cancelar</button>
       </div>
+    </div>
 
-      <section class="border-section">
-        <div class="third__container">
-          <img
-            src="../../assets/adm/order/icons8-usuário-homem-com-círculo-64.png"
-            alt="User image"
-            class="container__image"
-          />
-          <hr class="second-line" />
+  </main>
 
-          <div class="fourth__container">
-            <p class="container__text">Nome do Usuário: Marcelo Silva</p>
-            <p class="container__text">Telefone do Usuário: (13)97685-4365</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="second-border-section">
-        <table class="second-border-section-table">
-          <tr class="section-title">
-            <td class="section-title-text">Carrinho</td>
-          </tr>
-          <tr class="container__columns">
-            <td>Produtos</td>
-            <td>Quantidade</td>
-            <td>Preço</td>
-            <td>Total/Item</td>
-          </tr>
-          <tr class="container__columns">
-            <td>Banana</td>
-            <td>3</td>
-            <td>R$23.00</td>
-            <td>R$69.00</td>
-          </tr>
-          <tr class="container__columns">
-            <td>Limão</td>
-            <td>2</td>
-            <td>R$3.00</td>
-            <td>R$6.00</td>
-          </tr>
-          <tr class="container__columns">
-            <td>Mamão</td>
-            <td>4</td>
-            <td>R$5.00</td>
-            <td>R$20.00</td>
-          </tr>
-          <tr class="container__columns text-total">
-            <td>Total</td>
-            <td></td>
-            <td></td>
-            <td style="font-family: var(--body-font);" class="total">R$95.00</td>
-          </tr>
-          <tr class="section-title">
-            <td class="section-title-text">Data e Horário</td>
-          </tr>
-          <tr class="container__second-columns">
-            <td>Data: 24/05/24</td>
-          </tr>
-          <tr class="container__second-columns">
-            <td>Horário: 9:00 - 9:30</td>
-          </tr>
-        </table>
-      </section>
-
-      <div class="container__buttons">
-        <button class="container__buttons-button">Aprovar Pedido</button>
-        <button class="container__buttons-button-red">Rejeitar Pedido</button>
-      </div>      
-      
-      <section class="border-section">
-        <div class="third__container">
-          <img
-            src="../../assets/adm/order/icons8-usuário-homem-com-círculo-64.png"
-            alt="User image"
-            class="container__image"
-          />
-          <hr class="second-line" />
-
-          <div class="fourth__container">
-            <p class="container__text">Nome do Usuário: João Ribeiro</p>
-            <p class="container__text">Telefone do Usuário: (12)96785-8395</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="second-border-section">
-        <table class="second-border-section-table">
-          <tr class="section-title">
-            <td class="section-title-text">Carrinho</td>
-          </tr>
-          <tr class="container__columns">
-            <td>Produtos</td>
-            <td>Quantidade</td>
-            <td>Preço</td>
-            <td>Total/Item</td>
-          </tr>
-          <tr class="container__columns">
-            <td>Mamão</td>
-            <td>3</td>
-            <td>R$23.00</td>
-            <td>R$69.00</td>
-          </tr>
-          <tr class="container__columns">
-            <td>Abacaxi</td>
-            <td>2</td>
-            <td>R$3.00</td>
-            <td>R$6.00</td>
-          </tr>
-          <tr class="container__columns">
-            <td>Maça</td>
-            <td>4</td>
-            <td>R$5.00</td>
-            <td>R$20.00</td>
-          </tr>
-          <tr class="container__columns text-total">
-            <td>Total</td>
-            <td></td>
-            <td></td>
-            <td style="font-family: var(--body-font);" class="total">R$95.00</td>
-          </tr>
-          <tr class="section-title">
-            <td class="section-title-text">Data e Horário</td>
-          </tr>
-          <tr class="container__second-columns">
-            <td>Data: 24/05/24</td>
-          </tr>
-          <tr class="container__second-columns">
-            <td>Horário: 9:00 - 9:30</td>
-          </tr>
-        </table>
-      </section>
-
-      <div class="container__buttons">
-        <button class="container__buttons-button">Aprovar Pedido</button>
-        <button class="container__buttons-button-red">Rejeitar Pedido</button>
+  <footer class="footer">
+    <hr class="white-line-footer" />
+    <section class="container__first__footer">
+      <p class="container__footer__title">Grupos que apoiam a causa</p>
+      <div class="container__footer__supporters">
+        <img class="suportters-image" src="../../assets/home/footer/cades.png" alt="Cades" />
+        <img class="suportters-image" src="../../assets/home/footer/missaoAmbiental.png" alt="Missão Ambiental" />
+        <img class="suportters-image" src="../../assets/home/footer/mudaIpiranga.png" alt="Muda Ipiranga" />
       </div>
+      <div class="container__footer__supporters">
+        <img class="suportters-image" src="../../assets/home/footer/sosAbelhas.png" alt="SOS Abelhas" />
+        <img class="suportters-image" src="../../assets/home/footer/supporterFlower.png" />
+        <img class="suportters-image" src="../../assets/home/footer/casao.png" />
+        <img class="suportters-image" src="../../assets/home/footer/chicoScience.png" alt="Chico Science" />
+      </div>
+    </section>
+    <section class="container__second__footer">
+      <h2>Usina Eco-Cultural</h2>
+      <h3>Rua Breno Ferraz do Amaral 415, São Paulo/SP</h3>
+      <h3>CEP 04124-020</h3>
+      <h2>Sede Adminstrativa @usinaecocultural</h2>
+      <hr class="white-line" />
+      <h4>Incinerador Vergueiro | IMT - 2023</h4>
+      <h4>Desenvolvido por Imtech Mauá</h4>
+    </section>
+  </footer>
 
-    </main>
+  <script src="/scripts/home/navbar/navbar.js" type="module"></script>
+  <script type="module" src="../../scripts/index/logout.js"></script>
+  <script type="module" src="../../scripts/admin/orderControl/mainOrderControl.js"></script>
+</body>
 
-    <footer class="footer">
-      <hr class="white-line-footer" />
-      <section class="container__first__footer">
-        <p class="container__footer__title">Grupos que apoiam a causa</p>
-        <div class="container__footer__supporters">
-          <img
-            class="suportters-image"
-            src="../../assets/home/footer/cades.png"
-            alt="Cades"
-          />
-          <img
-            class="suportters-image"
-            src="../../assets/home/footer/missaoAmbiental.png"
-            alt="Missão Ambiental"
-          />
-          <img
-            class="suportters-image"
-            src="../../assets/home/footer/mudaIpiranga.png"
-            alt="Muda Ipiranga"
-          />
-        </div>
-        <div class="container__footer__supporters">
-          <img
-            class="suportters-image"
-            src="../../assets/home/footer/sosAbelhas.png"
-            alt="SOS Abelhas"
-          />
-          <img
-            class="suportters-image"
-            src="../../assets/home/footer/supporterFlower.png"
-          />
-          <img
-            class="suportters-image"
-            src="../../assets/home/footer/casao.png"
-          />
-          <img
-            class="suportters-image"
-            src="../../assets/home/footer/chicoScience.png"
-            alt="Chico Science"
-          />
-        </div>
-      </section>
-      <section class="container__second__footer">
-        <h2>Usina Eco-Cultural</h2>
-        <h3>Rua Breno Ferraz do Amaral 415, São Paulo/SP</h3>
-        <h3>CEP 04124-020</h3>
-        <h2>Sede Adminstrativa @usinaecocultural</h2>
-        <hr class="white-line" />
-        <h4>Incinerador Vergueiro | IMT - 2023</h4>
-        <h4>Desenvolvido por Imtech Mauá</h4>
-      </section>
-    </footer>
-
-    <script src="/scripts/home/navbar/navbar.js" type="module"></script>
-    <script type="module" src="../../scripts/index/logout.js"></script>
-  </body>
 </html>
