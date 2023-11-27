@@ -95,8 +95,16 @@
       </div>
     </div>
 
-  </main>
 
+    <div class="custom-modal" id="error-modal">
+      <div class="custom-modal-content" id="error-modal-content">
+        <span class="custom-close" id="error-modal-close">&times;</span>
+        <h2>Erro no Cadastro</h2>
+        <p id="error-message"></p>
+      </div>
+    </div>
+
+  </main>
 
   <footer class="footer">
     <hr class="white-line-footer">
@@ -130,10 +138,7 @@
   <script type="module" src="../../scripts/index/logout.js"></script>
   <script>
     $(document).ready(function () {
-      // Aplicar a máscara para CPF
       $("#cpf").inputmask("999.999.999-99");
-  
-      // Aplicar a máscara para telefone
       $("#phone").inputmask("(99)99999-9999");
     });
   </script>
