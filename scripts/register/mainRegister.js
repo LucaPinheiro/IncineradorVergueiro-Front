@@ -1,9 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
   const closeModalButton = document.getElementById("error-modal-close");
   const errorModal = document.getElementById("error-modal");
+  const closeModalSucess = document.getElementById("close-modal");
+  const sucessModal = document.getElementById("success-modal");
 
   closeModalButton.addEventListener("click", () => {
     errorModal.style.display = "none";
+  });
+
+  closeModalSucess.addEventListener("click", () => {
+    successModal.style.display = "none";
+    window.location.reload();
   });
 
   const registrationForm = document.getElementById("registrationForm");
