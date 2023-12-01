@@ -1,0 +1,26 @@
+/* mobile */
+
+.container__box__maps {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px; 
+    margin-bottom: 40px;
+}
+
+.container__circle__image {
+    margin: 10px 0;
+}
+
+.container__box__maps__title {
+    font-size: 20px;
+    margin-bottom: 22px;
+    margin-top: 15px;
+}
+
+.container__box__maps__maps {
+    width: 70%;
+    height: 90%;
+    border-radius: 40px;
+}

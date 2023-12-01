@@ -1,11 +1,151 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial</title>
+    <link rel="stylesheet" href="./styles/home/style.css">
 </head>
+
 <body>
-    
+
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-branding"><img class="home-icon" src="./assets/home/icon.svg" alt="Logo"></a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="./index.html" class="nav-link">Página Inicial</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./pages/user/store.html" class="nav-link">Loja</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./pages/user/support.html" class="nav-link">Apoie</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./pages/user/about.html" class="nav-link">Sobre nós</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./pages/user/event.html" class="nav-link">Eventos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./pages/user/newEvent.html" class="nav-link">Agendamentos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="myAccount">Minha Conta</a>
+                </li>
+            </ul>
+            <div class="hamburguer">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <div class="banner__box">
+            <h1 class="banner__title">
+                <span id="carouselTitle">Eventos</span>
+            </h1>
+            <p class="banner__text">
+                <span id="carouselText">INCINERADOR VERGUEIRO ESTÁ DE PORTAS ABERTAS! NOS PRÓXIMOS SÁBADOS DO MÊS DE
+                    SETEMBRO ESTARÁ ABERTA AS INSCRIÇÕES PARA O EVENTO.</span>
+            </p>
+        </div>
+        <a href="" class="banner__button" id="buttonText" target="_blank">Inscreva-se</a>
+    </section>
+
+    <div class="carousel-indicators" id="indicators">
+        <!-- Indicators will be added dynamically here -->
+    </div>
+
+    <section class="container__values">
+        <div class="container__values__box first">
+            <div class="container__values__box__left">
+                <h2 class="container__values__title">sustentabilidade</h2>
+                <img class="imagem" src="./assets/home/BackgroundImage-Home.png" id="imagem" alt="">
+            </div>
+            <p class="container__values__text">Sustentabilidade é a capacidade de uso consciente dos recursos naturais
+                sem comprometer o bem-estar das gerações futuras. Seu objetivo principal é encontrar o equilíbrio entre
+                o desenvolvimento econômico
+                e a preservação ambiental. <br> <br>
+                nós, da usina eco-cultural,</p>
+        </div>
+
+        <div class="container__values__box ">
+            <div class="container__values__box__left">
+                <h2 class="container__values__title title_second">Políticas Sociais</h2>
+                <img src="./assets/home/socialImages.png" class="imagem" id="imagem" alt="Políticas Sociais">
+            </div>
+            <div class="class=container__values__box__right">
+                <p class="container__values__text text_second" style="margin-right: 0px;">No âmbito político, a política
+                    social é um programa
+                    governamental ou
+                    uma politica pública governamental destinada ao bem-estar geral da população, mas com caráter
+                    distributivo, destinado principalmente às camadas de menor renda da sociedade, em situação de
+                    pobreza ou pobreza extrema, visando principalmente desenvolvimento econômico, a eliminação da
+                    pobreza, a redução da desigualdade econômica e redistribuição de riqueza e renda</p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="black-line">
+
+    <div class="container__circle">
+        <a class="container__circle__image">Ver Imagens</a>
+    </div>
+
+    <hr class="black-line">
+
+    <section class="container__maps">
+        <div class="container__box__maps">
+            <p class="container__box__maps__title">Incinerador Vergueiro</p>
+            <iframe class="container__box__maps__maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1776.060978890611!2d-46.62206929643048!3d-23.596908939478432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5bf8fec09847%3A0x21fe6ebe5482bc4e!2sUsina%20Eco-Cultural!5e0!3m2!1spt-BR!2sbr!4v1693825060460!5m2!1spt-BR!2sbr"
+                width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <hr class="white-line-footer">
+        <section class="container__first__footer">
+            <p class="container__footer__title">Grupos que apoiam a causa</p>
+            <div class="container__footer__supporters">
+                <img class="suportters-image" src="./assets/home/footer/cades.png" alt="Cades">
+                <img class="suportters-image" src="./assets/home/footer/missaoAmbiental.png" alt="Missão Ambiental">
+                <img class="suportters-image" src="./assets/home/footer/mudaIpiranga.png" alt="Muda Ipiranga">
+            </div>
+            <div class="container__footer__supporters">
+                <img class="suportters-image" src="./assets/home/footer/sosAbelhas.png" alt="SOS Abelhas">
+                <img class="suportters-image" src="./assets/home/footer/supporterFlower.png">
+                <img class="suportters-image" src="./assets/home/footer/casao.png">
+                <img class="suportters-image" src="./assets/home/footer/chicoScience.png" alt="Chico Science">
+            </div>
+        </section>
+        <section class="container__second__footer">
+            <h2>Usina Eco-Cultural</h2>
+            <h3>Rua Breno Ferraz do Amaral 415, São Paulo/SP</h3>
+            <h3>CEP 04124-020</h3>
+            <h2>Sede Adminstrativa @usinaecocultural</h2>
+            <hr class="white-line">
+            <h4>Incinerador Vergueiro | IMT - 2023</h4>
+            <h4>Desenvolvido por <a href="./pages/user/representativeData.html">Imtech Mauá</a></h4>
+        </section>
+    </footer>
+
+    <script>
+
+    </script>
+
+    <script type="module" src="./scripts/index/mainIndex.js"></script>
+    <script type="module" src="./scripts/index/logout.js"></script>
+    <script src="./scripts/home/app.js" type="module"></script>
+    <script src="./scripts/home/banner/bannerSlide.js" type="module"></script>
+    <script src="./scripts/home/navbar/navbar.js" type="module"></script>
 </body>
+
 </html>

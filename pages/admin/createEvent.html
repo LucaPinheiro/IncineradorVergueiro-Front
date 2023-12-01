@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Eventos</title>
+    <link rel="stylesheet" href="../../styles/newEvent/responsive.css">
+    <link rel="stylesheet" href="../../styles/home/style.css">
+    <link rel="stylesheet" href="../../styles/admin/createEvent/createEvent.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="./adminPage.html" class="nav-branding"><img src="../../assets/home/icon.svg" alt="Logo"></a>
+
+            <ul class="nav-menu" style="margin-right: 30px;">
+                <li class="nav-item">
+                    <a href="./adminPage.html" class="nav-link">Administração</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./eventControl.html" class="nav-link">Eventos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./productControl.html" class="nav-link">Loja</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./order.html" class="nav-link">Pedidos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./suggestionEvent.html" class="nav-link">Sugestão de evento</a>
+                </li>
+            </ul>
+            <div class="hamburguer">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 class="title">Novo Evento</h1>
+        <hr class="line">
+        <form class="form-container">
+            <div class="form-box">
+                <label class="form-box_title" for="eventName">Nome do Evento:</label>
+                <input id="eventName" class="form-box-input" type="text"
+                    placeholder="Digite um nome para seu evento...">
+            </div>
+            <div class="form-box">
+                <label class="form-box_title" for="hostName">Nome do Anfitrião:</label>
+                <input id="hostName" class="form-box-input" type="text" placeholder="Dê um nome para seu anfitrião...">
+            </div>
+            <div class="form-box">
+                <label class="form-box_title" for="eventDate">Data do Evento:</label>
+                <input id="eventDate" class="form-box-input" type="date">
+            </div>
+            <div class="multiple-box">
+                <div class="form-box">
+                    <label class="form-box_title" for="startTime">Horário de Início:</label>
+                    <input id="startTime" class="form-box-input" type="time">
+                </div>
+                <div class="form-box">
+                    <label class="form-box_title" for="endTime">Horário de Término:</label>
+                    <input id="endTime" class="form-box-input" type="time">
+                </div>
+            </div>
+            <div class="form-box">
+                <label class="form-box_title" for="participants">Número de Participantes:</label>
+                <input id="participants" class="number" type="number"
+                    placeholder="Digite o número de participantes... ">
+            </div>
+            <div class="form-box">
+                <label class="form-box_title" for="eventDescription">Descrição do Evento:</label>
+                <textarea id="eventDescription" class="text-area" rows="4" cols="50"
+                    placeholder="Insira uma descrição para seu evento..."></textarea>
+            </div>
+            <div class="btn-box">
+                <button type="button" class="btn-event" id="createEventButton">Agendar Evento</button>
+            </div>
+        </form>
+
+        <div id="confirmationModal" class="modal">
+            <div class="modal-content">
+                <p>Tem certeza de que deseja criar o evento?</p>
+                <button id="confirmButton">Confirmar</button>
+                <button id="cancelButton" class="btn-close">Cancelar</button>
+            </div>
+        </div>
+
+        <div id="successModal" class="modal">
+            <div class="modal-content">
+                <p>Evento criado com sucesso!</p>
+                <button id="closeSuccessButton">Fechar</button>
+            </div>
+        </div>
+
+        <div id="errorModal" class="modal">
+            <div class="modal-content">
+                <p>Erro ao criar o evento.</p>
+                <button id="closeErrorButton">Fechar</button>
+            </div>
+        </div>
+
+        <div id="emptyFieldsModal" class="modal">
+            <div class="modal-content">
+                <p>Por favor, preencha todos os campos antes de criar o evento.</p>
+                <button id="closeEmptyFieldsButton">Fechar</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <hr class="white-line-footer">
+        <section class="container__first__footer">
+            <p class="container__footer__title">Grupos que apoiam a causa</p>
+            <div class="container__footer__supporters">
+                <img class="suportters-image" src="../../assets/home/footer/cades.png" alt="Cades">
+                <img class="suportters-image" src="../../assets/home/footer/missaoAmbiental.png" alt="Missão Ambiental">
+                <img class="suportters-image" src="../../assets/home/footer/mudaIpiranga.png" alt="Muda Ipiranga">
+            </div>
+            <div class="container__footer__supporters">
+                <img class="suportters-image" src="../../assets/home/footer/sosAbelhas.png" alt="SOS Abelhas">
+                <img class="suportters-image" src="../../assets/home/footer/supporterFlower.png">
+                <img class="suportters-image" src="../../assets/home/footer/casao.png">
+                <img class="suportters-image" src="../../assets/home/footer/chicoScience.png" alt="Chico Science">
+            </div>
+        </section>
+        <section class="container__second__footer">
+            <h2>Usina Eco-Cultural</h2>
+            <h3>Rua Breno Ferraz do Amaral 415, São Paulo/SP</h3>
+            <h3>CEP 04124-020</h3>
+            <h2>Sede Adminstrativa @usinaecocultural</h2>
+            <hr class="white-line">
+            <h4>Incinerador Vergueiro | IMT - 2023</h4>
+            <h4>Desenvolvido por Imtech Mauá</h4>
+        </section>
+    </footer>
+
+    <script type="module" src="../../scripts/home/navbar/navbar.js"></script>
+    <script type="module" src="../../scripts/admin/createEvent/mainCreateEvent.js"></script>
+    <script type="module" src="../../scripts/index/logout.js"></script>
+</body>

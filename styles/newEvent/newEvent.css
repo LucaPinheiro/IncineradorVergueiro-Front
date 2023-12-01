@@ -1,0 +1,257 @@
+@import url("../home/header.css");
+@import url("../home/footer.css");
+@import url("../../global.css");
+
+
+.container__event {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container__event__title {
+    margin-top: 30px;
+    margin-bottom: 30px; 
+    font-size: 20px;
+    margin-right: 130px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px; 
+    margin-right: 60px;
+}
+
+label {
+    text-align: left;
+    padding-right: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.form-row-start-finish {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    margin-bottom: 20px;
+    margin-right: 20px;
+    gap: 18px;
+}
+
+.form-row-start-finish .large-textbox {
+    width: 135px;
+}
+
+.form-row-start-finish .form-row  {
+    margin-right: 10px;
+
+}
+
+.form-row-second-box {
+    margin-left: 30px;
+}
+
+.form-row-first-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    margin-left: 35px;
+}
+
+.large-textbox {
+    width: 300px;
+    height: 20px;
+}
+
+#eventDescription {
+    height: 80px;
+}
+
+.wide-label {
+    font-size: 15px;
+}
+
+#newEvent {
+    font-size: 12px;    
+    margin-bottom: 18px;
+    margin-right: 80px;
+    margin-left: 50px;
+}
+
+
+
+
+
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+textarea {
+    border: none; 
+    border-radius: 8px;
+    background-color: #D7D3D3; 
+}
+
+input[type="submit"] {
+    background-color: #69A625;
+    border: none;
+    border-radius: 8px; 
+    color: white; 
+    padding: 10px 20px; 
+    margin-left: 160px;
+    cursor: pointer; 
+}
+
+input[type="submit"]:hover {
+    background-color: #4F802D; 
+}
+
+@media screen and (min-width: 820px) {
+    .container__event {
+        margin-top: 20px;
+        text-align: left; 
+    }
+
+    .container__event__title {
+        margin-left: 80px; 
+        font-size: 28px;
+    }
+
+    form {
+        align-items: flex-start;
+    }
+
+
+    .form-row-start-finish {
+        margin-left: 80px; 
+        gap: 50px;
+    }
+
+    .form-row-start-finish .form-row {
+        margin-right: 0; 
+    }
+
+    .form-row-start-finish .large-textbox {
+        width: 300px;
+    }
+
+    .form-row-second-box {
+        margin-left: 80px; 
+    }
+
+    .form-row-first-box {
+        margin-left: 80px; 
+    }
+
+    .wide-label {
+        font-size: 18px;
+    }
+
+    #newEvent {
+        font-size: 18px;
+    }
+
+    .form-row-button {
+        margin-left: 200px;
+        margin-top: 30px;
+        margin-bottom: 18px;
+        margin-right: 50px;
+    }
+
+    .large-textbox {
+        width: 650px;
+    }
+
+    .footer h2.first-title {
+        font-size: 18px;
+    }
+
+    .footer h3.second-title {
+        font-size: 12px;
+    }
+
+    .footer h3.third-title {
+        font-size: 12px;
+    }
+
+    .footer h2.fourth-title {
+        font-size: 13px;
+    }
+
+    .footer h4.fifith-title {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container__event {
+        text-align: left;
+        margin-top: 0; 
+    }
+
+    .container__event__title {
+        font-size: 28px;
+    }
+
+    form {
+        align-items: flex-start;
+    }
+
+    .form-row {
+        margin-right: 0; 
+        align-items: flex-start; 
+    }
+
+    .form-row-start-finish {
+        gap: 140px; 
+        margin-right: 0; 
+    }
+
+    .form-row-second-box {
+        margin-left: 80px; 
+    }
+
+    .form-row-first-box {
+        margin-left: 80px; 
+    }
+
+    .wide-label {
+        font-size: 18px;
+    }
+
+    #newEvent {
+        font-size: 18px;
+    }
+
+    .form-row-button {
+        margin-left: 935px; 
+        margin-top: 30px;
+        margin-bottom: 18px;
+
+    }
+
+    #eventName, #hostName, #eventDate, #numParticipants, #eventDescription {
+        width: 1150px;
+    }
+
+    #startTime {
+        width: 505px;
+    }
+
+    #endTime {
+        width: 505px;
+    }   
+} 

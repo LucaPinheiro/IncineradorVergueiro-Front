@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastre-se</title>
+  <link rel="stylesheet" href="../../styles/register/register.css">
+  <link rel="stylesheet" href="../../styles/home/style.css">
+  <link rel="stylesheet" href="../../styles/register/modal.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="../../index.html" class="nav-branding"><img class="home-icon" src="../../assets/home/icon.svg"
+          alt="Icon"></a>
+
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="../../index.html" class="nav-link">Página Inicial</a>
+        </li>
+        <li class="nav-item">
+          <a href="./store.html" class="nav-link">Loja</a>
+        </li>
+        <li class="nav-item">
+          <a href="./support.html" class="nav-link">Apoie</a>
+        </li>
+        <li class="nav-item">
+          <a href="./about.html" class="nav-link">Sobre nós</a>
+        </li>
+        <li class="nav-item">
+          <a href="./event.html" class="nav-link">Eventos</a>
+        </li>
+        <li class="nav-item">
+          <a href="./newEvent.html" class="nav-link">Agendamentos</a>
+        </li>
+        <li class="nav-item">
+          <a href="../../pages/user/login.html" class="nav-link">Minha Conta</a>
+        </li>
+      </ul>
+      <div class="hamburguer">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <form class="container__form" id="registrationForm">
+        <div class="container__box">
+          <h1 class="container__event__title">Cadastre-se</h1>
+          <label class="container__box-label" for="name">Nome:</label>
+          <input class="container__box-input" type="text" id="name" name="name" required
+            placeholder="Digite seu nome...">
+
+          <label class="container__box-label" for="email">Email:</label>
+          <input class="container__box-input" type="email" id="email" name="email" required
+            placeholder="Digite seu email...">
+
+          <label class="container__box-label" for="password">Senha:</label>
+          <input class="container__box-input" type="password" id="password" name="password" required
+            placeholder="Digite sua senha...">
+
+
+          <label class="container__box-label" for="confirmPassword">Confirmar Senha:</label>
+          <input class="container__box-input" type="password" id="confirmPassword" name="confirmPassword" required
+            placeholder="Confirme sua senha...">
+
+          <label class="container__box-label" for="cpf">CPF:</label>
+          <input class="container__box-input" type="text" id="cpf" name="cpf" required placeholder="Digite seu CPF...">
+
+          <label class="container__box-label" for="phone">Telefone:</label>
+          <input class="container__box-input" type="tel" id="phone" name="phone" required placeholder="(00)00000-0000">
+        </div>
+      </form>
+
+      <div class="container__button">
+        <button type="submit">Voltar</button>
+        <button type="submit" id="createButton">Criar</button>
+      </div>
+      <p class="container__footer-text">Já possui uma conta? <a href="./login.html"
+          class="container__text-link">Login</a></p>
+    </div>
+
+    <div class="modal" id="success-modal">
+      <div class="modal-content">
+        <span class="close" id="close-modal">&times;</span>
+        <h2>Registro Bem-Sucedido!</h2>
+        <p>Seu usuário foi criado com sucesso.</p>
+      </div>
+    </div>
+
+
+    <div class="custom-modal" id="error-modal">
+      <div class="custom-modal-content" id="error-modal-content">
+        <span class="custom-close" id="error-modal-close">&times;</span>
+        <h2>Erro no Cadastro</h2>
+        <p id="error-message"></p>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <hr class="white-line-footer">
+    <section class="container__first__footer">
+      <p class="container__footer__title">Grupos que apoiam a causa</p>
+      <div class="container__footer__supporters">
+        <img class="suportters-image" src="../../assets/home/footer/cades.png" alt="Cades">
+        <img class="suportters-image" src="../../assets/home/footer/missaoAmbiental.png" alt="Missão Ambiental">
+        <img class="suportters-image" src="../../assets/home/footer/mudaIpiranga.png" alt="Muda Ipiranga">
+      </div>
+      <div class="container__footer__supporters">
+        <img class="suportters-image" src="../../assets/home/footer/sosAbelhas.png" alt="SOS Abelhas">
+        <img class="suportters-image" src="../../assets/home/footer/supporterFlower.png">
+        <img class="suportters-image" src="../../assets/home/footer/casao.png">
+        <img class="suportters-image" src="../../assets/home/footer/chicoScience.png" alt="Chico Science">
+      </div>
+    </section>
+    <section class="container__second__footer">
+      <h2>Usina Eco-Cultural</h2>
+      <h3>Rua Breno Ferraz do Amaral 415, São Paulo/SP</h3>
+      <h3>CEP 04124-020</h3>
+      <h2>Sede Adminstrativa @usinaecocultural</h2>
+      <hr class="white-line">
+      <h4>Incinerador Vergueiro | IMT - 2023</h4>
+      <h4>Desenvolvido por Imtech Mauá</h4>
+    </section>
+  </footer>
+
+  <script src="/scripts/home/navbar/navbar.js" type="module"></script>
+  <script type="module" src="../../scripts/register/mainRegister.js"></script>
+  <script type="module" src="../../scripts/index/logout.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#cpf").inputmask("999.999.999-99");
+      $("#phone").inputmask("(99)99999-9999");
+    });
+  </script>
+
+</body>
+
+</html>

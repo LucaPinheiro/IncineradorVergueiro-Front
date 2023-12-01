@@ -1,0 +1,423 @@
+@import url("../home/header.css");
+@import url("../home/footer.css");
+@import url("../../global.css");
+@import url("../home/maps.css");
+
+.banner {
+  background-image: url("/assets/support/supportimage.png");
+  background-size: cover;
+  background-position: center;
+  height: 191px;
+  position: relative;
+}
+
+.container__cards {
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.banner__box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.banner__title {
+  color: var(--white);
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.banner__text {
+  color: var(--white);
+  font-size: 13px;
+  margin-top: 27px;
+  margin-right: 15px;
+  margin-left: 15px;
+  font-family: var(--body-font);
+}
+
+.banner__button {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--green);
+    color: var(--white);
+    padding: 1%;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 0px;
+    width: 135px;
+    font-family: var(--body-font);
+}
+
+.banner__button:hover {
+    background-color: #4C7E16;
+}
+
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 22px;
+  color: var(--green);
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.title__line {
+  height: 2px;
+  width: 100%;
+  margin-bottom: 23px;
+  margin-top: 15px;
+}
+
+
+
+.title__supporters {
+  font-size: 22px;
+  color: black;
+  margin-top: 20px;
+  }
+
+  .container__values {
+    margin-top: 20px;
+  }
+  
+  .container__values__box__first {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  .container__values__text {
+    font-size: 12px;
+    margin-left: 10px;
+    font-family: var(--body-font);
+    line-height: 15px;
+  }
+  
+  .container__values__img {
+    max-width: 100%;
+    margin-right: 10px;
+    width: 216px;
+    height: 213px;
+  }
+  
+  .container__values__box__second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container__values__content {
+    display: flex;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+  
+  .container__values__text__caldeiras {
+    margin: 25px;
+    font-size: 12px;
+    width: 340px;
+    font-family: var(--body-font);
+    line-height: 15px;
+  }
+  
+  .container__values__content img {
+    max-width: 100%;
+  }
+  
+  .container__values__box__third {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container__values__text__Missao_Ambiental {
+    margin: 30px 42px 20px 42px;
+    font-size: 12px;
+    font-family: var(--body-font);
+    line-height: 15px;
+  }
+
+  .container__values__img__Missao__Ambiental {
+    max-width: 100%;
+    margin-right: 0px;
+    width: 544px;
+    height: 143px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+
+  .supporters__link {
+    color: black;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 45px;
+    margin-bottom: 40px;
+  }
+
+  .container__values__box__fourth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container__values__text__Maua {
+    margin: 30px 42px 20px 42px;
+    font-size: 12px;
+    font-family: var(--body-font);
+    line-height: 15px;
+  }
+
+  .container__values__img__maua {
+    height: 146px;
+    width: 344px;
+    margin-top: 20px;
+
+
+  }
+
+  .supporters__link__text {
+    color: blue;
+    text-decoration: underline;
+  }
+
+  .img__pc {
+    display: none;
+  }
+
+
+@media screen and (min-width: 820px) {
+
+  .banner {
+    background-image: url("/assets/support/supportimage.png");
+    background-size: cover;
+    background-position: center;
+    height: 191px;
+    position: relative;
+  }
+  
+  .title {
+    font-size: 36px;
+    color: var(--green);
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+
+  .title__supporters {
+    font-size: 36px;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .container__values__box__first {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .container__values__text {
+    font-size: 16px;
+    margin-left: 20px;
+    width: 60%;
+    margin-right: 20px;
+    line-height: 20px;
+  }
+
+  .container__values__box__second {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .container__values__text__caldeiras {
+    margin: 25px;
+    font-size: 16px;
+    width: 60%;
+    margin-right: 20px;
+    line-height: 20px;
+  }
+
+  .container__values__box__second img {
+    margin-right: 20px;
+  }
+
+  .container__values__box__third {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .container__values__text__Missao_Ambiental {
+    margin: 30px 42px 20px 42px;
+    font-size: 16px;
+    width: 60%;
+    margin-right: 20px;
+    line-height: 20px;
+  }
+
+  .container__values__img__Missao_Ambiental {
+    margin-left: 20px;
+  }
+
+  .container__values__box__fourth {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .container__values__text__Maua {
+    margin: 30px 42px 20px 42px;
+    font-size: 16px;
+    width: 60%;
+    line-height: 20px;
+  }
+
+  .container__values__img__maua {
+    margin-right: 20px;
+  }
+
+  .title-container {
+    margin-top: 60px;
+  }
+
+  .supporters__link {
+    color: black;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  
+  .banner {
+    height: 300px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .title__supporters {
+    font-size: 28px;
+  }
+  
+  .container__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .container__values {
+    margin-top: 20px;
+    width: 50%;;
+  }
+
+  .container__values__box__first {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 20px;
+    gap: 25px;
+  }
+  
+  .container__values__text {
+    font-size: 18px;
+    width: 85%;
+    margin: 10px 35px 0px 35px;
+    line-height: 30px;
+  }
+
+  .container__values__box__second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container__values__content {
+    display: flex;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+  
+  .container__values__text__caldeiras {
+    margin: 25px;
+    font-size: 20px;
+    width: 80%;
+    margin: 41px 35px 0px 35px;
+    line-height: 30px;
+
+  }
+
+  .container__values__box__third {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container__values__text__Missao_Ambiental {
+    font-size: 20px;
+    margin: 41px;
+    margin-bottom: 100px;
+    margin-left: 60px;
+    line-height: 30px;
+    
+  }
+
+  .container__values__img__Missao_Ambiental {
+    margin-top: 20px;
+  }
+
+  .container__values__box__fourth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container__values__text__Maua {
+    font-size: 20px;
+    margin: 43px 41px 0px 10px;
+    line-height: 30px;
+    
+  }
+
+  .supporters__link {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .img__pc {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+  .img__pc img {
+    width: 500px;
+  }
+}

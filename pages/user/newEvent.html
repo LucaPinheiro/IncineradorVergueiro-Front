@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Eventos</title>
+    <link rel="stylesheet" href="../../styles/newEvent/responsive.css">
+    <link rel="stylesheet" href="../../styles/newEvent/modal.css">
+    <link rel="stylesheet" href="../../styles/home/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="../../index.html" class="nav-branding"><img src="../../assets/home/icon.svg" alt="Logo"></a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../../index.html" class="nav-link">Página Inicial</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./store.html" class="nav-link">Loja</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./support.html" class="nav-link">Apoie</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./about.html" class="nav-link">Sobre nós</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./event.html" class="nav-link">Eventos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./newEvent.html" class="nav-link">Agendamentos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../../pages/user/login.html" class="nav-link">Minha Conta</a>
+                </li>
+            </ul>
+            <div class="hamburguer">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="first__container">
+            <h1 class="title">Proposta de Eventos</h1>
+            <hr class="black-line">
+        </div>
+
+        <form class="form-container">
+
+            <div class="form-box">
+                <label class="form-box_title" for="eventName">Nome do Evento:</label>
+                <input class="form-box-input" type="text" name="eventName"
+                    placeholder="Digite um nome para seu evento...">
+            </div>
+
+            <div class="form-box">
+                <label class="form-box_title" for="host">Nome do Anfitrião:</label>
+                <input class="form-box-input" type="text" name="host" placeholder="Dê um nome para seu anfitrião...">
+            </div>
+
+            <div class="form-box">
+                <label class="form-box_title" for="date">Data do Evento:</label>
+                <input class="form-box-input" type="date" name="date">
+            </div>
+
+            <div class="multiple-box">
+
+                <div class="form-box">
+                    <label class="form-box_title" for="startTime">Horário de Início:</label>
+                    <input class="form-box-input" type="time" name="startTime">
+                </div>
+
+                <div class="form-box">
+                    <label class="form-box_title" for="endTime">Horário de Término:</label>
+                    <input class="form-box-input" type="time" name="endTime">
+                </div>
+
+            </div>
+
+            <div class="form-box">
+                <label class="form-box_title" for="participants">Número de Participantes:</label>
+                <input class="number" type="number" name="participants"
+                    placeholder="Digite o número de participantes... ">
+            </div>
+
+            <div class="form-box">
+                <label class="form-box_title" for="description">Descrição do Evento:</label>
+                <textarea class="text-area" rows="4" cols="50" name="description"
+                    placeholder="Insira uma descrição para seu evento..."></textarea>
+            </div>
+
+            <div class="btn-box">
+                <button class="btn-event">Agendar Evento</button>
+            </div>
+        </form>
+
+        <div id="success-modal" class="modal">
+
+            <div class="modal-content">
+                <span class="close" id="close-modal">&times;</span>
+                <h2>Proposta enviada com Sucesso!</h2>
+                <p>Obrigado por usar nosso serviço.</p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <hr class="white-line-footer">
+        <section class="container__first__footer">
+            <p class="container__footer__title">Grupos que apoiam a causa</p>
+            <div class="container__footer__supporters">
+                <img class="suportters-image" src="../../assets/home/footer/cades.png" alt="Cades">
+                <img class="suportters-image" src="../../assets/home/footer/missaoAmbiental.png" alt="Missão Ambiental">
+                <img class="suportters-image" src="../../assets/home/footer/mudaIpiranga.png" alt="Muda Ipiranga">
+            </div>
+            <div class="container__footer__supporters">
+                <img class="suportters-image" src="../../assets/home/footer/sosAbelhas.png" alt="SOS Abelhas">
+                <img class="suportters-image" src="../../assets/home/footer/supporterFlower.png">
+                <img class="suportters-image" src="../../assets/home/footer/casao.png">
+                <img class="suportters-image" src="../../assets/home/footer/chicoScience.png" alt="Chico Science">
+            </div>
+        </section>
+        <section class="container__second__footer">
+            <h2>Usina Eco-Cultural</h2>
+            <h3>Rua Breno Ferraz do Amaral 415, São Paulo/SP</h3>
+            <h3>CEP 04124-020</h3>
+            <h2>Sede Adminstrativa @usinaecocultural</h2>
+            <hr class="white-line">
+            <h4>Incinerador Vergueiro | IMT - 2023</h4>
+            <h4>Desenvolvido por Imtech Mauá</h4>
+        </section>
+    </footer>
+
+    <script type="module" src="../../scripts/home/navbar/navbar.js"></script>
+    <script type="module" src="../../scripts/newEvent/mainNewEvent.js"></script>
+    <script type="module" src="../../scripts/index/logout.js"></script>
+</body>
+
+</html>

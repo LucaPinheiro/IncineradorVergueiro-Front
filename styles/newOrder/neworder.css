@@ -1,0 +1,366 @@
+@import url("../home/header.css");
+@import url("../home/footer.css");
+@import url("../../global.css");
+
+body {
+    font-family: var(--body-font);
+}
+
+/* mobile */
+
+.header-item {
+    color: #fff !important;
+    transition: color 0.5s !important;
+}
+
+.header-item:hover {
+    color: #000 !important;
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: var(--main-font-family);
+}
+
+.line {
+    border: 1px solid black;
+    width: 180px;
+    margin: auto;
+    margin-top: 3px;
+}
+
+.second-line {
+    margin-top: 10px;
+    border: 1px solid black;
+
+}
+
+.container___section-first{
+    font-family: var(--body-font);
+}
+
+.container__section-second{
+    font-family: var(--body-font);
+}
+
+.container__first-box {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 15px 0px 15px;
+    align-items: center;
+}
+
+.container__first-box p {
+    font-family: var(--main-font-family);
+}
+
+.container__first-box__section {
+    display: flex;
+    justify-content: flex-end;
+    gap: 60px;
+}
+
+.container__first-box__button {
+    background-color: #69A625;
+    border-radius: 5px;
+    padding: 3px 9px;
+    font-family: var(--body-font);
+    color: white;
+    border: none;
+}
+
+.container__cart__total {
+    font-family: var(--main-font-family);
+}
+
+.third-line {
+    border: 1px solid black;
+    margin-top: 60px;
+}
+
+.container__empty {
+    margin: 20px 20px;
+    overflow: scroll;
+    overflow-x: hidden;
+    scroll-snap-type: both mandatory;
+    scroll-padding: 10px;
+}
+
+.container__second-box {
+    display: flex;
+    margin: 10px 15px 0px 15px;
+}
+
+.container__third-box {
+    display: flex;
+    margin: 40px 15px 0px 15px;
+}
+
+.container__third-box__text {
+    font-family: var(--main-font-family);
+}
+
+.fourth-line {
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+.container__fourth-box {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 15px 0px 15px;
+}
+
+.container__fourth-box-radio-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 15px;
+}
+
+.fifth-line {
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+.container__fifth-box {
+    margin: 20px 20px;
+    overflow: scroll;
+    overflow-x: hidden;
+    scroll-snap-type: both mandatory;
+    scroll-padding: 10px;
+}
+
+.container__fifth-box__first-group {
+    height: 130px;
+    width: 100%;
+}
+
+
+.container__fifth-box__options {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.fifth-box-line {
+    margin: 5px 20px 0px 20px;
+}
+
+.container__button {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container__button button {
+    font-family: var(--body-font);
+    background-color: #69A625;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+#buttonAddOrder, #buttonBackStore {
+    padding: 3px 9px 3px 9px;
+    border-width: 1px;
+    transition: 0.5s ease;
+}
+
+.container__first-box__button:hover {
+    background-color: var(--green-hover);
+    transition: 0.5s ease;
+}
+
+#buttonAddOrder:hover {
+    background-color: var(--green-hover);
+}
+
+#buttonBackStore:hover {
+    background-color: var(--green-hover);
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.container__footer__title{
+    font-family: var(--main-font-family);
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@media screen and (min-width: 820px) {
+    .title {
+        font-size: 18px;
+    }
+
+    .line {
+        width: 250px;
+    }
+
+    .container__first-box {
+        margin: 60px 15px 0px 15px;
+        font-size: 14px;
+    }
+
+    .container__first-box__button {
+        border-radius: 5px;
+        padding: 3px 9px;
+        font-size: 12px;
+        width: 170px;
+    }
+
+    .container__second-box {
+        margin: 10px 15px 0px 15px;
+        font-size: 14px;
+    }
+
+    .container__third-box {
+        margin: 40px 15px 0px 15px;
+        font-size: 14px;
+    }
+
+    .container__fourth-box {
+        margin: 10px 15px 0px 15px;
+        font-size: 14px;
+    }
+
+    .container__fifth-box {
+        display: flex;
+        justify-content: space-between;
+        margin: 25px 20px;
+        font-size: 14px;
+    }
+
+    .container__fifth-box__options {
+        width: 100%;
+    }
+
+    .container__fifth-box__first-group {
+        width: 100%;
+    }
+
+    .fifth-box-line {
+        margin: 5px 20px 0px 20px;
+        width: 95%;
+    }
+
+    #buttonAddOrder, #buttonBackStore {
+        width: 160px;
+        font-size: 12px;
+        border-width: 1px;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .navbar {
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .line {
+        width: 350px;
+    }
+
+    .container__section {
+        padding: 1em 4em;
+        display: flex;
+        gap: 4em;
+    }
+
+    .container__first-box {
+        margin: 60px 30px 0px 30px;
+        font-size: 16px;
+    }
+
+
+    .container___section-first {
+        width: 50%;
+    }
+
+    .container__section-second {
+        width: 50%;
+        margin-top: 20px;
+    }
+
+    .container__first-box__button {
+        padding: 2px 6px;
+        font-size: 11px;
+        width: 120px;
+    }
+
+    .container__second-box {
+        margin: 10px 30px 0px 30px;
+        font-size: 16px;
+    }
+
+    .container__third-box {
+        margin: 40px 30px 0px 30px;
+        font-size: 16px;
+    }
+
+    .container__fourth-box {
+        margin: 15px 80px 30px 80px;
+        font-size: 16px;
+    }
+
+    .container__fourth-box {
+        margin: 15px 80px 0px 80px;
+        font-size: 16px;
+    }
+
+    .container__fourth-box-radio-buttons {
+        margin: 0 80px;
+    }
+
+
+    .container__fifth-box {
+        margin: 30px 30px;
+        font-size: 16px;
+    }
+
+    .fifth-box-line {
+        margin: 5px 20px 5px 20px;
+    }
+
+    .fifth-line {
+        margin-top: 20px;
+    }
+
+    .container__button {
+        display: flex;
+        justify-content: end;
+        gap: 30px;
+        margin-right: 150px;
+    }
+
+    #buttonAddOrder, #buttonBackStore {
+        width: 140px;
+        font-size: 11px;
+        border-width: 1px;
+
+    }
+
+    .container__cart__total__text {
+        font-size: 14px;
+    }
+
+}
