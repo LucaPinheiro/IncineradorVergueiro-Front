@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   closeModalSucess.addEventListener("click", () => {
     successModal.style.display = "none";
-    window.location.reload();
+    window.location.href = "../../index.html";
   });
 
   const registrationForm = document.getElementById("registrationForm");
