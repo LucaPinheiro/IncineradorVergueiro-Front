@@ -1,8 +1,14 @@
 # Usina Eco Cultural - Site e Sistema Administrativo
 
+
+
 ## Sobre o Projeto
 
 O projeto "Usina Eco Cultural" é um site desenvolvido utilizando HTML, CSS e JavaScript puro para promover e informar sobre o movimento social que busca revitalizar o antigo Incinerador Vergueiro, transformando-o em um espaço de lazer público. O site inclui informações históricas, eventos futuros, serviços como criação de contas e login, uma loja de produtos orgânicos, e uma área administrativa para gerenciar eventos, usuários, produtos e pedidos.
+
+Aqui está uma imagem representativa do local:
+
+![Usina Eco Cultural](assets/readme/USINA_006.jpg)
 
 ## Features Principais
 
